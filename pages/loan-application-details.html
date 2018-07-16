@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>iClique</title>
+        <!-- responsive screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.7 -->
+        <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../resources/css/jquery.scrolling-tabs.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../resources/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../resources/css/ionicons.min.css">
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="../resources/css/iclique.css">
+		<link rel="stylesheet" href="../resourcescss/scrolltabs.css">
+        <link rel="stylesheet" href="../resources/css/skins/_all-skins.min.css">
+        <!-- Google Font -->
+        <link rel="stylesheet" href="../resources/js/datatables.net-bs/css/buttons.dataTables.min.css">
+    </head>
+
+    <body class="hold-transition skin-blue fixed sidebar-mini">
+        <!-- Main wrapper -->
+        <div class="wrapper">
+            <header class="main-header">
+                <!-- Logo -->
+                <a href="../index.html" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini"><b>I</b>Q</span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><img src="../resources/img/logo.jpg" alt="Logo" width="" height=""></span>
+                </a>
+                <!-- Header Navbar -->
+                <nav class="navbar navbar-static-top">
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <!-- Page Menu Title -->
+                    <div class="sidebar-title">Initiate Loan Application Details</div>
+                    <!-- Page Menu Title -->
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="../resources/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                                    <span class="desig hidden-xs">Anisul Haque</span>
+                                    <span class="desig hidden-xs">Head of Loan Recovery</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <img src="../resources/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                                        <p>
+                                            Anisul Haque - Head of Loan Recovery
+                                        </p>
+                                    </li>
+                                    <!-- User Menu-->
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- =============================================== -->
+
+            <!-- Left side column. contains the sidebar -->
+            <aside class="main-sidebar">
+                <!-- sidebar -->
+                <section class="sidebar">
+                    <ul class="sidebar-menu" data-widget="tree">
+                        <li class="">
+                            <a href="../index.html">
+                                <i class="fa fa-home"></i> <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-dashboard"></i> <span>Regular Account</span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="../pages/loan-application.html"><i class="fa fa-circle-o"></i> Normal</a></li>
+                                <li class="active"><a href="../pages/loan-application-details.html"><i class="fa fa-circle-o"></i> DMD</a></li>
+                                <li><a href="../pages/customer-application.html"><i class="fa fa-circle-o"></i> SMA</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-folder"></i> <span>Classified Account</span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="../pages/branch-manager.html"><i class="fa fa-circle-o"></i> Doubtful</a></li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i> Blacklisted</a></li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i> SS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- =============================================== -->
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+
+                <!-- Main content -->
+                <section class="content">
+                    <!-- Credit Score (1st Row) -->
+                    <div class="row">
+					<div class="col-md-12">
+                            <div class="box box-primary">
+                                <!-- Details Heading -->
+                                <div class="box-header-center with-border">
+                                    <h3 class="box-title"><span class="customer-name">JUBAIR</span><span class="customer-id">(Customer ID: 007)</span> </h3>
+                                </div>
+                                <!-- /.Details Heading -->
+                                <!-- Review And Details Body -->
+                                <div class="box-body">
+                        <!-- col -->
+                        <div class="col-lg-4 col-xs-6">
+                            <!-- small box -->
+                            <a href="#">
+                                <div class="loan-box bg-navy">
+                                    <div class="loann">
+                                        <p>Credit Score</p>
+                                        <h3>98</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- ./col -->
+                        <!-- col -->
+                        <div class="col-lg-4 col-xs-6">
+                            <!-- small box -->
+                            <a href="#">
+                                <div class="loan-box bg-teal">
+                                    <div class="loann">
+                                        <p>AML</p>
+                                        <h3>25</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- ./col -->
+                        <!-- col -->
+                        <div class="col-lg-4 col-xs-6">
+                            <!-- small box -->
+                            <a href="#">
+                                <div class="loan-box bg-purple loann">
+                                    <div class="loann">
+                                        <p>CML</p>
+                                        <h3>85</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- ./col -->
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <!-- /.Credit Score (1st Row) -->
+
+                    <!-- Review And Details -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-primary">
+                                <!-- Review And Details Heading -->
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Review And Details</h3>
+                                </div>
+                                <!-- /.Review And Details Heading -->
+                                <!-- Review And Details Body -->
+                                <div class="box-body">
+                                    <div class="nav-tabs-custom">
+                                        <!-- Review And Details Tab Menu -->
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active"><a href="#activity" role="tab" data-toggle="tab">Personal Information1</a></li>
+                                            <li role="presentation" ><a href="#activity2" role="tab" data-toggle="tab">Personal Information2</a></li>
+                                            <li role="presentation" ><a href="#activity3" role="tab" data-toggle="tab">Personal Information3</a></li>
+                                            <li role="presentation" ><a href="#activity4" role="tab" data-toggle="tab">Personal Information4</a></li>
+                                            <li role="presentation" ><a href="#activity5" role="tab" data-toggle="tab">Personal Information5</a></li>
+                                            <li role="presentation" ><a href="#activity6" role="tab" data-toggle="tab">Personal Information6</a></li>
+                                            <li role="presentation" ><a href="#activity7" role="tab" data-toggle="tab">Personal Information7</a></li>
+                                            <li role="presentation" ><a href="#activity8" role="tab" data-toggle="tab">Personal Information8</a></li>
+                                            <li role="presentation" ><a href="#activity9" role="tab" data-toggle="tab">Personal Information9</a></li>
+                                            <li role="presentation" ><a href="#activity10" role="tab" data-toggle="tab">Personal Information10</a></li>
+                                            <li role="presentation" ><a href="#activity11" role="tab" data-toggle="tab">Personal Information11</a></li>
+                                            
+                                        </ul>
+                                        <!-- /.Review And Details Tab Menu -->
+                                        <!-- Review And Details Tab Menu Content -->
+                                        <div class="tab-content">
+                                            <!-- Review And Details Active Tab Menu Content -->
+                                            <div role="tabpanel" class="active tab-pane" id="activity">
+                                                <div class="box-body">
+                                                    <div class="col-sm-3 summery-col">
+                                                        <div class="box-body no-padding">
+                                                            <ul class="nav nav-pills nav-stacked">
+                                                                <li class=""><span class="user-info">Account Number</span></li>
+                                                                <li class=""><span class="user-info"><b>134165165461 46</b></span></li>
+                                                                <li class=""><span class="user-info">Applicants Name</span></li>
+                                                                <li class=""><span class="user-info"><b>Mr. Anwarul Kabir</b></span></li>
+                                                                <li class=""><span class="user-info">TIN Number</span></li>
+                                                                <li class=""><span class="user-info"><b>121 58164961 94</b></span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.col -->
+                                                    <div class="col-sm-3 summery-col">
+                                                        <div class="box-body no-padding">
+                                                            <ul class="nav nav-pills nav-stacked">
+                                                                <li class=""><span class="user-info">Fathers Name</span></li>
+                                                                <li class=""><span class="user-info"><b>Rahim Ali</b></span></li>
+                                                                <li class=""><span class="user-info">Mother’s Name</span></li>
+                                                                <li class=""><span class="user-info"><b>Morjina Begum</b></span></li>
+                                                                <li class=""><span class="user-info">Mobile Number</span></li>
+                                                                <li class=""><span class="user-info"><b>+88017124141141</b></span></li>
+                                                            </ul>
+                                                        </div> 
+                                                    </div>
+                                                    <!-- /.col -->
+                                                    <div class="col-sm-3 summery-col">
+                                                        <div class="box-body no-padding">
+                                                            <ul class="nav nav-pills nav-stacked">
+                                                                <li class=""><span class="user-info">Branch</span></li>
+                                                                <li class=""><span class="user-info"><b>Enter here</b></span></li>
+                                                                <li class=""><span class="user-info">Loan Amount</span></li>
+                                                                <li class=""><span class="user-info"><b>3,000,000 BDT / Three Lac Only</b></span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3 summery-col">
+                                                        <div class="box-body no-padding">
+                                                            <ul class="nav nav-pills nav-stacked">
+                                                                <li class=""><span class="user-info">Date</span></li>
+                                                                <li class=""><span class="user-info"><b>01/Jan/2018</b></span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.Review And Details Active Tab Menu Content -->
+                                            <div role="tabpanel"  class="tab-pane fade" id="activity2" role="tabpanel" aria-labelledby="profile-tab">Personal Information3</div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="activity3" role="tabpanel" aria-labelledby="profile-tab">Personal Information3</div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="activity4" role="tabpanel" aria-labelledby="profile-tab">Personal Information4</div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="activity5" role="tabpanel" aria-labelledby="profile-tab">Personal Information5</div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="activity6" role="tabpanel" aria-labelledby="profile-tab">Personal Information6</div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="activity7" role="tabpanel" aria-labelledby="profile-tab">Personal Information7</div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="activity8" role="tabpanel" aria-labelledby="profile-tab">Personal Information8</div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="activity9" role="tabpanel" aria-labelledby="profile-tab">Personal Information9</div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="activity10" role="tabpanel" aria-labelledby="profile-tab">Personal Information10</div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="activity11" role="tabpanel" aria-labelledby="profile-tab">Personal Information11</div>
+                                            <div role="tabpanel" class="tab-pane fade" id="employment" role="tabpanel" aria-labelledby="employment-tab">Dummy Text</div>
+											
+                                        </div>
+                                        <!-- /.Review And Details Tab Menu Content -->
+                                    </div>
+                                </div>
+                                <!-- /.Review And Details Heading -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.Review And Details -->
+
+                    <!-- Summery Row -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-primary">
+                                <!-- Summery Row Heading -->
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Summery</h3>
+                                </div>
+                                <!-- Summery Row Heading -->
+                                <!-- Summery Row Body -->
+                                <div class="box-body">
+                                    <!--col -->
+                                    <div class="col-sm-12 col-lg-3 col-xs-12 summery-col">
+                                        <img src="../resources/img/avatar5.png" alt="Avator" width="180" height="180">
+                                    </div>
+                                    <!-- /.col -->
+                                    <!-- col -->
+                                    <div class="col-sm-6 col-lg-3 col-xs-6 summery-col">
+                                        <div class="box-body no-padding">
+                                            <ul class="nav nav-pills nav-stacked">
+                                                <li class=""><span class="user-info">Applicants Name</span></li>
+                                                <li class=""><span class="user-info"><b>Mr. Anwarul Kabir</b></span></li>
+                                                <li class=""><span class="user-info">Applied Loan Amount</span></li>
+                                                <li class=""><span class="user-info"><b>3,000,000</b></span></li>
+                                                <li class=""><span class="user-info">Loan Type</span></li>
+                                                <li class=""><span class="user-info"><b>Retail Loan</b></span></li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                    <!-- /.col -->
+                                    <!-- col -->
+                                    <div class="col-sm-6 col-lg-3 col-xs-6 summery-col">
+                                        <div class="box-body no-padding">
+                                            <ul class="nav nav-pills nav-stacked">
+                                                <li class=""><span class="user-info">Tenure</span></li>
+                                                <li class=""><span class="user-info"><b>48 Months</b></span></li>
+                                                <li class=""><span class="user-info">Interest Rate</span></li>
+                                                <li class=""><span class="user-info"><b>12%</b></span></li>
+                                                <li class=""><span class="user-info">Number of Installments</span></li>
+                                                <li class=""><span class="user-info"><b>48</b></span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- /.col -->
+                                    <!--  col Blank -->
+                                    <div class="col-sm-4 col-lg-3 col-xs-12 summery-col">
+
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                                <!-- Summery Row Body -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                    <!-- /.Summery Row -->
+
+                    <!-- Suggested Form Row -->
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Suggested Form Body -->
+                            <div class="box box-primary">
+							<div class="box-header with-border">
+                                    <h3 class="box-title">To be Submitted by RO</h3>
+                                </div>
+                                <div class="box-body">
+                                    <!-- Form Start -->
+                                    <form role="form">
+                                        <!-- col -->
+                                        <div class="col-sm-4 summery-col">
+                                            <div class="form-group">
+                                                <label>Suggested Amount</label>
+                                                <input type="text" class="form-control" placeholder="Enter here">
+                                            </div>
+                                        </div>
+                                        <!-- /.col -->
+                                        <!-- col -->
+                                        <div class="col-sm-4 summery-col">
+                                            <div class="form-group">
+                                                <label>Suggested Tenure</label>
+                                                <input type="text" class="form-control" placeholder="Enter here">
+                                            </div>
+                                        </div>
+                                        <!-- /.col -->
+                                        <!-- col -->
+                                        <div class="col-sm-4 summery-col">
+                                            <div class="form-group">
+                                                <label>Suggested Interest Rate</label>
+                                                <input type="text" class="form-control" placeholder="Enter here">
+                                            </div>
+                                        </div>
+                                        <!-- col -->
+                                    </form>
+                                    <!-- Form End -->
+                                </div>
+                            </div>
+                            <!-- /.Suggested Form Body -->
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                    <!-- /.Suggested Form Row -->
+					<!-- Comment / Suggestion -->
+					<!-- row -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-primary">
+								<!-- Comment / Suggestion Heading-->
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Comment / Suggestion / Recommendation</h3>
+                                </div>
+								<!-- /.Comment / Suggestion Heading-->
+
+                                <!-- form start -->
+                                <form role="form">
+                                    <div class="box-body">
+                                        <div class="form-group">
+                                            <textarea class="form-control" rows="3" placeholder="Enter Here ..."></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+								<!-- /.form start -->
+                            </div>
+                        </div>
+                    </div>
+					<!-- /.Comment / Suggestion -->
+					<!-- /.row -->
+                    <!-- Submit Button Start -->
+                    <!-- row -->
+					<div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-primary">
+                               <!-- form start -->
+                                <form role="form">
+                                    <div class="box-body">
+									<div class="pull-right">
+									<div class="box-header with-border">
+                                    <h3 class="box-title">Signautre of RO</h3>
+                                    </div>
+									<div class="fileinput fileinput-new" data-provides="fileinput">
+											<span class="btn btn-fileupload btn-file"><span>Choose file</span><input type="file" onchange="readURL(this);"/></span>
+											<span class="fileinput-filename"></span><span class="fileinput-new">No file chosen</span>
+									</div>
+										<img id="blah" src="../resources/img/300x80.png" width="300" height="80" alt="your image" />
+                                    </div>
+                                    </div>
+                                </form>
+								<!-- /.form start -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="box-body">
+                            <p>
+                                <button type="button" class="btn bg-navy btn-flat margin">Preview</button>
+                                <button type="button" class="btn bg-maroon btn-flat margin">Save for later</button>
+                                <button type="button" class="btn bg-purple btn-flat margin">Forward</button>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                    <!-- Submit Button End -->
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+
+            <footer class="main-footer">
+                <!-- Footer Section -->
+            </footer>
+
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 3 -->
+        <script src="../resources/js/jquery.min.js"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="../resources/js/bootstrap.min.js"></script>
+		<script src="../resources/js/jquery.scrolling-tabs.js"></script>
+        <!-- SlimScroll -->
+        <script src="../resources/js/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../resources/js/fastclick.js"></script>
+        <!-- iclique App -->
+        <script src="../resources/js/iclique.min.js"></script>
+        <script src="../resources/js/chart.js/Chart.js"></script>
+        <script src="../resources/js/highcharts.js"></script>
+		<script src="../resources/js/jquery.scrolltabs.js"></script>
+		<script src="../resources/js/jquery.mousewheel.js"></script>
+		<script >
+			$('.nav-tabs').scrollingTabs({
+					cssClassLeftArrow: 'fa fa-chevron-left',
+					cssClassRightArrow: 'fa fa-chevron-right',
+					disableScrollArrowsOnFullyScrolled: true,
+				});
+
+  </script>
+  <script>
+   function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }</script>
+    </body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>iClique</title>
+        <!-- responsive screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.7 -->
+        <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../resources/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../resources/css/ionicons.min.css">
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="../resources/css/iclique.css">
+        <!-- iclique Skins. Choose a skin from the css/skins
+            folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../resources/css/skins/_all-skins.min.css">
+        <link rel="stylesheet" href="../resources/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../resources/js/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+        <!-- Google Font -->
+    </head>
+    <!-- ADD THE CLASS sidebar-collapse TO HIDE THE SIDEBAR PRIOR TO LOADING THE SITE -->
+    <body class="hold-transition skin-blue fixed sidebar-mini">
+        <!-- Main wrapper -->
+        <div class="wrapper">
+
+            <header class="main-header">
+                <!-- Logo -->
+                <a href="../index.html" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini"><b>I</b>Q</span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><img src="../resources/img/logo.jpg" alt="Logo" width="" height=""></span>
+                </a>
+                <!-- Header Navbar -->
+                <nav class="navbar navbar-static-top">
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <!-- Page Menu Title -->
+                    <div class="sidebar-title">Customer Application</div>
+                    <!-- Page Menu Title -->
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="../resources/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                                    <span class="desig hidden-xs">Anisul Haque</span>
+                                    <span class="desig hidden-xs">Head of Loan Recovery</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <img src="../resources/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                                        <p>
+                                            Anisul Haque - Head of Loan Recovery
+                                        </p>
+                                    </li>
+                                    <!-- User Menu-->
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- =============================================== -->
+
+            <!-- Left side column. contains the sidebar -->
+            <aside class="main-sidebar">
+                <!-- sidebar -->
+                <section class="sidebar">
+                    <ul class="sidebar-menu" data-widget="tree">
+                        <li class="">
+                            <a href="../index.html">
+                                <i class="fa fa-home"></i> <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-dashboard"></i> <span>Regular Account</span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="../pages/loan-application.html"><i class="fa fa-circle-o"></i> Normal</a></li>
+                                <li class=""><a href="../pages/loan-application-details.html"><i class="fa fa-circle-o"></i> DMD</a></li>
+                                <li><a href="../pages/customer-application.html"><i class="fa fa-circle-o"></i> SMA</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-folder"></i> <span>Classified Account</span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li class="active"><a href="../pages/branch-manager.html"><i class="fa fa-circle-o"></i> Doubtful</a></li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i> Blacklisted</a></li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i> SS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- =============================================== -->
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+
+                <!-- Main content -->
+                <section class="content">
+
+                    <!-- Data Table Start -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-primary">
+                                <div class="box-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <form role="form">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-6">Statement Date:</label>
+                                                        <div class="input-group date col-sm-6">
+                                                            <div class="input-group-addon">
+                                                                <i class="fa fa-calendar"></i>
+                                                            </div>
+                                                            <input type="text" class="form-control pull-right" id="datepicker">
+                                                        </div>
+                                                        <!-- /.input group -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-5">End Date:</label>
+                                                        <div class="input-group date col-sm-7">
+                                                            <div class="input-group-addon">
+                                                                <i class="fa fa-calendar"></i>
+                                                            </div>
+                                                            <input type="text" class="form-control pull-right" id="datepicker1">
+                                                        </div>
+                                                        <!-- /.input group -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <button type="submit" class="btn btn-info">Generate</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <input type="button" id="Button4" onclick="printDiv();" value="Print" />
+                                    <div id="invc" style="border: 1px solid #d3d3d3;padding: 5px 50px;" class="custom-row col-md-12">
+                                        <div>
+                                            <P style="text-align:center;">ONE BANK LTD <br/>CARD DEPARTMENT <br/>CREDIT CARD STATEMENT <br/>[PERIOD: 24-MAY-2018 TO 24-JUNE-2018]</P>
+                                        </div>
+                                        <div class="table1">
+                                            <table style="table-layout: fixed;" class="table no-border">
+                                                <tr>
+                                                    <td colspan="2">CUSTOMER NAME</td>
+                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                    <td colspan="3">SUMIT HASSAN HABIB</td>
+                                                    <td colspan="2">CONTRACT NO</td>
+                                                    <td style="text-align: center;width: 10px;" >:</td>
+                                                    <td colspan="3">0080098879000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">CONTRACT TYPE</td>
+                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                    <td colspan="3">VISA PLATINUM GENERAL</td>
+                                                    <td colspan="2">CONTRACT STATUS</td>
+                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                    <td colspan="3">OK</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">PRIMARY CARD NO</td>
+                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                    <td colspan="3">41284956849484858</td>
+                                                    <td colspan="2">RISK GROUP</td>
+                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                    <td colspan="3">DF-1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">SUPPLY CARD NO</td>
+                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                    <td colspan="3">N/A</td>
+                                                    <td colspan="2"></td>
+                                                    <td colspan="3"></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div style="font-size: 12px;" class="col-sm-6">Account No (DOM): 102038400088345</div>
+                                        <div style="font-size: 12px;" class="col-sm-6">Limit Amount: 2,24,000.00 BDT</div>
+                                        <!-- Table -->
+                                        <table id="" class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>REFERENCE NUMBER</th>
+													<th>TRANSACTION DATE</th>
+                                                    <th>POST DATE</th>
+                                                    <th>TRANSACTION DESCRIPTION</th>
+                                                    <th>AMOUNT (BDT)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>63954789MY576</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>Payment</td>
+                                                    <td>52,745.47</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>HG935639863</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>Paymt Thank You</td>
+                                                    <td>52,745.47</td>
+                                                </tr>
+												<tr>
+                                                    <td>HY90845677</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>Store #99</td>
+                                                    <td>52,745.47</td>
+                                                </tr>
+												<tr>
+												    <td>78909080ONE</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>Balance Transfer</td>
+                                                    <td>52,745.47</td>
+                                                </tr>
+												<tr>
+                                                    <td>22345869IKL</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>Cash Advance</td>
+                                                    <td>52,745.47</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                            </tfoot>
+                                        </table>
+                                        <div style="font-size: 12px;" class="col-sm-6">Account No (INT): 10203840008898</div>
+                                        <div style="font-size: 12px;" class="col-sm-6">Limit Amount: 950.00 USD</div>
+
+                                        <table id="" class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>REFERENCE NUMBER</th>
+													<th>TRANSACTION DATE</th>
+                                                    <th>POST DATE</th>
+                                                    <th>TRANSACTION DESCRIPTION</th>
+                                                    <th>AMOUNT (USD)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>63954789MY576</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>Payment</td>
+                                                    <td>456.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>HG935639863</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>Paymt Thank You</td>
+                                                    <td>45.87</td>
+                                                </tr>
+												<tr>
+                                                    <td>HY90845677</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>Store #99</td>
+                                                    <td>67.87</td>
+                                                </tr>
+												<tr>
+												    <td>78909080ONE</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>Balance Transfer</td>
+                                                    <td>234.77</td>
+                                                </tr>
+												<tr>
+                                                    <td>22345869IKL</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>26/05/2018</td>
+                                                    <td>Cash Advance</td>
+                                                    <td>129.88</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                            </tfoot>
+                                        </table>
+                                        <div style="text-align: center;margin-top:30px;" class="col-sm-12">
+                                            <div style="font-size: 12px;" class="col-sm-4">
+                                                ----------------<br/>Posted By
+                                            </div>
+                                            <div style="font-size: 12px;" class="col-sm-4">
+                                                ----------------<br/>Checked By
+                                            </div>
+                                            <div style="font-size: 12px;" class="col-sm-4">
+                                                ----------------<br/>Authorized By
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.Table -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.Data Table Start -->
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+
+            <footer class="main-footer">
+                <!-- Footer Section -->
+            </footer>
+
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 3 -->
+        <script src="../resources/js/jquery.min.js"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="../resources/js/bootstrap.min.js"></script>
+        <!-- SlimScroll -->
+        <script src="../resources/js/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../resources/js/fastclick.js"></script>
+        <!-- iclique App -->
+        <script src="../resources/js/iclique.min.js"></script>
+        <script src="../resources/js/chart.js/Chart.js"></script>
+        <script src="../resources/js/highcharts.js"></script>
+        <script src="../resources/js/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <script src="../resources/js/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="../resources/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script>
+                                                                            $(function () {
+                                                                                $('#example1').DataTable()
+                                                                                $('#example2').DataTable({
+                                                                                    'paging': true,
+                                                                                    'lengthChange': false,
+                                                                                    'searching': false,
+                                                                                    'ordering': true,
+                                                                                    'info': true,
+                                                                                    'autoWidth': true,
+                                                                                    'responsive': true
+                                                                                })
+                                                                            })
+        </script>
+        <script>
+            //Date picker
+            $('#datepicker').datepicker({
+                autoclose: true
+            })
+        </script>
+        <script>
+            //Date picker
+            $('#datepicker1').datepicker({
+                autoclose: true
+            })
+        </script>
+        <script>
+            function printDiv() {
+                var DocumentContainer = document.getElementById('invc');
+                var WindowObject = window.open('', 'PrintWindow', 'width=800,height=650,top=50,left=50,toolbars=yes,scrollbars=yes,status=no,resizable=yes');
+                var strHtml = "<html>\n<head>\n <link rel=\"stylesheet\" type=\"text/css\" href=\"../resources/css/iclique.css\">\n</head><body><div style=\"width=750\">\n" + DocumentContainer.innerHTML + "\n</div>\n</body>\n</html>";
+                WindowObject.document.writeln(strHtml);
+                WindowObject.document.close();
+                WindowObject.focus();
+                WindowObject.print();
+                WindowObject.close();
+
+            }
+        </script>
+    </body>
+</html>
