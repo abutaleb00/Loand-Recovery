@@ -1476,7 +1476,7 @@ a:focus {
   text-decoration: none;
   font-family: Quicksand;
   font-style: Bold;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
 }
 .small-box > .small-box-footerapp {
@@ -1784,9 +1784,10 @@ a:focus {
 .box-header > .ion,
 .box-header .box-title {
   display: inline-block;
-  font-size: 16px;
+  font-size: 17px;
   margin: 0;
   line-height: 1;
+  font-weight: bold;
 }
 .box-header > .fa,
 .box-header > .glyphicon,
@@ -5405,4 +5406,33 @@ select.input-sm {
     left: 0;
     top: 0;
   }
+}
+.small-box5 {
+    border-radius: 2px;
+    position: relative;
+    display: block;
+    margin-bottom: 0px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.padd{padding-left:5px;
+padding-right:5px;}
+
+.small-box5 > .inner {
+    padding: 25px;
+	text-align: center;
+}
+
+.small-box5 > .small-box-footer {
+    position: relative;
+    text-align: center;
+    padding: 3px 0;
+    color: #fff;
+    display: block;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    font-family: Quicksand;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 20px;
 }

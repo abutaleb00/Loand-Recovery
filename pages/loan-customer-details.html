@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>iClique</title>
+        <!-- responsive screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.7 -->
+        <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../resources/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../resources/css/ionicons.min.css">
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="../resources/css/iclique.css">
+        <!-- iclique Skins. Choose a skin from the css/skins
+             folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../resources/css/skins/_all-skins.min.css">
+        <link rel="stylesheet" href="../resources/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../resources/css/jquery.scrolling-tabs.css">
+        <link rel="stylesheet" href="../resources/js/datatables.net-bs/css/buttons.dataTables.min.css">
+        <link rel="stylesheet" href="../resources/js/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+        <!-- Google Font -->
+
+    </head>
+    <!-- ADD THE CLASS sidebar-collapse TO HIDE THE SIDEBAR PRIOR TO LOADING THE SITE -->
+    <body class="hold-transition skin-blue fixed sidebar-mini">
+        <!-- Main wrapper -->
+        <div class="wrapper">
+
+            <header class="main-header">
+                <!-- Logo -->
+                <a href="../index.html" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini"><b>I</b>Q</span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><img src="../resources/img/logo.jpg" alt="Logo" width="" height=""></span>
+                </a>
+                <!-- Header Navbar -->
+                <nav class="navbar navbar-static-top">
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <!-- Page Menu Title -->
+                    <div class="sidebar-title">Customer Id: 1021220 Details</div>
+                    <!-- Page Menu Title -->
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="../resources/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                                    <span class="desig hidden-xs">Anisul Haque</span>
+                                    <span class="desig hidden-xs">Head of Loan Recovery</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <img src="../resources/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                                        <p>
+                                            Anisul Haque - Head of Loan Recovery
+                                        </p>
+                                    </li>
+                                    <!-- User Menu-->
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- =============================================== -->
+
+            <!-- Left side column. contains the sidebar -->
+            <aside class="main-sidebar">
+                <!-- sidebar -->
+                <section class="sidebar">
+                    <ul class="sidebar-menu" data-widget="tree">
+                        <li class="">
+                            <a href="../loanindex.html">
+                                <i class="fa fa-home"></i> <span>Dashboard</span>
+                                </span>
+                            </a>
+                        </li>
+                         <li class="">
+                            <a href="./hoc.html">
+                                <i class="fa fa-cubes"></i> <span>Head of Collection</span>
+                                </span>
+                            </a>
+                        </li>
+						<li class="">
+                            <a href="./supervisor.html">
+                                <i class="fa fa-handshake-o"></i> <span>Supervisor</span>
+                                </span>
+                            </a>
+                        </li>
+						<li class="">
+                            <a href="./teams.html">
+                                <i class="fa fa-group"></i> <span>Team Member</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- =============================================== -->
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+
+                <!-- Main content -->
+                <section class="content">
+                    <!-- Data Table Start -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-primary">
+                                <!-- Review And Details Body -->
+                                <div class="box-body">
+                                    <div class="nav-tabs-custom">
+                                        <!-- Review And Details Tab Menu -->
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active"><a href="#AccountSummery" role="tab" data-toggle="tab">Account Summery</a></li>
+                                            <li role="presentation" ><a href="#LimitHistory" role="tab" data-toggle="tab">Limit History</a></li>
+                                            <li role="presentation" ><a href="#PaymentHistory" role="tab" data-toggle="tab">Payment History</a></li>
+                                            <li role="presentation" ><a href="#Statement" role="tab" data-toggle="tab">Statement</a></li>
+                                            <li role="presentation" ><a href="#MinPaymentHistory" role="tab" data-toggle="tab">Min Payment History</a></li>
+                                            <li role="presentation" ><a href="#CardUsageInfo" role="tab" data-toggle="tab">Card Usage Info</a></li>
+                                            <li role="presentation" ><a href="#OverDueDetails" role="tab" data-toggle="tab">OverDue Details</a></li>
+                                            <li role="presentation" ><a href="#CLRescheduling" role="tab" data-toggle="tab">CL A/C Rescheduling</a></li>
+                                            <li role="presentation" ><a href="#LegalIssue" role="tab" data-toggle="tab">Legal Issue</a></li>
+                                            <li role="presentation" ><a href="#3rdPartyIssue" role="tab" data-toggle="tab">3rd Party Issue</a></li>
+                                            <li role="presentation" ><a href="#3rdPartyIssue" role="tab" data-toggle="tab">3rd Party Issue</a></li>
+
+                                        </ul>
+                                        <!-- /.Review And Details Tab Menu -->
+                                        <!-- Review And Details Tab Menu Content -->
+                                        <div class="tab-content">
+                                            <!-- Review And Details Active Tab Menu Content -->
+                                            <div role="tabpanel" class="active tab-pane" id="AccountSummery">
+                                                <div class="box-body">
+                                                    <!--Table body-->
+                                                    <div class="row">
+                                                        <table style="table-layout: fixed; border:1px solid #d3d3d3;" class="table table-responsive w-auto">
+                                                            <!--Table body-->
+                                                            <tbody>
+                                                                <tr bgcolor="#FF0000">
+                                                                    <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;font-weight:bold;"colspan="2">Account Details</td>
+                                                                    <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;" colspan="7"></td>
+                                                                </tr>
+                                                                <tr style="font-weight:bold;">
+                                                                    <td style="background: #3C8DBC; color: #fff;">Customer Name</td>
+                                                                    <td colspan="3">Md. Mushfiqur Rahman Khan</td>
+                                                                    <td style="background: #3C8DBC; color: #fff;">Client ID:</td>
+                                                                    <td colspan="4">131212800010</td>
+                                                                </tr>
+                                                                <tr style="font-weight:bold;">
+                                                                    <td style="background: #3C8DBC; color: #fff;">Customer Profile</td>
+                                                                    <td style="background: #3C8DBC; color: #fff;border-left: 1px solid #d3d3d3;" colspan="2">Contact Details</td>
+                                                                    <td style="background: #3C8DBC; color: #fff;border-left: 1px solid #d3d3d3;" colspan="2">Telephone</td>
+                                                                    <td style="background: #3C8DBC; color: #fff;border-left: 1px solid #d3d3d3;" colspan="2">Account</td>
+                                                                    <td style="background: #3C8DBC; color: #fff;border-left: 1px solid #d3d3d3;" colspan="2">Status</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Name</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2">MD       XYZ</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;">Office :123456789</td>
+                                                                    <td>Ext :123456789</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2">No: 4562215326625226</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" >O Date: 07-02-2012</td>
+                                                                    <td rowspan="6"><img src="../resources/img/avatar5.png" alt="Avator" width="110" height="120"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td rowspan="4">Adress:</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;"colspan="2" rowspan="4">Usha Tower(3rd Floor)
+                                                                        255/f-8.Tejgaon,Gulshan ,Dhaka.
+                                                                        BD</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2">Fax : ***********</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2">Product: OBL CC</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" >Status :</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" >Home:</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" >Ext :</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2">Current Due: </td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;"  >Last Action :</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2">Mobile :********</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2">Past Due Amt:</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" ></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2">Email : s_r@gmail.com</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2">CL Status:</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" ></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>DOB:</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" >3-3-1980</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" >Gender:</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;border-right: 1px solid #d3d3d3;" >Male</td>
+                                                                    <td colspan="4"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="font-weight:bold;">Refference Detail:</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;font-weight:bold;" colspan="4">Refference -1</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;font-weight:bold;" colspan="4">Refference -2</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Name</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2">MD       XYZ</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" >Office :123456789</td>
+                                                                    <td>Ext :123</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2">MD       XYZ</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" >Office :123456789</td>
+                                                                    <td>Ext :123</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" rowspan="3">Adress:</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2" rowspan="3">Usha Tower(3rd Floor)
+                                                                        255/f-8.Tejgaon,Gulshan ,Dhaka.
+                                                                        BD</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2">Fax : ***********</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2" rowspan="3">Usha Tower(3rd Floor)
+                                                                        255/f-8.Tejgaon,Gulshan ,Dhaka.
+                                                                        BD</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2">Fax : ***********</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" >Home:</td>
+                                                                    <td>Ext :</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" >Home:</td>
+                                                                    <td>Ext :</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2">Email : s_r@gmail.com</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;" colspan="2">Email : s_r@gmail.com</td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <!--Table body-->
+
+
+                                                        </table>
+                                                        <!--Table-->
+                                                        <!--Table-->
+                                                        <table style="table-layout: fixed;border-bottom: 2px solid #d3d3d3;word-wrap: break-word;" class="table table-custom table-bordered table-responsive w-auto">
+                                                            <!--Table body-->
+                                                            <tbody>
+                                                                <tr bgcolor="#FF0000">
+                                                                    <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;font-weight:bold;" colspan="2">Debt Details</td>
+                                                                    <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;" colspan="9"></td>
+                                                                </tr>
+                                                                <tr style="font-weight:bold;">
+                                                                    <td>Product</td>
+                                                                    <td>Card No</td>
+                                                                    <td>Credit Limit BDT</td>
+                                                                    <td>Credit Limit USD</td>
+                                                                    <td>Total Limit</td>
+                                                                    <td>Cash Limit</td>
+                                                                    <td>Avail Credit</td>
+                                                                    <td>Avail Cash</td>
+                                                                    <td>Bill Cycle</td>
+                                                                    <td>Card History</td>
+                                                                    <td>Status</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>CC</td>
+                                                                    <td>4562215326625220</td>
+                                                                    <td>80000</td>
+                                                                    <td>250</td>
+                                                                    <td>100000</td>
+                                                                    <td>79500</td>
+                                                                    <td>55000</td>
+                                                                    <td>55000</td>
+                                                                    <td>1,10,25</td>
+                                                                    <td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Details</button></td>
+                                                                    <td>Active</td>
+                                                                </tr>
+                                                                <tr style="font-weight:bold;">
+                                                                    <td>Past Due Amt</td>
+                                                                    <td>Total Due</td>
+                                                                    <td>O/S Balance</td>
+                                                                    <td>Cards Type</td>
+                                                                    <td>Total Live/Active  Card</td>
+                                                                    <td>Paymnt Date</td>
+                                                                    <td>Last Trns Date</td>
+                                                                    <td>Last Pay Date</td>
+                                                                    <td>Last Pay Amt</td>
+                                                                    <td>Autopay Acct</td>
+                                                                    <td>Total Exposour in the Bank</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>0.00</td>
+                                                                    <td>0.00</td>
+                                                                    <td>BDT:-25389.70  USD: 149.20</td>
+                                                                    <td>Douel</td>
+                                                                    <td></td>
+                                                                    <td>10th</td>
+                                                                    <td>21-02-2018</td>
+                                                                    <td>10/3/2018</td>
+                                                                    <td>50000</td>
+                                                                    <td>0</td>
+                                                                    <td>Saving A/C, FDR</td>
+                                                                </tr>
+                                                                <tr style="font-weight:bold;">
+                                                                    <td>First Use Date</td>
+                                                                    <td>Suspence Date</td>
+                                                                    <td>Cancel Date</td>
+                                                                    <td>Create Date</td>
+                                                                    <td>Expired Date</td>
+                                                                    <td>FID</td>
+                                                                    <td>DPD/ATE</td>
+                                                                    <td>History</td>
+                                                                    <td>Customer Profession</td>
+                                                                    <td>Suspence Amt</td>
+                                                                    <td>Settlement Amt</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td>0.0</td>
+                                                                    <td></td>
+                                                                    <td>RMG</td>
+                                                                    <td>BDT: 0 USD: 0</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr style="font-weight:bold;">
+                                                                    <td>Emi Facilities Issue</td>
+                                                                    <td>Rm Code/Dst Code</td>
+                                                                    <td>Rm /Dst  Contact Number</td>
+                                                                    <td>Source of Card</td>
+                                                                    <td>Campaign/ Facilities</td>
+                                                                    <td>Payment Due Date</td>
+                                                                    <td>Present Minimum Dues</td>
+                                                                    <td>Loyalty Program</td>
+                                                                    <td>Supplimentary Cards</td>
+                                                                    <td>Recommandation</td>
+                                                                    <td>Insurance</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Details</button></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td>DST/RM</td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td>BDT: 0 USD: 0</td>
+                                                                    <td></td>
+                                                                    <td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Details</button></td>
+                                                                    <td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Details</button></td>
+                                                                    <td>Manager</td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <!--Table body-->
+
+
+                                                        </table>
+
+                                                        <!--Table-->
+
+                                                        <table style="table-layout: fixed;" class="table table-striped table-bordered table-responsive w-auto">
+                                                            <!--Table body-->
+                                                            <tbody>
+                                                                <tr bgcolor="#FF0000">
+                                                                    <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;font-weight:bold;" colspan="2">Daily Notes/Memo Logs</td>
+                                                                    <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;" colspan="6"></td>
+                                                                </tr>
+                                                                <tr style="font-weight:bold;">
+                                                                    <td>Action</td>
+                                                                    <td >Result</td>
+                                                                    <td>Place</td>
+                                                                    <td>Amount</td>
+                                                                    <td>Date</td>
+                                                                    <td>Time</td>
+                                                                    <td colspan="2">Summary</td>
+                                                                </tr>
+                                                                <tr style="font-weight:bold;">
+                                                                    <td>
+                                                                        <select>
+                                                                            <option selected hidden>Choose here</option>
+                                                                            <option value="1">SMS</option>
+                                                                            <option value="2">Phone Call</option>
+                                                                            <option value="3">Email</option>
+                                                                            <option value="4">Visit</option>
+
+                                                                        </select>
+                                                                    </td>
+                                                                    <td><input id="result"></td>
+                                                                    <td><input id="result"></td>
+                                                                    <td><input id="result"></td>
+                                                                    <td><input id="result"></td>
+                                                                    <td><input id="result"></td>
+                                                                    <td><input id="result"></td>
+                                                                    <td style="float: right"><button id="result" class="btn bg-navy btn-flat1">Archive</button><button id="result" class="btn bg-navy btn-flat1">Submit</button></td>
+                                                                </tr>																
+                                                            </tbody>
+                                                            <!--Table body-->
+                                                        </table>
+                                                        <!--Table-->
+                                                        <table id="table" style="table-layout: fixed;border-bottom: 2px solid #d3d3d3;" class="table table-striped table-bordered table-responsive w-auto">
+                                                            <!--Table body-->
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Action</th>
+                                                                    <th>Result</th>
+                                                                    <th>Place</th>
+                                                                    <th >Amount</th>
+                                                                    <th>Date</th>
+                                                                    <th>Time</th>
+                                                                    <th colspan="2">Summary</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>SMS</td>
+                                                                    <td>Pay</td>
+                                                                    <td>Office</td>
+                                                                    <td>20000</td>
+                                                                    <td>20/05/2018</td>
+                                                                    <td>12:30 PM</td>
+                                                                    <td colspan="2">Payment: ref: 688262</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Email</td>
+                                                                    <td>Pay</td>
+                                                                    <td>Office</td>
+                                                                    <td>20000</td>
+                                                                    <td>20/05/2018</td>
+                                                                    <td>12:30 PM</td>
+                                                                    <td colspan="2">Payment: ref: 688262</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Phone Call</td>
+                                                                    <td>Pay</td>
+                                                                    <td>Office</td>
+                                                                    <td>20000</td>
+                                                                    <td>20/05/2018</td>
+                                                                    <td>12:30 PM</td>
+                                                                    <td colspan="2">Payment: ref: 688262</td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <!--Table body-->
+                                                        </table>
+                                                    </div>
+                                                    <div class="modal fade" id="modal-default">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span></button>
+                                                                    <h4 class="modal-title">Card History</h4>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <table id="example" class="table table-bordered table-striped">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Customer name</th>
+                                                                                <th>Customer Type </th>
+                                                                                <th>Application Type</th>
+                                                                                <th>Number of Borrowers</th>
+                                                                                <th>Loan Amount</th>
+                                                                                <th>Tenure</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                        <tfoot>
+                                                                        </tfoot>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                                </div>
+                                                            </div>
+                                                            <!-- /.modal-content -->
+                                                        </div>
+                                                        <!-- /.modal-dialog -->
+                                                    </div>
+                                                    <!-- /.col -->
+                                                </div>
+                                                <!-- Summery Row Body -->
+                                            </div>
+                                            <!-- /.Review And Details Active Tab Menu Content -->
+                                            <div role="tabpanel"  class="tab-pane fade" id="LimitHistory" role="tabpanel" aria-labelledby="profile-tab">
+                                                 <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="box box-primary">
+                                                            <!-- Table -->
+                                                            <div class="box-body">
+                                                                <input type="button" id="Button4" onclick="printDiv();" value="Print" />
+                                                                <div id="invc" style="border: 1px solid #d3d3d3;padding: 5px 20px;" class="custom-row col-md-12">
+                                                                    <div>
+                                                                        <P style="text-align:center;">KS MASUD PARVEZ NAHIAN (3210) <br/>Document: 019211, Date of Birth: 16/06/1988 <br/>Address: PO, ONE BANK LTD, RETAIL BANKING DIVISION,22,KAWRANBAZAR</P>
+                                                                    </div>
+
+                                                                    <table id="example11" class="table table-bordered">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Date</th>
+                                                                                <th>Card Number</th>
+                                                                                <th>Card Type</th>
+                                                                                <th>Limit Amount(BDT)</th>
+                                                                                <th>Limit Amount(USD)</th>
+                                                                                <th>Total Limit</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>645367474867437</td>
+                                                                                <td>Credit</td>
+                                                                                <td>3456789</td>
+                                                                                <td>2345</td>
+                                                                                <td>3576800</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>645367474867437</td>
+                                                                                <td>Credit</td>
+                                                                                <td>3456789</td>
+                                                                                <td>2345</td>
+                                                                                <td>3576800</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>645367474867437</td>
+                                                                                <td>Credit</td>
+                                                                                <td>3456789</td>
+                                                                                <td>2345</td>
+                                                                                <td>3576800</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>645367474867437</td>
+                                                                                <td>Credit</td>
+                                                                                <td>3456789</td>
+                                                                                <td>2345</td>
+                                                                                <td>3576800</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>645367474867437</td>
+                                                                                <td>Credit</td>
+                                                                                <td>3456789</td>
+                                                                                <td>2345</td>
+                                                                                <td>3576800</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>645367474867437</td>
+                                                                                <td>Credit</td>
+                                                                                <td>3456789</td>
+                                                                                <td>2345</td>
+                                                                                <td>3576800</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>645367474867437</td>
+                                                                                <td>Credit</td>
+                                                                                <td>3456789</td>
+                                                                                <td>2345</td>
+                                                                                <td>3576800</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>645367474867437</td>
+                                                                                <td>Credit</td>
+                                                                                <td>3456789</td>
+                                                                                <td>2345</td>
+                                                                                <td>3576800</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>645367474867437</td>
+                                                                                <td>Credit</td>
+                                                                                <td>3456789</td>
+                                                                                <td>2345</td>
+                                                                                <td>3576800</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>645367474867437</td>
+                                                                                <td>Debit</td>
+                                                                                <td>3456789</td>
+                                                                                <td>2345</td>
+                                                                                <td>3576800</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>645367474867437</td>
+                                                                                <td>Credit</td>
+                                                                                <td>3456789</td>
+                                                                                <td>2345</td>
+                                                                                <td>3576800</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>645367474867437</td>
+                                                                                <td>Credit</td>
+                                                                                <td>3456789</td>
+                                                                                <td>2345</td>
+                                                                                <td>3576800</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>645367474867437</td>
+                                                                                <td>Credit</td>
+                                                                                <td>3456789</td>
+                                                                                <td>2345</td>
+                                                                                <td>3576800</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>645367474867437</td>
+                                                                                <td>Debit</td>
+                                                                                <td>3456789</td>
+                                                                                <td>2345</td>
+                                                                                <td>3576800</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                        <tfoot>
+                                                                        </tfoot>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <!-- /.Table -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /.Data Table Start -->
+                                            </div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="PaymentHistory" role="tabpanel" aria-labelledby="profile-tab">
+                                                 <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="box box-primary">
+                                                            <!-- Table -->
+                                                            <div class="box-body">
+                                                                <input type="button" id="Button4" onclick="printDiv();" value="Print" />
+                                                                <div id="invc" style="border: 1px solid #d3d3d3;padding: 5px 20px;" class="custom-row col-md-12">
+                                                                    <div>
+                                                                        <P style="text-align:center;">KS MASUD PARVEZ NAHIAN (3210) <br/>Document: 019211, Date of Birth: 16/06/1988 <br/>Address: PO, ONE BANK LTD, RETAIL BANKING DIVISION,22,KAWRANBAZAR</P>
+                                                                    </div>
+
+                                                                    <table id="example11" class="table table-bordered">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Date</th>
+                                                                                <th>Description</th>
+                                                                                <th>Payment Amount(BDT)</th>
+                                                                                <th>Payment Amount(USD)</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                        <tfoot>
+                                                                        </tfoot>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <!-- /.Table -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /.Data Table Start -->
+                                            </div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="Statement" role="tabpanel" aria-labelledby="profile-tab">
+                                               <div class="box-body">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <form role="form">
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label class="col-sm-6">Statement Date:</label>
+                                                                        <div class="input-group date col-sm-6">
+                                                                            <div class="input-group-addon">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </div>
+                                                                            <input type="text" class="form-control pull-right" id="datepicker">
+                                                                        </div>
+                                                                        <!-- /.input group -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label class="col-sm-5">End Date:</label>
+                                                                        <div class="input-group date col-sm-7">
+                                                                            <div class="input-group-addon">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </div>
+                                                                            <input type="text" class="form-control pull-right" id="datepicker1">
+                                                                        </div>
+                                                                        <!-- /.input group -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <button type="submit" class="btn btn-info">Generate</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <input type="button" id="Button4" onclick="printDiv();" value="Print" />
+                                                    <div id="invc" style="border: 1px solid #d3d3d3;padding: 5px 50px;" class="custom-row col-md-12">
+                                                        <div>
+                                                            <P style="text-align:center;">ONE BANK LTD <br/>CARD DEPARTMENT <br/>MINIUM PAYMENT HISTORY INFORMATION <br/>[PERIOD: 24-MAY-2018 TO 24-JUNE-2018]</P>
+                                                        </div>
+                                                        <div class="table1">
+                                                            <table style="table-layout: fixed;" class="table no-border">
+                                                                <tr>
+                                                                    <td colspan="2">CUSTOMER NAME</td>
+                                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                                    <td colspan="3">SUMIT HASSAN HABIB</td>
+                                                                    <td colspan="2">CONTRACT NO</td>
+                                                                    <td style="text-align: center;width: 10px;" >:</td>
+                                                                    <td colspan="3">0080098879000</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2">CONTRACT TYPE</td>
+                                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                                    <td colspan="3">VISA PLATINUM GENERAL</td>
+                                                                    <td colspan="2">CONTRACT STATUS</td>
+                                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                                    <td colspan="3">OK</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2">PRIMARY CARD NO</td>
+                                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                                    <td colspan="3">41284956849484858</td>
+                                                                    <td colspan="2">RISK GROUP</td>
+                                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                                    <td colspan="3">DF-1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2">SUPPLY CARD NO</td>
+                                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                                    <td colspan="3">N/A</td>
+                                                                    <td colspan="2"></td>
+                                                                    <td colspan="3"></td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <div style="font-size: 12px;" class="col-sm-6">Account No (DOM): 102038400088345</div>
+                                                        <div style="font-size: 12px;" class="col-sm-6">Limit Amount: 2,24,000.00 BDT</div>
+                                                        <!-- Table -->
+                                                        <table id="" class="table table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Date</th>
+                                                                    <th>Description</th>
+                                                                    <th>Amount (BDT)</th>
+                                                                    <th>Settlement</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>ATM Withdraw, AB Bank</td>
+                                                                    <td>500.00</td>
+                                                                    <td>52,745.47</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>ATM Withdraw, AB Bank</td>
+                                                                    <td>500.00</td>
+                                                                    <td>52,745.47</td>
+                                                                </tr>
+																<tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>ATM Withdraw, AB Bank</td>
+                                                                    <td>500.00</td>
+                                                                    <td>52,745.47</td>
+                                                                </tr>
+																<tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>ATM Withdraw, AB Bank</td>
+                                                                    <td>500.00</td>
+                                                                    <td>52,745.47</td>
+                                                                </tr>
+																<tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>ATM Withdraw, AB Bank</td>
+                                                                    <td>500.00</td>
+                                                                    <td>52,745.47</td>
+                                                                </tr>
+																<tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>ATM Withdraw, AB Bank</td>
+                                                                    <td>500.00</td>
+                                                                    <td>52,745.47</td>
+                                                                </tr>
+																<tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>ATM Withdraw, AB Bank</td>
+                                                                    <td>500.00</td>
+                                                                    <td>52,745.47</td>
+                                                                </tr>
+																<tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>ATM Withdraw, AB Bank</td>
+                                                                    <td>500.00</td>
+                                                                    <td>52,745.47</td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                            </tfoot>
+                                                        </table>
+                                                        <div style="font-size: 12px;" class="col-sm-6">Account No (INT): 10203840008898</div>
+                                                        <div style="font-size: 12px;" class="col-sm-6">Limit Amount: 950.00 USD</div>
+
+                                                        <table id="" class="table table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Date</th>
+                                                                    <th>Description</th>
+                                                                    <th>Amount (USD)</th>
+                                                                    <th>Settlement</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>ATM Withdraw, AB Bank</td>
+                                                                    <td>500.00</td>
+                                                                    <td>52,745.47</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>ATM Withdraw, AB Bank</td>
+                                                                    <td>500.00</td>
+                                                                    <td>52,745.47</td>
+                                                                </tr>
+																<tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>ATM Withdraw, AB Bank</td>
+                                                                    <td>500.00</td>
+                                                                    <td>52,745.47</td>
+                                                                </tr>
+																<tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>ATM Withdraw, AB Bank</td>
+                                                                    <td>500.00</td>
+                                                                    <td>52,745.47</td>
+                                                                </tr>
+																<tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>ATM Withdraw, AB Bank</td>
+                                                                    <td>500.00</td>
+                                                                    <td>52,745.47</td>
+                                                                </tr>
+																<tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>ATM Withdraw, AB Bank</td>
+                                                                    <td>500.00</td>
+                                                                    <td>52,745.47</td>
+                                                                </tr>
+																<tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>ATM Withdraw, AB Bank</td>
+                                                                    <td>500.00</td>
+                                                                    <td>52,745.47</td>
+                                                                </tr>
+																<tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>ATM Withdraw, AB Bank</td>
+                                                                    <td>500.00</td>
+                                                                    <td>52,745.47</td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                            </tfoot>
+                                                        </table>
+                                                        <div style="text-align: center;margin-top:30px;" class="col-sm-12">
+                                                            <div style="font-size: 12px;" class="col-sm-4">
+                                                                ----------------<br/>Posted By
+                                                            </div>
+                                                            <div style="font-size: 12px;" class="col-sm-4">
+                                                                ----------------<br/>Checked By
+                                                            </div>
+                                                            <div style="font-size: 12px;" class="col-sm-4">
+                                                                ----------------<br/>Authorized By
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /.Table -->
+                                            </div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="MinPaymentHistory" role="tabpanel" aria-labelledby="profile-tab">
+                                                <div class="box-body">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <form role="form">
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label class="col-sm-6">Statement Date:</label>
+                                                                        <div class="input-group date col-sm-6">
+                                                                            <div class="input-group-addon">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </div>
+                                                                            <input type="text" class="form-control pull-right" id="datepicker">
+                                                                        </div>
+                                                                        <!-- /.input group -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label class="col-sm-5">End Date:</label>
+                                                                        <div class="input-group date col-sm-7">
+                                                                            <div class="input-group-addon">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </div>
+                                                                            <input type="text" class="form-control pull-right" id="datepicker1">
+                                                                        </div>
+                                                                        <!-- /.input group -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <button type="submit" class="btn btn-info">Generate</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <input type="button" id="Button4" onclick="printDiv();" value="Print" />
+                                                    <div id="invc" style="border: 1px solid #d3d3d3;padding: 5px 50px;" class="custom-row col-md-12">
+                                                        <div>
+                                                            <P style="text-align:center;">ONE BANK LTD <br/>CARD DEPARTMENT <br/>MINIUM PAYMENT HISTORY INFORMATION <br/>[PERIOD: 24-MAY-2018 TO 24-JUNE-2018]</P>
+                                                        </div>
+                                                        <div class="table1">
+                                                            <table style="table-layout: fixed;" class="table no-border">
+                                                                <tr>
+                                                                    <td colspan="2">CUSTOMER NAME</td>
+                                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                                    <td colspan="3">SUMIT HASSAN HABIB</td>
+                                                                    <td colspan="2">CONTRACT NO</td>
+                                                                    <td style="text-align: center;width: 10px;" >:</td>
+                                                                    <td colspan="3">0080098879000</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2">CONTRACT TYPE</td>
+                                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                                    <td colspan="3">VISA PLATINUM GENERAL</td>
+                                                                    <td colspan="2">CONTRACT STATUS</td>
+                                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                                    <td colspan="3">OK</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2">PRIMARY CARD NO</td>
+                                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                                    <td colspan="3">41284956849484858</td>
+                                                                    <td colspan="2">RISK GROUP</td>
+                                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                                    <td colspan="3">DF-1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2">SUPPLY CARD NO</td>
+                                                                    <td style="text-align: center;width: 10px;">:</td>
+                                                                    <td colspan="3">N/A</td>
+                                                                    <td colspan="2"></td>
+                                                                    <td colspan="3"></td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <div style="font-size: 12px;" class="col-sm-6">Account No (DOM): 102038400088345</div>
+                                                        <div style="font-size: 12px;" class="col-sm-6">Limit Amount: 2,24,000.00 BDT</div>
+                                                        <!-- Table -->
+                                                        <table id="" class="table table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Statement Date</th>
+                                                                    <th>Min Payment Amt (BDT)</th>
+                                                                    <th>Paid Amount (BDT)</th>
+                                                                    <th>Unpaid Amount (BDT)</th>
+                                                                    <th>STAT</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>52,775.47</td>
+                                                                    <td>0.00</td>
+                                                                    <td>52,745.47</td>
+                                                                    <td>NP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>25/05/2018</td>
+                                                                    <td>52,745.47</td>
+                                                                    <td>0.00</td>
+                                                                    <td>52,775.47</td>
+                                                                    <td>NP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>30/05/2018</td>
+                                                                    <td>50,745.47</td>
+                                                                    <td>0.00</td>
+                                                                    <td>50,745.47</td>
+                                                                    <td>NP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>31/05/2018</td>
+                                                                    <td>42,745.47</td>
+                                                                    <td>0.00</td>
+                                                                    <td>42,745.47</td>
+                                                                    <td>NP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>31/05/2018</td>
+                                                                    <td>42,745.47</td>
+                                                                    <td>0.00</td>
+                                                                    <td>42,745.47</td>
+                                                                    <td>NP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>31/05/2018</td>
+                                                                    <td>42,745.47</td>
+                                                                    <td>0.00</td>
+                                                                    <td>42,745.47</td>
+                                                                    <td>NP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>31/05/2018</td>
+                                                                    <td>42,745.47</td>
+                                                                    <td>0.00</td>
+                                                                    <td>42,745.47</td>
+                                                                    <td>NP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>31/05/2018</td>
+                                                                    <td>42,745.47</td>
+                                                                    <td>0.00</td>
+                                                                    <td>42,745.47</td>
+                                                                    <td>NP</td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                            </tfoot>
+                                                        </table>
+                                                        <div style="font-size: 12px;" class="col-sm-6">Account No (INT): 10203840008898</div>
+                                                        <div style="font-size: 12px;" class="col-sm-6">Limit Amount: 950.00 USD</div>
+
+                                                        <table id="" class="table table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Statement Date</th>
+                                                                    <th>Min Payment Amt (USD)</th>
+                                                                    <th>Paid Amount (USD)</th>
+                                                                    <th>Unpaid Amount (USD)</th>
+                                                                    <th>STAT</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>26/05/2018</td>
+                                                                    <td>129.61</td>
+                                                                    <td>0.00</td>
+                                                                    <td>129.61</td>
+                                                                    <td>NP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>25/05/2018</td>
+                                                                    <td>193.44</td>
+                                                                    <td>0.00</td>
+                                                                    <td>193.44</td>
+                                                                    <td>NP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>30/05/2018</td>
+                                                                    <td>192.44</td>
+                                                                    <td>0.00</td>
+                                                                    <td>192.44</td>
+                                                                    <td>NP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>31/05/2018</td>
+                                                                    <td>193.44</td>
+                                                                    <td>0.00</td>
+                                                                    <td>193.44</td>
+                                                                    <td>NP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>31/05/2018</td>
+                                                                    <td>193.44</td>
+                                                                    <td>0.00</td>
+                                                                    <td>193.44</td>
+                                                                    <td>NP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>31/05/2018</td>
+                                                                    <td>193.44</td>
+                                                                    <td>0.00</td>
+                                                                    <td>193.44</td>
+                                                                    <td>NP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>31/05/2018</td>
+                                                                    <td>193.44</td>
+                                                                    <td>0.00</td>
+                                                                    <td>193.44</td>
+                                                                    <td>NP</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>31/05/2018</td>
+                                                                    <td>193.44</td>
+                                                                    <td>0.00</td>
+                                                                    <td>193.44</td>
+                                                                    <td>NP</td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                            </tfoot>
+                                                        </table>
+                                                        <div style="text-align: center;margin-top:30px;" class="col-sm-12">
+                                                            <div style="font-size: 12px;" class="col-sm-4">
+                                                                ----------------<br/>Posted By
+                                                            </div>
+                                                            <div style="font-size: 12px;" class="col-sm-4">
+                                                                ----------------<br/>Checked By
+                                                            </div>
+                                                            <div style="font-size: 12px;" class="col-sm-4">
+                                                                ----------------<br/>Authorized By
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /.Table -->
+                                            </div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="CardUsageInfo" role="tabpanel" aria-labelledby="profile-tab">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="box box-primary">
+                                                            <!-- Table -->
+                                                            <div class="box-body">
+                                                                <input type="button" id="Button4" onclick="printDiv();" value="Print" />
+                                                                <div id="invc" style="border: 1px solid #d3d3d3;padding: 5px 20px;" class="custom-row col-md-12">
+                                                                    <div>
+                                                                        <P style="text-align:center;">KS MASUD PARVEZ NAHIAN (3210) <br/>Document: 019211, Date of Birth: 16/06/1988 <br/>Address: PO, ONE BANK LTD, RETAIL BANKING DIVISION,22,KAWRANBAZAR</P>
+                                                                    </div>
+
+                                                                    <table id="example11" class="table table-bordered">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Date</th>
+                                                                                <th>Ope:</th>
+                                                                                <th>Amount</th>
+                                                                                <th>Retailer</th>
+                                                                                <th>Terminal</th>
+                                                                                <th>Terminal Location</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>P10</td>
+                                                                                <td>245678</td>
+                                                                                <td>08765422245667</td>
+                                                                                <td>5608754</td>
+                                                                                <td>OBL, KAWRANBAZAR, DHAKA-1212</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>P10</td>
+                                                                                <td>245678</td>
+                                                                                <td>08765422245667</td>
+                                                                                <td>5608754</td>
+                                                                                <td>OBL, KAWRANBAZAR, DHAKA-1212</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>P10</td>
+                                                                                <td>245678</td>
+                                                                                <td>08765422245667</td>
+                                                                                <td>5608754</td>
+                                                                                <td>OBL, KAWRANBAZAR, DHAKA-1212</td>
+                                                                            </tr><tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>P10</td>
+                                                                                <td>245678</td>
+                                                                                <td>08765422245667</td>
+                                                                                <td>5608754</td>
+                                                                                <td>OBL, KAWRANBAZAR, DHAKA-1212</td>
+                                                                            </tr><tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>P10</td>
+                                                                                <td>245678</td>
+                                                                                <td>08765422245667</td>
+                                                                                <td>5608754</td>
+                                                                                <td>OBL, KAWRANBAZAR, DHAKA-1212</td>
+                                                                            </tr><tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>P10</td>
+                                                                                <td>245678</td>
+                                                                                <td>08765422245667</td>
+                                                                                <td>5608754</td>
+                                                                                <td>OBL, KAWRANBAZAR, DHAKA-1212</td>
+                                                                            </tr><tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>P10</td>
+                                                                                <td>245678</td>
+                                                                                <td>08765422245667</td>
+                                                                                <td>5608754</td>
+                                                                                <td>OBL, KAWRANBAZAR, DHAKA-1212</td>
+                                                                            </tr><tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>P10</td>
+                                                                                <td>245678</td>
+                                                                                <td>08765422245667</td>
+                                                                                <td>5608754</td>
+                                                                                <td>OBL, KAWRANBAZAR, DHAKA-1212</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>P10</td>
+                                                                                <td>245678</td>
+                                                                                <td>08765422245667</td>
+                                                                                <td>5608754</td>
+                                                                                <td>OBL, KAWRANBAZAR, DHAKA-1212</td>
+                                                                            </tr><tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>P10</td>
+                                                                                <td>245678</td>
+                                                                                <td>08765422245667</td>
+                                                                                <td>5608754</td>
+                                                                                <td>OBL, KAWRANBAZAR, DHAKA-1212</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>P10</td>
+                                                                                <td>245678</td>
+                                                                                <td>08765422245667</td>
+                                                                                <td>5608754</td>
+                                                                                <td>OBL, KAWRANBAZAR, DHAKA-1212</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                        <tfoot>
+                                                                        </tfoot>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <!-- /.Table -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /.Data Table Start -->
+                                            </div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="OverDueDetails" role="tabpanel" aria-labelledby="profile-tab">
+											<div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="box box-primary">
+                                                            <!-- Table -->
+                                                            <div class="box-body">
+                                                                <input type="button" id="Button4" onclick="printDiv();" value="Print" />
+                                                                <div id="invc" style="border: 1px solid #d3d3d3;padding: 5px 20px;" class="custom-row col-md-12">
+                                                                    <div>
+                                                                        <P style="text-align:center;">KS MASUD PARVEZ NAHIAN (3210) <br/>Document: 019211, Date of Birth: 16/06/1988 <br/>Address: PO, ONE BANK LTD, RETAIL BANKING DIVISION,22,KAWRANBAZAR</P>
+                                                                    </div>
+
+                                                                    <table id="example11" class="table table-bordered">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Date</th>
+                                                                                <th>Description</th>
+                                                                                <th>Payment Amount(BDT)</th>
+                                                                                <th>Payment Amount(USD)</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+																			<tr>
+                                                                                <td>26/05/2018</td>
+                                                                                <td>Payment Ref: 2748549865</td>
+                                                                                <td>345677</td>
+                                                                                <td>234</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                        <tfoot>
+                                                                        </tfoot>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <!-- /.Table -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /.Data Table Start -->
+											</div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="CLRescheduling" role="tabpanel" aria-labelledby="profile-tab">CL A/C Rescheduling</div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="LegalIssue" role="tabpanel" aria-labelledby="profile-tab">Legal Issue</div>
+                                            <div role="tabpanel"  class="tab-pane fade" id="3rdPartyIssue" role="tabpanel" aria-labelledby="profile-tab">3rd Party Issue</div>								
+                                            <div role="tabpanel"  class="tab-pane fade" id="3rd" role="tabpanel" aria-labelledby="profile-tab">3rd</div>								
+                                            <div role="tabpanel"  class="tab-pane fade" id="3rd" role="tabpanel" aria-labelledby="profile-tab">3rd</div>								
+                                            <!-- /.Review And Details Tab Menu Content -->
+                                        </div>
+                                    </div>
+                                    <!-- /.Review And Details Heading -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.Review And Details -->
+
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+
+            <footer class="main-footer">
+                <!-- Footer Section -->
+            </footer>
+
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 3 -->
+        <script src="../resources/js/jquery.min.js"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="../resources/js/bootstrap.min.js"></script>
+        <!-- SlimScroll -->
+        <script src="../resources/js/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../resources/js/fastclick.js"></script>
+        <!-- iclique App -->
+        <script src="../resources/js/iclique.min.js"></script>
+        <script src="../resources/js/chart.js/Chart.js"></script>
+        <script src="../resources/js/highcharts.js"></script>
+        <script src="../resources/js/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="../resources/js/datatables.net/js/vfs_fonts.js"></script>
+        <script src="../resources/js/datatables.net/js/pdfmake.min.js"></script>
+        <script src="../resources/js/datatables.net/js/jszip.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.html5.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.print.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.flash.min.js"></script>
+        <script src="../resources/js/datatables.net/js/dataTables.buttons.min.js"></script>
+        <script src="../resources/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../resources/js/jquery.scrolltabs.js"></script>
+        <script src="../resources/js/jquery.mousewheel.js"></script>
+        <script src="../resources/js/jquery.scrolling-tabs.js"></script>
+        <script src="../resources/js/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <script src="../resources/js/bootstable.js"></script>
+        <script>
+                                                                    $('#table').SetEditable();
+        </script>
+
+        <script>
+            function printDiv(divName) {
+                var printContents = document.getElementById(divName).innerHTML;
+                var originalContents = document.body.innerHTML;
+                document.body.innerHTML = printContents;
+                window.print();
+                document.body.innerHTML = originalContents;
+            }
+        </script>
+        <script >
+            $('.nav-tabs').scrollingTabs({
+                cssClassLeftArrow: 'fa fa-chevron-left',
+                cssClassRightArrow: 'fa fa-chevron-right',
+                disableScrollArrowsOnFullyScrolled: true,
+            });
+
+        </script>
+
+        <script>
+
+            $(document).ready(function () {
+                $('#example').DataTable({
+                    dom: 'Bfrtip',
+                    buttons: [
+                        'excel', 'pdf', 'print'
+                    ]
+
+                });
+            }
+            );
+
+
+        </script>
+        <script>
+
+            $(document).ready(function () {
+                $('#example1').DataTable({
+                    dom: 'Bfrtip',
+                    buttons: [
+                        'excel', 'pdf', 'print'
+                    ]
+
+                });
+            });
+        </script>
+        <script>
+
+            $(document).ready(function () {
+                $('#example2').DataTable({
+                    dom: 'Bfrtip',
+                    buttons: [
+                        'excel', 'pdf', 'print'
+                    ]
+
+                });
+            });
+        </script>
+        <script>
+
+            $(document).ready(function () {
+                $('#example11').DataTable({
+
+                });
+            });
+        </script>
+        <script>
+            //Date picker
+            $('#datepicker').datepicker({
+                autoclose: true
+            })
+        </script>
+        <script>
+            //Date picker
+            $('#datepicker1').datepicker({
+                autoclose: true
+            })
+        </script>
+        <script>
+            function printDiv() {
+                var DocumentContainer = document.getElementById('invc');
+                var WindowObject = window.open('', 'PrintWindow', 'width=800,height=650,top=50,left=50,toolbars=yes,scrollbars=yes,status=no,resizable=yes');
+                var strHtml = "<html>\n<head>\n <link rel=\"stylesheet\" type=\"text/css\" href=\"../resources/css/iclique.css\">\n</head><body><div style=\"width=750\">\n" + DocumentContainer.innerHTML + "\n</div>\n</body>\n</html>";
+                WindowObject.document.writeln(strHtml);
+                WindowObject.document.close();
+                WindowObject.focus();
+                WindowObject.print();
+                WindowObject.close();
+
+            }
+        </script>
+
+        <!-- <script>
+        function PrintElem(elem)
+        {
+            var mywindow = window.open('', 'PRINT', 'height=400,width=600');
+        
+            mywindow.document.write('<html><head><title>' + document.title  + '</title>');
+            mywindow.document.write('</head><body >');
+            mywindow.document.write('<h1>' + document.title  + '</h1>');
+            mywindow.document.write(document.getElementById(elem).innerHTML);
+            mywindow.document.write('</body></html>');
+        
+            mywindow.document.close(); // necessary for IE >= 10
+            mywindow.focus(); // necessary for IE >= 10*/
+        
+            mywindow.print();
+            mywindow.close();
+        
+            return true;
+        }
+        </script> -->
+    </body>
+</html>

@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>iClique</title>
+        <!-- responsive screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.7 -->
+        <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../resources/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../resources/css/ionicons.min.css">
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="../resources/css/iclique.css">
+        <!-- iclique Skins. Choose a skin from the css/skins
+             folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../resources/css/skins/_all-skins.min.css">
+        <link rel="stylesheet" href="../resources/css/dataTables.bootstrap.min.css">
+        <!-- Google Font -->
+        <link rel="stylesheet" href="../resources/js/datatables.net-bs/css/buttons.dataTables.min.css">
+		<style>
+		/* Ensure that the demo table scrolls */
+    th, td { white-space: nowrap; }
+    div.dataTables_wrapper {
+        margin: 0 auto;
+    }
+ 
+    div.container {
+        width: 80%;
+    }
+		</style>
+    </head>
+    <!-- ADD THE CLASS sidebar-collapse TO HIDE THE SIDEBAR PRIOR TO LOADING THE SITE -->
+    <body class="hold-transition skin-blue fixed sidebar-mini">
+        <!-- Main wrapper -->
+        <div class="wrapper">
+
+            <header class="main-header">
+                <!-- Logo -->
+                <a href="../index.html" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini"><b>I</b>Q</span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><img src="../resources/img/logo.jpg" alt="Logo" width="" height=""></span>
+                </a>
+                <!-- Header Navbar -->
+                <nav class="navbar navbar-static-top">
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <!-- Page Menu Title -->
+                    <div class="sidebar-title">Loan Customer List</div>
+                    <!-- Page Menu Title -->
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="../resources/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                                    <span class="desig hidden-xs">Anisul Haque</span>
+                                    <span class="desig hidden-xs">Head of Loan Recovery</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <img src="../resources/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                                        <p>
+                                            Anisul Haque - Head of Loan Recovery
+                                        </p>
+                                    </li>
+                                    <!-- User Menu-->
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- =============================================== -->
+
+            <!-- Left side column. contains the sidebar -->
+            <aside class="main-sidebar">
+                <!-- sidebar -->
+                <section class="sidebar">
+                    <ul class="sidebar-menu" data-widget="tree">
+                        <li class="">
+                            <a href="../loanindex.html">
+                                <i class="fa fa-home"></i> <span>Dashboard</span>
+                                </span>
+                            </a>
+                        </li>
+                         <li class="">
+                            <a href="./hoc.html">
+                                <i class="fa fa-cubes"></i> <span>Head of Collection</span>
+                                </span>
+                            </a>
+                        </li>
+						<li class="">
+                            <a href="./supervisor.html">
+                                <i class="fa fa-handshake-o"></i> <span>Supervisor</span>
+                                </span>
+                            </a>
+                        </li>
+						<li class="">
+                            <a href="./teams.html">
+                                <i class="fa fa-group"></i> <span>Team Member</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- =============================================== -->
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+
+                <!-- Main content -->
+                <section class="content">
+					<!-- Data Table Start -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-primary">
+                                <!-- Table -->
+                                <div class="box-body" style="overflow:scroll">
+								<p style="font-size: 22px; font-weight:bold;">Monitoring Sheet for the Month of February 2018</p>
+                                    <table id="example" class="table table-bordered table-striped">
+										<thead class="thead-dark">
+											<tr style="background-color: #3C8DBC; color: #ffffff;">
+												<th data-sortable="true">Branch, Loan Wise</th>
+												<th data-sortable="true">Branch, SB A/C Wise</th>
+												<th data-sortable="true"> Name of Borrowers</th>
+												<th data-breakpoints="xs sm md">File No</th>
+												<th data-sortable="true">Loan  A/C</th>
+												<th>Loan a/c Lending</th>
+												<th>SB A/c No</th>
+												<th>Match</th>
+												<th>Payment 2017</th>
+												<th>Payment Jan'18</th>
+												<th>Payment Feb'18</th>
+												<th>Payment Mar'18</th>
+												<th>Payment Apr'18</th>
+												<th>Payment May'18</th>
+												<th>Payment Jun'18</th>
+												<th>Payment Jul'18</th>
+												<th>Payment Aug'18</th>
+												<th>Payment Sep'18</th>
+												<th>Payment Oct'18</th>
+												<th>Payment Nov'18</th>
+												<th>Payment Dec'18</th>
+												<th>Payment Jan'18 to Dec'18</th>
+												<th>Collector Dec'17</th>
+												<th>Collector Jan'18</th>
+												<th>Collector Feb'18</th>
+												<th>Supervisor</th>
+												<th>OS-31-Dec-17</th>
+												<th>EMI Amount </th>
+												<th>Overdue 31.12.17</th>
+												<th>ATE 31.12.17</th>
+												<th>Repayment Jan'18</th>
+												<th>End ATE</th>
+												<th>EMI Date</th>
+												<th>Status Dec'17</th>
+												<th>Status Jan'18</th>
+												<th>Product</th>
+												<th>Amount Disbursed</th>
+												<th>Staff List</th>
+												<th>Absconding File</th>
+												<th>Agent Name</th>
+												<th>Interest Rate</th>
+												<th>Loan A/C wise Zone</th>
+												<th>SB A/C wise Zone</th>
+												<th>Expiry</th>
+												<th>Disbursment Date</th>
+												<th>Expiry Date</th>
+												<th>EMI Date</th>
+												<th>CIF</th>
+												<th>End Of Moritorium Period</th>
+												<th>Contact No-Customer</th>
+												<th>Contact No- Guarantor</th>
+												<th>Rescheduled Month</th>
+												<th>RM</th>
+												<th>RM Code</th>
+												<th>Int Suspense & Accrued Int O/s  as per Schedule 31.12.17</th>
+												<th>>10<</th>
+												<th>Remarks</th>
+												<th>CLIENT ID</th>
+												<th>CARD Number</th>
+												<th>View</th>
+												<th>Assign</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr data-expanded="true">
+												<td>Banasree</td>
+												<td><a href="#">Banasree</a></td>
+												<td>Hasnat Md. Jalal & Farida Yesmin</td>
+												<td>H-431</td>
+												<td>039RT06120430001</td>
+												<td>039RT06120430001</td>
+												<td>0392050000069</td>
+												<td> -  </td>
+												<td>348,535.68</td>
+												<td>29044.64</td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> - </td>
+												<td>29,044.64</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Shafayet</td>
+												<td>1,695,231.86</td>
+												<td>29,044.64</td>
+												<td> - </td>
+												<td> - </td>
+												<td> - </td>
+												<td>1.00</td>
+												<td>12</td>
+												<td>NORM</td>
+												<td>NORM</td>
+												<td>Home</td>
+												<td>2000000</td>
+												<td> - </td>
+												<td>0</td>
+												<td>0</td>
+												<td>15.50%</td>
+												<td>DHK</td>
+												<td>DHK</td>
+												<td>0</td>
+												<td>12-Feb-2012</td>
+												<td>12-Feb-2027</td>
+												<td>12-Mar-2012</td>
+												<td>‭000002149‬</td>
+												<td>0</td>
+												<td> </td>
+												<td> </td>
+												<td>0</td>
+												<td>Khaled Shams</td>
+												<td>151</td>
+												<td> - </td>
+												<td>>10</td>
+												<td>0</td>
+												<td>0</td>
+												<td>0</td>
+												<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+												<td><button type="button"  class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											</tr>
+											<tr data-expanded="true">
+												<td>Banasree</td>
+												<td><a href="#">Banasree</a></td>
+												<td>Hasnat Md. Jalal & Farida Yesmin</td>
+												<td>H-431</td>
+												<td>039RT06120430001</td>
+												<td>039RT06120430001</td>
+												<td>0392050000069</td>
+												<td> -  </td>
+												<td>348,535.68</td>
+												<td>29044.64</td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> - </td>
+												<td>29,044.64</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Shafayet</td>
+												<td>1,695,231.86</td>
+												<td>29,044.64</td>
+												<td> - </td>
+												<td> - </td>
+												<td> - </td>
+												<td>1.00</td>
+												<td>12</td>
+												<td>NORM</td>
+												<td>NORM</td>
+												<td>Home</td>
+												<td>2000000</td>
+												<td> - </td>
+												<td>0</td>
+												<td>0</td>
+												<td>15.50%</td>
+												<td>DHK</td>
+												<td>DHK</td>
+												<td>0</td>
+												<td>12-Feb-2012</td>
+												<td>12-Feb-2027</td>
+												<td>12-Mar-2012</td>
+												<td>‭000002149‬</td>
+												<td>0</td>
+												<td> </td>
+												<td> </td>
+												<td>0</td>
+												<td>Khaled Shams</td>
+												<td>151</td>
+												<td> - </td>
+												<td>>10</td>
+												<td>0</td>
+												<td>0</td>
+												<td>0</td>
+												<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+												<td><button type="button"  class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											</tr>
+											<tr data-expanded="true">
+												<td>Banasree</td>
+												<td><a href="#">Banasree</a></td>
+												<td>Hasnat Md. Jalal & Farida Yesmin</td>
+												<td>H-431</td>
+												<td>039RT06120430001</td>
+												<td>039RT06120430001</td>
+												<td>0392050000069</td>
+												<td> -  </td>
+												<td>348,535.68</td>
+												<td>29044.64</td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> - </td>
+												<td>29,044.64</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Shafayet</td>
+												<td>1,695,231.86</td>
+												<td>29,044.64</td>
+												<td> - </td>
+												<td> - </td>
+												<td> - </td>
+												<td>1.00</td>
+												<td>12</td>
+												<td>NORM</td>
+												<td>NORM</td>
+												<td>Home</td>
+												<td>2000000</td>
+												<td> - </td>
+												<td>0</td>
+												<td>0</td>
+												<td>15.50%</td>
+												<td>DHK</td>
+												<td>DHK</td>
+												<td>0</td>
+												<td>12-Feb-2012</td>
+												<td>12-Feb-2027</td>
+												<td>12-Mar-2012</td>
+												<td>‭000002149‬</td>
+												<td>0</td>
+												<td> </td>
+												<td> </td>
+												<td>0</td>
+												<td>Khaled Shams</td>
+												<td>151</td>
+												<td> - </td>
+												<td>>10</td>
+												<td>0</td>
+												<td>0</td>
+												<td>0</td>
+												<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+												<td><button type="button"  class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											</tr>
+											<tr data-expanded="true">
+												<td>Banasree</td>
+												<td><a href="#">Banasree</a></td>
+												<td>Hasnat Md. Jalal & Farida Yesmin</td>
+												<td>H-431</td>
+												<td>039RT06120430001</td>
+												<td>039RT06120430001</td>
+												<td>0392050000069</td>
+												<td> -  </td>
+												<td>348,535.68</td>
+												<td>29044.64</td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> - </td>
+												<td>29,044.64</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Shafayet</td>
+												<td>1,695,231.86</td>
+												<td>29,044.64</td>
+												<td> - </td>
+												<td> - </td>
+												<td> - </td>
+												<td>1.00</td>
+												<td>12</td>
+												<td>NORM</td>
+												<td>NORM</td>
+												<td>Home</td>
+												<td>2000000</td>
+												<td> - </td>
+												<td>0</td>
+												<td>0</td>
+												<td>15.50%</td>
+												<td>DHK</td>
+												<td>DHK</td>
+												<td>0</td>
+												<td>12-Feb-2012</td>
+												<td>12-Feb-2027</td>
+												<td>12-Mar-2012</td>
+												<td>‭000002149‬</td>
+												<td>0</td>
+												<td> </td>
+												<td> </td>
+												<td>0</td>
+												<td>Khaled Shams</td>
+												<td>151</td>
+												<td> - </td>
+												<td>>10</td>
+												<td>0</td>
+												<td>0</td>
+												<td>0</td>
+												<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+												<td><button type="button"  class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											</tr>
+											<tr data-expanded="true">
+												<td>Agrabad</td>
+												<td><a href="#">Agrabad</a></td>
+												<td>Khawaza Mowin Uddin Hossain</td>
+												<td>H-431</td>
+												<td>003RT06120320001</td>
+												<td>003RT06120320001</td>
+												<td>0392050000069</td>
+												<td> -  </td>
+												<td>309,127.92</td>
+												<td>0</td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> - </td>
+												<td>29,044.64</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Shafayet</td>
+												<td>1,695,231.86</td>
+												<td>29,044.64</td>
+												<td> - </td>
+												<td> - </td>
+												<td> - </td>
+												<td>1.00</td>
+												<td>12</td>
+												<td>NORM</td>
+												<td>NORM</td>
+												<td>Home</td>
+												<td>2000000</td>
+												<td> - </td>
+												<td>0</td>
+												<td>0</td>
+												<td>15.50%</td>
+												<td>DHK</td>
+												<td>DHK</td>
+												<td>0</td>
+												<td>12-Feb-2012</td>
+												<td>12-Feb-2027</td>
+												<td>12-Mar-2012</td>
+												<td>‭000002149‬</td>
+												<td>0</td>
+												<td> </td>
+												<td> </td>
+												<td>0</td>
+												<td>Khaled Shams</td>
+												<td>151</td>
+												<td> - </td>
+												<td>>10</td>
+												<td>0</td>
+												<td>0</td>
+												<td>0</td>
+												<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+												<td><button type="button"  class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											</tr>
+											<tr data-expanded="true">
+												<td>Banasree</td>
+												<td><a href="#">Banasree</a></td>
+												<td>Hasnat Md. Jalal & Farida Yesmin</td>
+												<td>H-428</td>
+												<td>039RT06120430001</td>
+												<td>039RT06120430001</td>
+												<td>0392050000069</td>
+												<td> -  </td>
+												<td>348,535.68</td>
+												<td>29044.64</td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> - </td>
+												<td>29,044.64</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Shafayet</td>
+												<td>1,695,231.86</td>
+												<td>29,044.64</td>
+												<td> - </td>
+												<td> - </td>
+												<td> - </td>
+												<td>1.00</td>
+												<td>12</td>
+												<td>NORM</td>
+												<td>NORM</td>
+												<td>Home</td>
+												<td>2000000</td>
+												<td> - </td>
+												<td>0</td>
+												<td>0</td>
+												<td>15.50%</td>
+												<td>DHK</td>
+												<td>DHK</td>
+												<td>0</td>
+												<td>12-Feb-2012</td>
+												<td>12-Feb-2027</td>
+												<td>12-Mar-2012</td>
+												<td>‭000002149‬</td>
+												<td>0</td>
+												<td> </td>
+												<td> </td>
+												<td>0</td>
+												<td>Khaled Shams</td>
+												<td>151</td>
+												<td> - </td>
+												<td>>10</td>
+												<td>0</td>
+												<td>0</td>
+												<td>0</td>
+												<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+												<td><button type="button"  class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											</tr>
+											<tr data-expanded="true">
+												<td>Sherpur</td>
+												<td><a href="#">Sherpur</a></td>
+												<td>Md. Shafiqul Islam</td>
+												<td>H-431</td>
+												<td>003RT06120320001</td>
+												<td>003RT06120320001</td>
+												<td>0392050000069</td>
+												<td> -  </td>
+												<td>309,127.92</td>
+												<td>0</td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> - </td>
+												<td>29,044.64</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Shafayet</td>
+												<td>1,695,231.86</td>
+												<td>29,044.64</td>
+												<td> - </td>
+												<td> - </td>
+												<td> - </td>
+												<td>1.00</td>
+												<td>12</td>
+												<td>NORM</td>
+												<td>NORM</td>
+												<td>Home</td>
+												<td>2000000</td>
+												<td> - </td>
+												<td>0</td>
+												<td>0</td>
+												<td>15.50%</td>
+												<td>DHK</td>
+												<td>DHK</td>
+												<td>0</td>
+												<td>12-Feb-2012</td>
+												<td>12-Feb-2027</td>
+												<td>12-Mar-2012</td>
+												<td>‭000002149‬</td>
+												<td>0</td>
+												<td> </td>
+												<td> </td>
+												<td>0</td>
+												<td>Khaled Shams</td>
+												<td>151</td>
+												<td> - </td>
+												<td>>10</td>
+												<td>0</td>
+												<td>0</td>
+												<td>0</td>
+												<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+												<td><button type="button"  class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											</tr>
+											<tr data-expanded="true">
+												<td>Banasree</td>
+												<td><a href="#">Banasree</a></td>
+												<td>Hasnat Md. Jalal & Farida Yesmin</td>
+												<td>H-431</td>
+												<td>039RT06120430001</td>
+												<td>039RT06120430001</td>
+												<td>0392050000069</td>
+												<td> -  </td>
+												<td>348,535.68</td>
+												<td>29044.64</td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> - </td>
+												<td>29,044.64</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Shafayet</td>
+												<td>1,695,231.86</td>
+												<td>29,044.64</td>
+												<td> - </td>
+												<td> - </td>
+												<td> - </td>
+												<td>1.00</td>
+												<td>12</td>
+												<td>NORM</td>
+												<td>NORM</td>
+												<td>Home</td>
+												<td>2000000</td>
+												<td> - </td>
+												<td>0</td>
+												<td>0</td>
+												<td>15.50%</td>
+												<td>DHK</td>
+												<td>DHK</td>
+												<td>0</td>
+												<td>12-Feb-2012</td>
+												<td>12-Feb-2027</td>
+												<td>12-Mar-2012</td>
+												<td>‭000002149‬</td>
+												<td>0</td>
+												<td> </td>
+												<td> </td>
+												<td>0</td>
+												<td>Khaled Shams</td>
+												<td>151</td>
+												<td> - </td>
+												<td>>10</td>
+												<td>0</td>
+												<td>0</td>
+												<td>0</td>
+												<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+												<td><button type="button"  class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											</tr>
+											<tr data-expanded="true">
+												<td>Sherpur</td>
+												<td><a href="#">Sherpur</a></td>
+												<td>Md. Shafiqul Islam</td>
+												<td>H-431</td>
+												<td>003RT06120320001</td>
+												<td>003RT06120320001</td>
+												<td>0392050000069</td>
+												<td> -  </td>
+												<td>309,127.92</td>
+												<td>0</td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> - </td>
+												<td>29,044.64</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Shafayet</td>
+												<td>1,695,231.86</td>
+												<td>29,044.64</td>
+												<td> - </td>
+												<td> - </td>
+												<td> - </td>
+												<td>1.00</td>
+												<td>12</td>
+												<td>NORM</td>
+												<td>NORM</td>
+												<td>Home</td>
+												<td>2000000</td>
+												<td> - </td>
+												<td>0</td>
+												<td>0</td>
+												<td>15.50%</td>
+												<td>DHK</td>
+												<td>DHK</td>
+												<td>0</td>
+												<td>12-Feb-2012</td>
+												<td>12-Feb-2027</td>
+												<td>12-Mar-2012</td>
+												<td>‭000002149‬</td>
+												<td>0</td>
+												<td> </td>
+												<td> </td>
+												<td>0</td>
+												<td>Khaled Shams</td>
+												<td>151</td>
+												<td> - </td>
+												<td>>10</td>
+												<td>0</td>
+												<td>0</td>
+												<td>0</td>
+												<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+												<td><button type="button"  class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											</tr>
+											<tr data-expanded="true">
+												<td>Banasree</td>
+												<td><a href="#">Banasree</a></td>
+												<td>Hasnat Md. Jalal & Farida Yesmin</td>
+												<td>H-431</td>
+												<td>039RT06120430001</td>
+												<td>039RT06120430001</td>
+												<td>0392050000069</td>
+												<td> -  </td>
+												<td>348,535.68</td>
+												<td>29044.64</td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> - </td>
+												<td>29,044.64</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Shafayet</td>
+												<td>1,695,231.86</td>
+												<td>29,044.64</td>
+												<td> - </td>
+												<td> - </td>
+												<td> - </td>
+												<td>1.00</td>
+												<td>12</td>
+												<td>NORM</td>
+												<td>NORM</td>
+												<td>Home</td>
+												<td>2000000</td>
+												<td> - </td>
+												<td>0</td>
+												<td>0</td>
+												<td>15.50%</td>
+												<td>DHK</td>
+												<td>DHK</td>
+												<td>0</td>
+												<td>12-Feb-2012</td>
+												<td>12-Feb-2027</td>
+												<td>12-Mar-2012</td>
+												<td>‭000002149‬</td>
+												<td>0</td>
+												<td> </td>
+												<td> </td>
+												<td>0</td>
+												<td>Khaled Shams</td>
+												<td>151</td>
+												<td> - </td>
+												<td>>10</td>
+												<td>0</td>
+												<td>0</td>
+												<td>0</td>
+												<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+												<td><button type="button"  class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											</tr>
+											<tr data-expanded="true">
+												<td>Sherpur</td>
+												<td><a href="#">Sherpur</a></td>
+												<td>Md. Shafiqul Islam</td>
+												<td>H-431</td>
+												<td>003RT06120320001</td>
+												<td>003RT06120320001</td>
+												<td>0392050000069</td>
+												<td> -  </td>
+												<td>309,127.92</td>
+												<td>0</td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> - </td>
+												<td>29,044.64</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Shafayet</td>
+												<td>1,695,231.86</td>
+												<td>29,044.64</td>
+												<td> - </td>
+												<td> - </td>
+												<td> - </td>
+												<td>1.00</td>
+												<td>12</td>
+												<td>NORM</td>
+												<td>NORM</td>
+												<td>Home</td>
+												<td>2000000</td>
+												<td> - </td>
+												<td>0</td>
+												<td>0</td>
+												<td>15.50%</td>
+												<td>DHK</td>
+												<td>DHK</td>
+												<td>0</td>
+												<td>12-Feb-2012</td>
+												<td>12-Feb-2027</td>
+												<td>12-Mar-2012</td>
+												<td>‭000002149‬</td>
+												<td>0</td>
+												<td> </td>
+												<td> </td>
+												<td>0</td>
+												<td>Khaled Shams</td>
+												<td>151</td>
+												<td> - </td>
+												<td>>10</td>
+												<td>0</td>
+												<td>0</td>
+												<td>0</td>
+												<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+												<td><button type="button"  class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											</tr>
+											<tr data-expanded="true">
+												<td>Banasree</td>
+												<td><a href="#">Banasree</a></td>
+												<td>Hasnat Md. Jalal & Farida Yesmin</td>
+												<td>H-431</td>
+												<td>039RT06120430001</td>
+												<td>039RT06120430001</td>
+												<td>0392050000069</td>
+												<td> -  </td>
+												<td>348,535.68</td>
+												<td>29044.64</td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> -   </td>
+												<td> - </td>
+												<td>29,044.64</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Tania</td>
+												<td>Shafayet</td>
+												<td>1,695,231.86</td>
+												<td>29,044.64</td>
+												<td> - </td>
+												<td> - </td>
+												<td> - </td>
+												<td>1.00</td>
+												<td>12</td>
+												<td>NORM</td>
+												<td>NORM</td>
+												<td>Home</td>
+												<td>2000000</td>
+												<td> - </td>
+												<td>0</td>
+												<td>0</td>
+												<td>15.50%</td>
+												<td>DHK</td>
+												<td>DHK</td>
+												<td>0</td>
+												<td>12-Feb-2012</td>
+												<td>12-Feb-2027</td>
+												<td>12-Mar-2012</td>
+												<td>‭000002149‬</td>
+												<td>0</td>
+												<td> </td>
+												<td> </td>
+												<td>0</td>
+												<td>Khaled Shams</td>
+												<td>151</td>
+												<td> - </td>
+												<td>>10</td>
+												<td>0</td>
+												<td>0</td>
+												<td>0</td>
+												<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+												<td><button type="button"  class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											</tr>
+										</tbody>
+									</table>
+                                </div>
+                                <!-- /.Table -->
+								<div class="modal fade" id="modal-default">
+								  <div class="modal-dialog">
+									<div class="modal-content">
+									  <div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										  <span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title">Assign Customer</h4>
+									  </div>
+									  <div class="modal-body">
+									  <div class="form-group">
+										<label class="col-md-3">Assigned To : </label>
+										<input class="col-md-9" type="text" id="txtAutoComplete" list="languageList" placeholder="Type Name..."/>
+											<datalist id="languageList">
+											<option value="Hasnat" />
+											<option value="Jamil" />
+											<option value="Kamran" />
+											<option value="Mahabub" />
+											<option value="Al-Amin" />
+											<option value="Jubair" />
+											<option value="Mamun" />
+											<option value="Rana" />
+											<option value="Tazim" />
+											<option value="Anthony" />
+											</datalist>
+									  </div>
+									  </div>
+									  <div class="modal-footer">
+										<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary">Confirm</button>
+									  </div>
+									</div>
+									<!-- /.modal-content -->
+								  </div>
+								  <!-- /.modal-dialog -->
+								</div>
+								<!-- /.modal -->
+                            </div>
+                        </div>
+                        </div>
+						<!-- /.Data Table Start -->
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+
+            <footer class="main-footer">
+                <!-- Footer Section -->
+            </footer>
+
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 3 -->
+        <script src="../resources/js/jquery.min.js"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="../resources/js/bootstrap.min.js"></script>
+        <!-- SlimScroll -->
+        <script src="../resources/js/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../resources/js/fastclick.js"></script>
+        <!-- iclique App -->
+        <script src="../resources/js/iclique.min.js"></script>
+        <script src="../resources/js/chart.js/Chart.js"></script>
+        <script src="../resources/js/highcharts.js"></script>
+        <script src="../resources/js/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="../resources/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../resources/js/datatables.net/js/vfs_fonts.js"></script>
+        <script src="../resources/js/datatables.net/js/pdfmake.min.js"></script>
+        <script src="../resources/js/datatables.net/js/jszip.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.html5.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.print.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.flash.min.js"></script>
+        <script src="../resources/js/datatables.net/js/dataTables.buttons.min.js"></script>
+        <script>
+            $(document).ready(function() {
+    $('#example').DataTable( {
+		aLengthMenu: [
+        [10, 50, 100, 200, -1],
+        [25, 50, 100, 200, "All"]
+    ]
+		
+    } );
+} );
+        </script>
+		<script>
+    function yesnoCheck(that) {
+        if (that.value == "other") {
+            alert("check");
+            document.getElementById("ifYes").style.display = "block";
+        } else {
+            document.getElementById("ifYes").style.display = "none";
+        }
+    }
+</script>
+    </body>
+</html>

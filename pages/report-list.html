@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>iClique</title>
+        <!-- responsive screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.7 -->
+        <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../resources/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../resources/css/ionicons.min.css">
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="../resources/css/iclique.css">
+        <!-- iclique Skins. Choose a skin from the css/skins
+             folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../resources/css/skins/_all-skins.min.css">
+        <link rel="stylesheet" href="../resources/css/dataTables.bootstrap.min.css">
+        <!-- Google Font -->
+        <link rel="stylesheet" href="../resources/js/datatables.net-bs/css/buttons.dataTables.min.css">
+    </head>
+    <body class="hold-transition skin-blue fixed sidebar-mini">
+        <!-- Main wrapper -->
+        <div class="wrapper">
+            <header class="main-header">
+                <!-- Logo -->
+                <a href="../index.html" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini"><b>I</b>Q</span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><img src="../resources/img/logo.jpg" alt="Logo" width="" height=""></span>
+                </a>
+                <!-- Header Navbar -->
+                <nav class="navbar navbar-static-top">
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <!-- Page Menu Title -->
+                    <div class="sidebar-title">Bucket Wise Segment</div>
+                    <!-- Page Menu Title -->
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="../resources/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                                    <span class="desig hidden-xs">Anisul Haque</span>
+                                    <span class="desig hidden-xs">Head of Loan Recovery</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                         <img src="../resources/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                                        <p>
+                                            Anisul Haque - Head of Loan Recovery
+                                        </p>
+                                    </li>
+                                    <!-- User Menu-->
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- =============================================== -->
+			
+            <!-- Left side column. contains the sidebar -->
+            <aside class="main-sidebar">
+                <!-- sidebar -->
+                <section class="sidebar">
+                    <ul class="sidebar-menu" data-widget="tree">
+                        <li class="">
+                            <a href="../loanindex.html">
+                                <i class="fa fa-home"></i> <span>Dashboard</span>
+                                </span>
+                            </a>
+                        </li>
+                         <li class="">
+                            <a href="./hoc.html">
+                                <i class="fa fa-cubes"></i> <span>Head of Collection</span>
+                                </span>
+                            </a>
+                        </li>
+						<li class="">
+                            <a href="./supervisor.html">
+                                <i class="fa fa-handshake-o"></i> <span>Supervisor</span>
+                                </span>
+                            </a>
+                        </li>
+						<li class="">
+                            <a href="./teams.html">
+                                <i class="fa fa-group"></i> <span>Team Member</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- =============================================== -->
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <!-- Main content -->
+                <section class="content">
+				<!-- Application Row 1 -->
+				  <div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-primary">
+                                <!-- Table -->
+                                <div class="box-body">
+								<p style="font-size: 22px; font-weight:bold;">All Reports</p>
+                                    <table id="example" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>SL</th>
+                                                <th>Report Name</th>
+                                                <th>View</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>RDB-309 Daily Loan Outstanding Summery Report</td>
+                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                            </tr>
+											<tr>
+                                                <td>2</td>
+                                                <td>RBD Balance CASA</td>
+                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                            </tr>
+											<tr>
+                                                <td>3</td>
+                                                <td>RBD Balance For CL</td>
+                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                            </tr>
+											<tr>
+                                                <td>4</td>
+                                                <td>LAD-321 Periodical Write off Loan Recovery</td>
+                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                            </tr>
+											<tr>
+                                                <td>5</td>
+                                                <td>RBD-003 Retail CASA Loan Listing</td>
+                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                            </tr>
+											<tr>
+                                                <td>6</td>
+                                                <td>RBD-001 Retail Loan Listing All BR</td>
+                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                            </tr>
+											<tr>
+                                                <td>7</td>
+                                                <td>Loan_CSS JO-Jan-2018-18</td>
+                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                            </tr>
+											<tr>
+                                                <td>8</td>
+                                                <td>Cash Line By Account Status</td>
+                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                            </tr>
+											<tr>
+                                                <td>9</td>
+                                                <td>Retail Loan By Account Status</td>
+                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                            </tr>
+											<tr>
+                                                <td>10</td>
+                                                <td>Overdue CL Report</td>
+                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                            </tr>
+											<tr>
+                                                <td>11</td>
+                                                <td>RBD-009 Retail Loan List</td>
+                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                            </tr>
+											<tr>
+                                                <td>12</td>
+                                                <td>Overdue CASA Report</td>
+                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                            </tr>
+											<tr>
+                                                <td>13</td>
+                                                <td>Retail Payment CL</td>
+                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                            </tr>
+											<tr>
+                                                <td>14</td>
+                                                <td>Retail Payment CASA</td>
+                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                            </tr>
+											<tr>
+                                                <td>15</td>
+                                                <td>RDB Loan Disbursement Report</td>
+                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <!-- /.Table -->
+                            </div>
+                        </div>
+                        </div>
+						<!-- /.Data Table Start -->
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+
+            <footer class="main-footer">
+                <!-- Footer Section -->
+            </footer>
+
+        </div>
+        <!-- ./wrapper -->
+        <!-- jQuery 3 -->
+        <script src="../resources/js/jquery.min.js"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="../resources/js/bootstrap.min.js"></script>
+        <!-- SlimScroll -->
+        <script src="../resources/js/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../resources/js/fastclick.js"></script>
+        <!-- iclique App -->
+        <script src="../resources/js/iclique.min.js"></script>
+        <script src="../resources/js/chart.js/Chart.js"></script>
+        <script src="../resources/js/highcharts.js"></script>
+		<script src="../resources/js/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="../resources/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../resources/js/datatables.net/js/vfs_fonts.js"></script>
+        <script src="../resources/js/datatables.net/js/pdfmake.min.js"></script>
+        <script src="../resources/js/datatables.net/js/jszip.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.html5.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.print.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.flash.min.js"></script>
+        <script src="../resources/js/datatables.net/js/dataTables.buttons.min.js"></script>
+        <script>
+            $(document).ready(function() {
+    $('#example').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'excel', 'pdf', 'print'
+        ],
+		aLengthMenu: [
+        [15, 50, 100, 200, -1],
+        [25, 50, 100, 200, "All"]
+    ]
+    } );
+} );
+        </script>
+    </body>
+</html>
