@@ -42,7 +42,7 @@
                         <span class="icon-bar"></span>
                     </a>
                     <!-- Page Menu Title -->
-                    <div class="sidebar-title">Team Member</div>
+                    <div class="sidebar-title">Activity</div>
                     <!-- Page Menu Title -->
                     <div class="navbar-custom-menu">
                         <ul class="nav navbar-nav">
@@ -103,7 +103,7 @@
                                 </span>
                             </a>
                         </li>
-						<li class="active">
+						<li class="">
                             <a href="./teams.html">
                                 <i class="fa fa-group"></i> <span>Team Member</span>
                                 </span>
@@ -121,50 +121,63 @@
                 <!-- Main content -->
                 <section class="content">
 				<!-- Application Row 1 -->
-                    <div class="row">
-						<!-- col -->
-                        <div class="col-lg-4 col-xs-6">
-                            <!-- small box -->
-                            <a href="./loan-customer.html">
-                                <div class="small-box customer-application">
-                                    <div class="inner">
-                                        <h3>15</h3>
-                                    </div>
-                                    <span class="small-box-footer">Loan List</span>
+				  <div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-primary">
+                                <!-- Table -->
+                                <div class="box-body">
+								<p style="font-size: 22px; font-weight:bold;">Activity</p>
+                                    <table id="example" class="table table-bordered table-striped">
+
+                                                            <!--Table body-->
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Action</th>
+                                                                    <th>Result</th>
+                                                                    <th>Place</th>
+                                                                    <th >Amount</th>
+                                                                    <th>Date</th>
+                                                                    <th>Time</th>
+                                                                    <th>Summary</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>SMS</td>
+                                                                    <td>Pay</td>
+                                                                    <td>Office</td>
+                                                                    <td>20000</td>
+                                                                    <td>20/05/2018</td>
+                                                                    <td>12:30 PM</td>
+                                                                    <td>Payment: ref: 688262</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Email</td>
+                                                                    <td>Pay</td>
+                                                                    <td>Office</td>
+                                                                    <td>20000</td>
+                                                                    <td>20/05/2018</td>
+                                                                    <td>12:30 PM</td>
+                                                                    <td>Payment: ref: 688262</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Phone Call</td>
+                                                                    <td>Pay</td>
+                                                                    <td>Office</td>
+                                                                    <td>20000</td>
+                                                                    <td>20/05/2018</td>
+                                                                    <td>12:30 PM</td>
+                                                                    <td>Payment: ref: 688262</td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <!--Table body-->
+                                    </table>
                                 </div>
-                            </a>
-							<!-- /.small box -->
+                                <!-- /.Table -->
+                            </div>
                         </div>
-                        <!-- ./col -->
-                        <!-- ./col -->
-						<!-- col -->
-                        <div class="col-lg-4 col-xs-6">
-                            <!-- small box -->
-                            <a href="./activity-report.html">
-                                <div class="small-box processed-application">
-                                    <div class="inner">
-                                        <h3>23</h3>
-                                    </div>
-                                    <span class="small-box-footer">Activities</span>
-                                </div>
-                            </a>
-							<!-- /.small box -->
                         </div>
-						<div class="col-lg-4 col-xs-6">
-                            <!-- small box -->
-                            <a href="./report-list.html">
-                                <div class="small-box bg-teal">
-                                    <div class="inner">
-                                        <h3>33</h3>
-                                    </div>
-                                    <span class="small-box-footer">Report</span>
-                                </div>
-                            </a>
-							<!-- /.small box -->
-                        </div>
-                        <!-- ./col -->
-                    </div>
-					<!-- /.Application Row 1 -->
+						<!-- /.Data Table Start -->
                 </section>
                 <!-- /.content -->
             </div>
@@ -176,7 +189,6 @@
 
         </div>
         <!-- ./wrapper -->
-
         <!-- jQuery 3 -->
         <script src="../resources/js/jquery.min.js"></script>
         <!-- Bootstrap 3.3.7 -->
@@ -189,5 +201,28 @@
         <script src="../resources/js/iclique.min.js"></script>
         <script src="../resources/js/chart.js/Chart.js"></script>
         <script src="../resources/js/highcharts.js"></script>
+		<script src="../resources/js/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="../resources/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../resources/js/datatables.net/js/vfs_fonts.js"></script>
+        <script src="../resources/js/datatables.net/js/pdfmake.min.js"></script>
+        <script src="../resources/js/datatables.net/js/jszip.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.html5.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.print.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.flash.min.js"></script>
+        <script src="../resources/js/datatables.net/js/dataTables.buttons.min.js"></script>
+        <script>
+            $(document).ready(function() {
+    $('#example').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'excel', 'pdf', 'print'
+        ],
+		aLengthMenu: [
+        [15, 50, 100, 200, -1],
+        [25, 50, 100, 200, "All"]
+    ]
+    } );
+} );
+        </script>
     </body>
 </html>

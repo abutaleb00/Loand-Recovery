@@ -5446,3 +5446,6 @@ padding-right:5px;}
 .special .table > th {
     font-size: 11px;
 }
+.left-bo{
+	border-left: 1px solid #d3d3d3;
+}

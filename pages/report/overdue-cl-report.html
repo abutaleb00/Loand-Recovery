@@ -22,7 +22,6 @@
         <link rel="stylesheet" href="../../resources/js/datatables.net-bs/css/buttons.dataTables.min.css">
         <style>
             @page { size: auto;  margin: 0px; }
-			
 			@media print {
   body * {
     visibility: hidden;
@@ -32,14 +31,15 @@
     color: white;
     font-size: 9px;
 	width: 100%;
-	padding:0px 2px;
+	padding:0px 5px;
 	margin: 10px 2px 2px 2px;
   }
  table {
   border: none; border-collapse: collapse;
+  white-space:nowrap;
 }
 table td { border-left: 1px solid #000; }
-table th { font-size:10px; }
+table th { font-size:10px;; }
 table td:first-child { border-left: none; }
 }
         </style>
@@ -65,7 +65,7 @@ table td:first-child { border-left: none; }
                         <span class="icon-bar"></span>
                     </a>
                     <!-- Page Menu Title -->
-                    <div class="sidebar-title">Cash Line By Account Status</div>
+                    <div class="sidebar-title">Overdue CL Report</div>
                     <!-- Page Menu Title -->
                     <div class="navbar-custom-menu">
                         <ul class="nav navbar-nav">
@@ -148,52 +148,70 @@ table td:first-child { border-left: none; }
                                     <div style="border-bottom: 1px solid #ddd;padding:5px"><input type="button" value="print" class="btn btn-success" id="print"></div>
                                     <div id="section-to-print" style="padding: 5px 20px;" class="custom-row col-md-12 special">
                                         <div>
-                                            <P style="font-size:13px;font-weight:bold;">CASH_LINE_BY_ACCOUNT_STATUS</P>
+                                            <P style="font-size:13px;font-weight:bold;">ONE Bank Limited</P>
+                                            <P style="font-size:12px">RETAIL BANKING DEPARTMENT <br/>REPORT GENERATION DATE AND TIME: 01-07-2018 08:07:23</P>
+                                            <P style="font-size:11px;font-weight:bold;">Report Base Date: Jul 2, 2018</P>
                                         </div>
 
-                                        <table id="example" class="special table table-bordered nowrap border responsive" style="width: 100%; border:1px solid;border: 1px solid #dddddd;white-space:nowrap;">
-                                            <thead style="font-size:10px;">
+                                        <table id="example11" class="special table table-bordered nowrap border" style="width: 100%; border:1px solid;border: 1px solid #dddddd;white-space:nowrap;">
+                                            <thead>
                                                 <tr >
-                                                    <th>BRANCH CODE</th>
-                                                    <th>PRODUCT CODE</th>
-													<th>USER DEFINED STATUS</th>
-                                                    <th>ACCOUNT NUMBER</th>
-                                                    <th>LINE EXPIRE DATE</th>
-                                                    <th>COL</th>
-                                                    <th>LIMIT AMOUNT</th>
-                                                    <th>OUTSTANDING</th>
+                                                    <th>CL Account</th>
+                                                    <th>Branch</th>
+                                                    <th>Customer Name</th>
+                                                    <th>Principal Outstanding</th>
+                                                    <th>Installment Amount</th>
+                                                    <th>Total Overdue Amount</th>
+                                                    <th>Product</th>
+                                                    <th>Disbursment Date</th>
+                                                    <th>Expiry Date</th>
+                                                    <th>Next Emi Date</th>
+                                                    <th>Amount Disburse</th>
+                                                    <th>Status</th>
                                                 </tr>
                                             </thead>
                                             <tbody style="text-align:right;">
-												<tr>
-                                                    <td>001</td>
-                                                    <td>RT13</td>
-                                                    <td>NORM</td>
-                                                    <td>001RT13180860001</td>
-                                                    <td>27-Mar-2021</td>
+                                                <tr>
+                                                    <td>001RT01131990001</td>
+                                                    <td>1</td>
+                                                    <td>JALAL AHMED SUFI & RINAZ AHMED</td>
+                                                    <td>-19,378.03</td>
+                                                    <td>19,604.11</td>
                                                     <td>0</td>
-                                                    <td>178000</td>
-                                                    <td>-166172.8</td>
+                                                    <td>RT01</td>
+                                                    <td>18-Jul-13</td>
+                                                    <td>18-Jul-18</td>
+                                                    <td>18-Jul-18</td>
+                                                    <td>800,000.00</td>
+                                                    <td>NORM</td>
                                                 </tr>
 												<tr>
-                                                    <td>001</td>
-                                                    <td>SODOT</td>
-                                                    <td>NORM</td>
-                                                    <td>0010001003003</td>
-                                                    <td>06-Jun-2019</td>
-                                                    <td>0</td>
-                                                    <td>1099000</td>
-                                                    <td>-948459.56</td>
+                                                    <td>001RT01133630001</td>
+                                                    <td>1</td>
+                                                    <td>MD. ABDUL AZIZ KHAN</td>
+                                                    <td>-3,970.05</td>
+                                                    <td>21,876.93</td>
+                                                    <td>8,629.32</td>
+                                                    <td>RT01</td>
+                                                    <td>04-Oct-09</td>
+                                                    <td>04-Oct-14</td>
+                                                    <td></td>
+                                                    <td>203,474.25</td>
+                                                    <td>BL</td>
                                                 </tr>
 												<tr>
-                                                    <td>001</td>
-                                                    <td>SODOT</td>
-                                                    <td>NORM</td>
-                                                    <td>00100010005049</td>
-                                                    <td>04-Jun-2019</td>
+                                                    <td>001RT01150690001</td>
+                                                    <td>1</td>
+                                                    <td>AKHTAR AHMED</td>
+                                                    <td>-1,709,467.59</td>
+                                                    <td>911,602.61</td>
                                                     <td>0</td>
-                                                    <td>2902000</td>
-                                                    <td>-324564.94</td>
+                                                    <td>RT01</td>
+                                                    <td>10-Mar-15</td>
+                                                    <td>10-Mar-20</td>
+                                                    <td>15-Jul-18</td>
+                                                    <td>4,000,000.00</td>
+                                                    <td>NORM</td>
                                                 </tr>
                                             </tbody>
                                             <tfoot>
@@ -237,6 +255,21 @@ table td:first-child { border-left: none; }
         <script src="../../resources/js/datatables.net/js/buttons.print.min.js"></script>
         <script src="../../resources/js/datatables.net/js/buttons.flash.min.js"></script>
         <script src="../../resources/js/datatables.net/js/dataTables.buttons.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#example').DataTable({
+                    dom: 'Bfrtip',
+                    buttons: [
+                        'excel', 'pdf', 'print'
+                    ],
+                    aLengthMenu: [
+                        [15, 50, 100, 200, -1],
+                        [25, 50, 100, 200, "All"]
+                    ]
+                });
+            });
+        </script>
+
         <script>
             document.querySelector("#print").addEventListener("click", function () {
                 window.print();
