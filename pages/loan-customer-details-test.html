@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>iClique</title>
+        <!-- responsive screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.7 -->
+        <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../resources/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../resources/css/ionicons.min.css">
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="../resources/css/iclique.css">
+        <!-- iclique Skins. Choose a skin from the css/skins
+             folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../resources/css/skins/_all-skins.min.css">
+        <link rel="stylesheet" href="../resources/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../resources/css/jquery.scrolling-tabs.css">
+        <link rel="stylesheet" href="../resources/js/datatables.net-bs/css/buttons.dataTables.min.css">
+        <link rel="stylesheet" href="../resources/js/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+		<link href="../resources/css/bootstrap-editable.css" rel="stylesheet">
+		<link href="../resources/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
+        <!-- Google Font -->
+
+    </head>
+    <!-- ADD THE CLASS sidebar-collapse TO HIDE THE SIDEBAR PRIOR TO LOADING THE SITE -->
+    <body class="hold-transition skin-blue fixed sidebar-mini">
+        <!-- Main wrapper -->
+        <div class="wrapper">
+
+            <header class="main-header">
+                <!-- Logo -->
+                <a href="../loanindex.html" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini"><b>I</b>Q</span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><img src="../resources/img/logo.jpg" alt="Logo" width="" height=""></span>
+                </a>
+                <!-- Header Navbar -->
+                <nav class="navbar navbar-static-top">
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <!-- Page Menu Title -->
+                    <div class="sidebar-title">Customer Id: 1021220 Details</div>
+                    <!-- Page Menu Title -->
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="../resources/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                                    <span class="desig hidden-xs">Anisul Haque</span>
+                                    <span class="desig hidden-xs">Head of Loan Recovery</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <img src="../resources/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                                        <p>
+                                            Anisul Haque - Head of Loan Recovery
+                                        </p>
+                                    </li>
+                                    <!-- User Menu-->
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- =============================================== -->
+
+            <!-- Left side column. contains the sidebar -->
+            <aside class="main-sidebar">
+                <!-- sidebar -->
+                <section class="sidebar">
+                    <ul class="sidebar-menu" data-widget="tree">
+                        <li class="">
+                            <a href="../loanindex.html">
+                                <i class="fa fa-home"></i> <span>Dashboard</span>
+                                </span>
+                            </a>
+                        </li>
+                         <li class="">
+                            <a href="./hoc.html">
+                                <i class="fa fa-cubes"></i> <span>Head of Collection</span>
+                                </span>
+                            </a>
+                        </li>
+						<li class="">
+                            <a href="./supervisor.html">
+                                <i class="fa fa-handshake-o"></i> <span>Supervisor</span>
+                                </span>
+                            </a>
+                        </li>
+						<li class="">
+                            <a href="./teams.html">
+                                <i class="fa fa-group"></i> <span>Team Member</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- =============================================== -->
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+
+                <!-- Main content -->
+                <section class="content">
+                    <!-- Data Table Start -->
+                    <div class="row">
+                    <div class="col-md-12">
+
+                                                <div class="box-body">
+                                                    <!--Table body-->
+                                                    <div class="row">
+                                                        <table id="users" style="table-layout: fixed; border:1px solid #d3d3d3;" class="table table-responsive w-auto">
+                                                            <!--Table body-->
+                                                            <tbody>
+                                                                <tr bgcolor="#FF0000">
+                                                                    <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;font-weight:bold;"colspan="2">Account Details</td>
+                                                                    <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;" colspan="7"></td>
+                                                                </tr>
+                                                                <tr style="font-weight:bold;">
+                                                                    <td style="background: #3C8DBC; color: #fff;">Customer Name</td>
+                                                                    <td colspan="3"><span class="editdata" data-type="text">Md. Mushfiqur Rahman Khan</span></input></td>
+                                                                    <td style="background: #3C8DBC; color: #fff;">Client ID:</td>
+                                                                    <td colspan="4">131212800010</td>
+                                                                </tr>
+                                                                <tr style="font-weight:bold;">
+                                                                    <td style="background: #3C8DBC; color: #fff;">Customer Profile</td>
+                                                                    <td style="background: #3C8DBC; color: #fff;border-left: 1px solid #d3d3d3;" colspan="2">Contact Details</td>
+                                                                    <td style="background: #3C8DBC; color: #fff;border-left: 1px solid #d3d3d3;" colspan="2">Telephone</td>
+                                                                    <td style="background: #3C8DBC; color: #fff;border-left: 1px solid #d3d3d3;" colspan="2">Account</td>
+                                                                    <td style="background: #3C8DBC; color: #fff;border-left: 1px solid #d3d3d3;" colspan="2">Status</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td >Name</td>
+                                                                    <td class="left-bo" colspan="2"><span class="editdata" data-type="text">MD XYZ</span></td>
+                                                                    <td class="left-bo">Office :<span class="editdata" data-type="text">123456789</span></td>
+                                                                    <td >Ext :<span class="editdata" data-type="text">123456789</span></td>
+                                                                    <td class="left-bo" colspan="2">No: <span class="editdata" data-type="text">4562215326625226</span></td>
+                                                                    <td class="left-bo" >Open Date: <span class="editdata" data-type="date" data-pk="1"  data-title="Select date">07-02-2012</span></td>
+                                                                    <td rowspan="6"><img src="../resources/img/avatar5.png" alt="Avator" width="110" height="120"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td rowspan="4">Adress:</td>
+                                                                    <td class="editfield" style="border-left: 1px solid #d3d3d3;" colspan="2" rowspan="4"><span class="editdata" data-type="textarea">Usha Tower(3rd Floor)255/f-8.
+																	Tejgaon,Gulshan ,Dhaka.BD</span></td>
+                                                                    <td class="left-bo">Fax :</td>
+                                                                    <td class="editfield" style="border-left: 1px solid #d3d3d3;"><span class="editdata" data-type="text">***********</span></td>
+                                                                    <td class="left-bo" colspan="2">Product: OBL CC</td>
+                                                                    <td class="left-bo" >Status :</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="left-bo" >Home:<span class="editdata" data-type="text"></span></td>
+                                                                    <td class="left-bo" >Ext :<span class="editdata" data-type="text"></span></td>
+                                                                    <td class="left-bo" colspan="2">Current Due: <span class="editdata" data-type="text"></span></td>
+                                                                    <td class="left-bo"  >Last Action :</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="editfield" style="border-left: 1px solid #d3d3d3;" colspan="2">Mobile :<span class="editdata" data-type="text">********</span></td>
+                                                                    <td class="left-bo" colspan="2">Past Due Amt:<span class="editdata" data-type="text"></span></td>
+                                                                    <td class="left-bo" ></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="left-bo" colspan="2">Email : <span class="editdata" data-type="text">s_r@gmail.com</span></td>
+                                                                    <td class="left-bo" colspan="2">CL Status:</td>
+                                                                    <td class="left-bo" ></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>DOB:</td>
+                                                                    <td class="left-bo" ><span class="editdata" data-type="date" data-pk="1"  data-title="Select date">3-3-1980</span></td>
+                                                                    <td class="left-bo" >Gender:</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;border-right: 1px solid #d3d3d3;" ><span class="editdata" data-pk="1" data-type="select" data-value="1"></td>
+                                                                    <td colspan="4"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="font-weight:bold;">Refference Detail:</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;font-weight:bold;" colspan="4">Refference -1</td>
+                                                                    <td style="border-left: 1px solid #d3d3d3;font-weight:bold;" colspan="4">Refference -2</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Name</td>
+                                                                    <td class="left-bo" colspan="2"><span class="editdata" data-type="text">MD XYZ</span></td>
+                                                                    <td class="left-bo" >Office :<span class="editdata" data-type="text">123456789</span></td>
+                                                                    <td>Ext :<span class="editdata" data-type="text">123</span></td>
+                                                                    <td class="left-bo" colspan="2"><span class="editdata" data-type="text">MD XYZ</span></td>
+                                                                    <td class="left-bo" >Office :<span class="editdata" data-type="text">123456789</span></td>
+                                                                    <td>Ext :<span class="editdata" data-type="text">123</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="left-bo" rowspan="3">Adress:</td>
+                                                                    <td class="left-bo" colspan="2" rowspan="3"><span class="editdata" data-type="textarea">Usha Tower(3rd Floor)255/f-8.
+																	Tejgaon,Gulshan ,Dhaka.BD</span></td>
+                                                                    <td class="left-bo" colspan="2">Fax : <span class="editdata" data-type="text">***********</span></td>
+                                                                    <td class="left-bo" colspan="2" rowspan="3"><span class="editdata" data-type="textarea">Usha Tower(3rd Floor)255/f-8.
+																	Tejgaon,Gulshan ,Dhaka.BD</span></td>
+                                                                    <td class="left-bo" colspan="2">Fax : <span class="editdata" data-type="text">***********</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="left-bo" >Home:</td>
+                                                                    <td>Ext :</td>
+                                                                    <td class="left-bo" >Home:</td>
+                                                                    <td>Ext :</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="left-bo" colspan="2">Email : <span class="editdata" data-type="text">s_r@gmail.com</span></td>
+                                                                    <td class="left-bo" colspan="2">Email : <span class="editdata" data-type="text">s_r@gmail.com</span></td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <!--Table body-->
+
+
+                                                        </table>
+                                                        <!--Table-->
+                                                        <!--Table-->
+                                                        <table style="table-layout: fixed;border-bottom: 2px solid #d3d3d3;word-wrap: break-word;" class="table table-custom table-bordered table-responsive w-auto">
+                                                            <!--Table body-->
+                                                            <tbody>
+                                                                <tr bgcolor="#FF0000">
+                                                                    <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;font-weight:bold;" colspan="2">Loan Details</td>
+                                                                    <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;" colspan="9"></td>
+                                                                </tr>
+                                                                <tr style="font-weight:bold;">
+                                                                    <td>Product</td>
+                                                                    <td>A/C No</td>
+                                                                    <td>Loan Amt BDT</td>
+                                                                    <td>O/S Balance</td>
+                                                                    <td>Payment Date</td>
+                                                                    <td>Last Pay Date</td>
+                                                                    <td>Last Pay Amt</td>
+                                                                    <td>Autopay Acct</td>
+                                                                    <td>Total Exposour in the Bank</td>
+                                                                    <td>History</td>
+                                                                    <td>Status</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Home Loan</td>
+                                                                    <td>4562215326625220</td>
+                                                                    <td>80000</td>
+                                                                    <td>21-02-2018</td>
+                                                                    <td>21-02-2018</td>
+                                                                    <td>79500</td>
+                                                                    <td>579090</td>
+                                                                    <td>0</td>
+                                                                    <td>Saving A/C, FDR</td>
+                                                                    <td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Details</button></td>
+                                                                    <td>Active</td>
+                                                                </tr>
+                                                                <tr style="font-weight:bold;">
+                                                                    <td>Bill Cycle</td>
+                                                                    <td>Customer Profession</td>
+                                                                    <td>Suspence Amt</td>
+                                                                    <td>Settlement Amt</td>
+                                                                    <td>Rm Code/Dst Code</td>
+                                                                    <td>Rm /Dst  Contact Number</td>
+                                                                    <td>Source of Loan</td>
+                                                                    <td>Campaign/ Facilities</td>
+                                                                    <td>Payment Due Date</td>
+                                                                    <td>Loyalty Program</td>
+                                                                    <td>Recommendation</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1,10,25</td>
+                                                                    <td>RMG</td>
+                                                                    <td>BDT:-25389.70</td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td>21545</td>
+                                                                    <td>1234567899</td>
+                                                                    <td>DST/RM</td>
+                                                                    <td></td>
+                                                                    <td>10/3/2018</td>
+                                                                    <td>Manager</td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <!--Table body-->
+                                                        </table>
+
+                                                        <!--Table-->
+
+                                                        <table style="table-layout: fixed;" class="table table-striped table-bordered table-responsive w-auto">
+                                                            <!--Table body-->
+                                                            <tbody>
+                                                                <tr bgcolor="#FF0000">
+                                                                    <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;font-weight:bold;" colspan="2">Daily Notes/Memo Logs</td>
+                                                                    <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;" colspan="6"></td>
+                                                                </tr>
+                                                                <tr style="font-weight:bold;">
+                                                                    <td>Action</td>
+                                                                    <td >Result</td>
+                                                                    <td>Place</td>
+                                                                    <td>Amount</td>
+                                                                    <td>Date</td>
+                                                                    <td>Time</td>
+                                                                    <td colspan="2">Summary</td>
+                                                                </tr>
+                                                                <tr style="font-weight:bold;">
+                                                                    <td>
+                                                                        <select>
+                                                                            <option selected hidden>Choose here</option>
+                                                                            <option value="1">SMS</option>
+                                                                            <option value="2">Phone Call</option>
+                                                                            <option value="3">Email</option>
+                                                                            <option value="4">Visit</option>
+
+                                                                        </select>
+                                                                    </td>
+                                                                    <td><input id="result"></td>
+                                                                    <td><input id="result"></td>
+                                                                    <td><input id="result"></td>
+                                                                    <td><input id="result"></td>
+                                                                    <td><input id="result"></td>
+                                                                    <td><input id="result"></td>
+                                                                    <td style="float: right"><button id="result" class="btn bg-navy btn-flat1">Archive</button><button id="result" class="btn bg-navy btn-flat1">Submit</button></td>
+                                                                </tr>																
+                                                            </tbody>
+                                                            <!--Table body-->
+                                                        </table>
+                                                        <!--Table-->
+                                                        <table id="table" style="table-layout: fixed;border-bottom: 2px solid #d3d3d3;" class="table table-striped table-bordered table-responsive w-auto">
+                                                            <!--Table body-->
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Action</th>
+                                                                    <th>Result</th>
+                                                                    <th>Place</th>
+                                                                    <th >Amount</th>
+                                                                    <th>Date</th>
+                                                                    <th>Time</th>
+                                                                    <th colspan="2">Summary</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>SMS</td>
+                                                                    <td>Pay</td>
+                                                                    <td>Office</td>
+                                                                    <td>20000</td>
+                                                                    <td>20/05/2018</td>
+                                                                    <td>12:30 PM</td>
+                                                                    <td colspan="2">Payment: ref: 688262</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Email</td>
+                                                                    <td>Pay</td>
+                                                                    <td>Office</td>
+                                                                    <td>20000</td>
+                                                                    <td>20/05/2018</td>
+                                                                    <td>12:30 PM</td>
+                                                                    <td colspan="2">Payment: ref: 688262</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Phone Call</td>
+                                                                    <td>Pay</td>
+                                                                    <td>Office</td>
+                                                                    <td>20000</td>
+                                                                    <td>20/05/2018</td>
+                                                                    <td>12:30 PM</td>
+                                                                    <td colspan="2">Payment: ref: 688262</td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <!--Table body-->
+                                                        </table>
+                                                    </div>
+                                                    <div class="modal fade" id="modal-default">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span></button>
+                                                                    <h4 class="modal-title">Card History</h4>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <table id="example" class="table table-bordered table-striped">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Customer name</th>
+                                                                                <th>Customer Type </th>
+                                                                                <th>Application Type</th>
+                                                                                <th>Number of Borrowers</th>
+                                                                                <th>Loan Amount</th>
+                                                                                <th>Tenure</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Mr. Monowar Hossain</td>
+                                                                                <td>Regular</td>
+                                                                                <td>Home Loan</td>
+                                                                                <td>2</td>
+                                                                                <td>300,000</td>
+                                                                                <td>3 Years</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                        <tfoot>
+                                                                        </tfoot>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                                </div>
+                                                            </div>
+                                                            <!-- /.modal-content -->
+                                                        </div>
+                                                        <!-- /.modal-dialog -->
+                                                    </div>
+                                                    <!-- /.col -->
+                                                </div>
+                                                <!-- Summery Row Body -->
+                    </div>
+                    </div>
+                    <!-- /.Review And Details -->
+
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+
+            <footer class="main-footer">
+                <!-- Footer Section -->
+            </footer>
+
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 3 -->
+        <script src="../resources/js/jquery.min.js"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="../resources/js/bootstrap.min.js"></script>
+        <!-- SlimScroll -->
+        <script src="../resources/js/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../resources/js/fastclick.js"></script>
+        <!-- iclique App -->
+        <script src="../resources/js/iclique.min.js"></script>
+        <script src="../resources/js/chart.js/Chart.js"></script>
+        <script src="../resources/js/highcharts.js"></script>
+        <script src="../resources/js/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="../resources/js/datatables.net/js/vfs_fonts.js"></script>
+        <script src="../resources/js/datatables.net/js/pdfmake.min.js"></script>
+        <script src="../resources/js/datatables.net/js/jszip.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.html5.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.print.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.flash.min.js"></script>
+        <script src="../resources/js/datatables.net/js/dataTables.buttons.min.js"></script>
+        <script src="../resources/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../resources/js/jquery.scrolltabs.js"></script>
+        <script src="../resources/js/jquery.mousewheel.js"></script>
+        <script src="../resources/js/jquery.scrolling-tabs.js"></script>
+        <script src="../resources/js/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <script src="../resources/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+        <script src="../resources/js/bootstable.js"></script>
+		<script src="../resources/js/bootstrap-editable.js"></script>
+		<script>
+		var source = [{'value': 1, 'text': 'Male'}, {'value': 2, 'text': 'Female'}];
+			$('#users .editdata').editable({
+				type: 'text',
+				title: 'Edit..',
+				placement: 'bottom',
+				'source': function() {
+					return source;
+				},
+				emptyclass: 'none',
+				format: 'yyyy-mm-dd',  
+				placement: 'bottom',		
+				viewformat: 'dd/mm/yyyy',    
+				datepicker: {
+                weekStart: 1
+           }
+			});
+		</script>
+		<script>
+           $('#table').SetEditable();
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('#example').DataTable({
+                    dom: 'Bfrtip',
+                    buttons: [
+                        'excel', 'pdf', 'print'
+                    ]
+
+                });
+            }
+            );
+        </script>
+        <script>
+		//Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    })
+        </script>
+        <script>
+
+            $(document).ready(function () {
+                $('#example1').DataTable({
+                    dom: 'Bfrtip',
+                    buttons: [
+                        'excel', 'pdf', 'print'
+                    ]
+
+                });
+            });
+        </script>
+        <script>
+            //Date picker
+            $('#datepicker').datepicker({
+                autoclose: true
+            })
+        </script>
+    </body>
+</html>
