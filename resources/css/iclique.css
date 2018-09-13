@@ -1330,7 +1330,7 @@ a:focus {
 .progress > .progress-bar,
 .progress .progress-bar,
 .progress > .progress-bar .progress-bar {
-  border-radius: 1px;
+  border-radius: 5px;
 }
 /* size variation */
 .progress.sm,
@@ -5414,11 +5414,22 @@ select.input-sm {
     margin-bottom: 0px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
+.small-box6 {
+    border-radius: 2px;
+    position: relative;
+    display: block;
+    margin-bottom: 0px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
 .padd{padding-left:5px;
 padding-right:5px;}
 
 .small-box5 > .inner {
     padding: 25px;
+	text-align: center;
+}
+.small-box6 > .inner {
+    padding: 5px;
 	text-align: center;
 }
 
@@ -5436,6 +5447,20 @@ padding-right:5px;}
     font-size: 14px;
     line-height: 20px;
 }
+.small-box6 > .small-box-footer {
+    position: relative;
+    text-align: center;
+    padding: 3px 0;
+    color: #fff;
+    display: block;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    font-family: Quicksand;
+    font-style: Bold;
+    font-size: 12px;
+    line-height: 15px;
+}
 .special .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th {
     padding: 1px 3px;
     line-height: 1.42857143;
@@ -5448,4 +5473,13 @@ padding-right:5px;}
 }
 .left-bo{
 	border-left: 1px solid #d3d3d3;
+}
+.progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #d5d5d5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
 }
