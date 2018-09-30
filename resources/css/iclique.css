@@ -1774,7 +1774,7 @@ a:focus {
   border-bottom: 1px solid #f4f4f4;
 }
 .box-header.with-border {
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #d3d3d3;
 }
 .collapsed-box .box-header.with-border {
   border-bottom: none;
@@ -5456,7 +5456,7 @@ padding-right:5px;}
     z-index: 10;
     background: rgba(0, 0, 0, 0.1);
     text-decoration: none;
-    font-family: Quicksand;
+    font-family: 'Quicksand', sans-serif;
     font-style: Bold;
     font-size: 12px;
     line-height: 15px;
@@ -5482,4 +5482,52 @@ padding-right:5px;}
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
     box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+.skin-blue .team-form {
+    border-radius: 3px;
+    border: 1px solid #374850;
+    margin: 5px 0px;
+}
+.skin-blue .team-form .btn {
+    color: #999;
+    border-top-left-radius: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 0;
+}
+.skin-blue .team-form input[type="text"] {
+    color: #666;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2px;
+}
+.skin-blue .team-form input[type="text"], .skin-blue .team-form .btn {
+    box-shadow: none;
+    background-color: #fff;
+    border: 1px solid transparent;
+    height: 35px;
+}
+.btn.btn-flat2 {
+    border-radius: 50px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-width: 1px;
+    padding: 7px 10px;
+}
+.green{
+	color:#2ECC71;
+}
+.blue{
+	color:#0984E3
+}
+.red{
+	color: #EB5757;
+}
+div.dataTables_scrollBody table {
+    border-top: none;
+    margin-top: 14px !important;
+    margin-bottom: 0 !important;
 }

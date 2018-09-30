@@ -71,8 +71,8 @@
         div.bhoechie-tab-menu div.list-group>a.active,
         div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
         div.bhoechie-tab-menu div.list-group>a.active .fa {
-            background-color: #0984E3;
-            background-image: #0984E3;
+            background-color: #3c8dbc;
+            background-image: #3c8dbc;
             color: #ffffff;
         }
 
@@ -85,7 +85,7 @@
             border-left: 0;
             border-bottom: 13px solid transparent;
             border-top: 13px solid transparent;
-            border-left: 10px solid #0984E3;
+            border-left: 10px solid #3c8dbc;
         }
 
         div.bhoechie-tab-content {
@@ -105,7 +105,7 @@
     <div class="wrapper">
         <header class="main-header">
             <!-- Logo -->
-            <a href="../index.html" class="logo">
+            <a href="../loanindex.html" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b>I</b>Q</span>
                 <!-- logo for regular state and mobile devices -->
@@ -121,7 +121,7 @@
                     <span class="icon-bar"></span>
                 </a>
                 <!-- Page Menu Title -->
-                <div class="sidebar-title">Supervisor Field</div>
+                <div class="sidebar-title">Supervisor List</div>
                 <!-- Page Menu Title -->
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
@@ -161,47 +161,36 @@
 
         <!-- Left side column. contains the sidebar -->
         <aside class="main-sidebar">
-            <!-- sidebar -->
-            <section class="sidebar">
-                <ul class="sidebar-menu" data-widget="tree">
-                    <li class="">
-                        <a href="../index.html">
-                            <i class="fa fa-home"></i> <span>Dashboard</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="./cl-ac.html">
-                            <i class="fa fa-cubes"></i> <span>Classified Account</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="./risk-report.html">
-                            <i class="fa fa-history"></i> <span>Risk Report</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="./supervisor-field.html">
-                            <i class="fa fa-handshake-o"></i> <span>Supervisor Field</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="./team-member.html">
-                            <i class="fa fa-group"></i> <span>Team Member</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="./private-customer.html">
-                            <i class="fa fa-inbox"></i> <span>Private Customer</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="fa fa-bar-chart"></i> <span>Report</span>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <!-- /.sidebar -->
+                <!-- sidebar -->
+                <section class="sidebar">
+                    <ul class="sidebar-menu" data-widget="tree">
+                        <li class="">
+                            <a href="../loanindex.html">
+                                <i class="fa fa-home"></i> <span>Dashboard</span>
+                                </span>
+                            </a>
+                        </li>
+                         <li class="">
+                            <a href="./hoc.html">
+                                <i class="fa fa-cubes"></i> <span>Head of Collection</span>
+                                </span>
+                            </a>
+                        </li>
+						<li class="active">
+                            <a href="./supervisor.html">
+                                <i class="fa fa-handshake-o"></i> <span>Supervisor</span>
+                                </span>
+                            </a>
+                        </li>
+						<li class="">
+                            <a href="./teams.html">
+                                <i class="fa fa-group"></i> <span>Team Member</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
         </aside>
 
         <!-- =============================================== -->
@@ -279,7 +268,7 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 customer-application">
+                                                <div class="small-box6 regular">
                                                     <div class="inner">
                                                         <h3>17</h3>
                                                     </div>
@@ -293,7 +282,7 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 rejected-application">
+                                                <div class="small-box6 bg-orange">
                                                     <div class="inner">
                                                         <h3>05</h3>
                                                     </div>
@@ -307,7 +296,7 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 processed-application">
+                                                <div class="small-box6 bg-teal">
                                                     <div class="inner">
                                                         <h3>33</h3>
                                                     </div>
@@ -330,7 +319,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">3,20000</h5>
+                                                                <h5 class="description-header blue">Tk. 3,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -338,7 +327,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">23,0000</h5>
+                                                                <h5 class="description-header green">Tk. 23,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -346,7 +335,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">90000</h5>
+                                                                <h5 class="description-header red">Tk. 90000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -483,7 +472,7 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 customer-application">
+                                                <div class="small-box6 regular">
                                                     <div class="inner">
                                                         <h3>02</h3>
                                                     </div>
@@ -497,7 +486,7 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 rejected-application">
+                                                <div class="small-box6 bg-orange">
                                                     <div class="inner">
                                                         <h3>03</h3>
                                                     </div>
@@ -511,7 +500,7 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 processed-application">
+                                                <div class="small-box6 bg-teal">
                                                     <div class="inner">
                                                         <h3>00</h3>
                                                     </div>
@@ -533,7 +522,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">Tk. 29,650,000.00</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -541,7 +530,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">Tk. 28,749,564.75</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -549,7 +538,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">Tk. 900,435.25</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -593,25 +582,25 @@
                                                                 <td>Mem-01</td>
                                                                 <td>Sup-01</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Mem-02</td>
                                                                 <td>Sup-01</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
 															<tr>
                                                                 <td>Mem-03</td>
                                                                 <td>Sup-01</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
 															<tr>
                                                                 <td>Mem-04</td>
                                                                 <td>Sup-01</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
                                                         <!--Table body-->
@@ -694,7 +683,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>33</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -722,7 +711,7 @@
                                             <a href="#">
                                                 <div class="small-box6 processed-application">
                                                     <div class="inner">
-                                                        <h3>14</h3>
+                                                        <h3>04</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Pending</span>
                                                 </div>
@@ -736,7 +725,7 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 customer-application">
+                                                <div class="small-box6 regular">
                                                     <div class="inner">
                                                         <h3>01</h3>
                                                     </div>
@@ -750,7 +739,7 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 rejected-application">
+                                                <div class="small-box6 bg-orange">
                                                     <div class="inner">
                                                         <h3>02</h3>
                                                     </div>
@@ -764,9 +753,9 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 processed-application">
+                                                <div class="small-box6 bg-teal">
                                                     <div class="inner">
-                                                        <h3>05</h3>
+                                                        <h3>02</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Assigned</span>
                                                 </div>
@@ -787,7 +776,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">99,000</h5>
+                                                                <h5 class="description-header blue">Tk. 99,000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -795,7 +784,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">75,000</h5>
+                                                                <h5 class="description-header green">75,000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -803,7 +792,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">2400</h5>
+                                                                <h5 class="description-header red">Tk. 24,000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -847,25 +836,25 @@
                                                                 <td>Mem-05</td>
                                                                 <td>Sup-02</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Mem-06</td>
                                                                 <td>Sup-02</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
 															<tr>
                                                                 <td>Mem-07</td>
                                                                 <td>Sup-02</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
 															<tr>
                                                                 <td>Mem-08</td>
                                                                 <td>Sup-02</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
                                                         <!--Table body-->
@@ -948,7 +937,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>125</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -976,7 +965,7 @@
                                             <a href="#">
                                                 <div class="small-box6 processed-application">
                                                     <div class="inner">
-                                                        <h3>55</h3>
+                                                        <h3>01</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Pending</span>
                                                 </div>
@@ -990,9 +979,9 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 customer-application">
+                                                <div class="small-box6 regular">
                                                     <div class="inner">
-                                                        <h3>17</h3>
+                                                        <h3>02</h3>
                                                     </div>
                                                     <span class="small-box-footer">Forwarded to 3rd Party</span>
                                                 </div>
@@ -1004,9 +993,9 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 rejected-application">
+                                                <div class="small-box6 bg-orange">
                                                     <div class="inner">
-                                                        <h3>05</h3>
+                                                        <h3>01</h3>
                                                     </div>
                                                     <span class="small-box-footer">Forwarded to Legal</span>
                                                 </div>
@@ -1018,9 +1007,9 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 processed-application">
+                                                <div class="small-box6 bg-teal">
                                                     <div class="inner">
-                                                        <h3>33</h3>
+                                                        <h3>01</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Assigned</span>
                                                 </div>
@@ -1041,7 +1030,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">3,20000</h5>
+                                                                <h5 class="description-header blue">Tk. 3,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1049,7 +1038,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">23,0000</h5>
+                                                                <h5 class="description-header green">Tk. 23,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1057,7 +1046,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">90000</h5>
+                                                                <h5 class="description-header red">Tk. 90000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1101,25 +1090,25 @@
                                                                 <td>Mem-09</td>
                                                                 <td>Sup-03</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Mem-10</td>
                                                                 <td>Sup-03</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
 															<tr>
                                                                 <td>Mem-11</td>
                                                                 <td>Sup-03</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
 															<tr>
                                                                 <td>Mem-12</td>
                                                                 <td>Sup-03</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='.../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
                                                         <!--Table body-->
@@ -1202,7 +1191,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>125</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -1216,7 +1205,7 @@
                                             <a href="#">
                                                 <div class="small-box6 rejected-application">
                                                     <div class="inner">
-                                                        <h3>15</h3>
+                                                        <h3>11</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Solved</span>
                                                 </div>
@@ -1230,7 +1219,7 @@
                                             <a href="#">
                                                 <div class="small-box6 processed-application">
                                                     <div class="inner">
-                                                        <h3>55</h3>
+                                                        <h3>05</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Pending</span>
                                                 </div>
@@ -1244,9 +1233,9 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 customer-application">
+                                                <div class="small-box6 regular">
                                                     <div class="inner">
-                                                        <h3>17</h3>
+                                                        <h3>01</h3>
                                                     </div>
                                                     <span class="small-box-footer">Forwarded to 3rd Party</span>
                                                 </div>
@@ -1258,9 +1247,9 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 rejected-application">
+                                                <div class="small-box6 bg-orange">
                                                     <div class="inner">
-                                                        <h3>05</h3>
+                                                        <h3>00</h3>
                                                     </div>
                                                     <span class="small-box-footer">Forwarded to Legal</span>
                                                 </div>
@@ -1272,9 +1261,9 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 processed-application">
+                                                <div class="small-box6 bg-teal">
                                                     <div class="inner">
-                                                        <h3>33</h3>
+                                                        <h3>03</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Assigned</span>
                                                 </div>
@@ -1295,7 +1284,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">3,20000</h5>
+                                                                <h5 class="description-header blue">Tk. 3,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1303,7 +1292,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">23,0000</h5>
+                                                                <h5 class="description-header green">Tk. 23,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1311,7 +1300,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">90000</h5>
+                                                                <h5 class="description-header red">Tk. 90000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1355,25 +1344,25 @@
                                                                 <td>Mem-13</td>
                                                                 <td>Sup-04</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Mem-14</td>
                                                                 <td>Sup-04</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
 															<tr>
                                                                 <td>Mem-15</td>
                                                                 <td>Sup-04</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
 															<tr>
                                                                 <td>Mem-16</td>
                                                                 <td>Sup-04</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
                                                         <!--Table body-->
@@ -1456,7 +1445,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>125</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -1470,7 +1459,7 @@
                                             <a href="#">
                                                 <div class="small-box6 rejected-application">
                                                     <div class="inner">
-                                                        <h3>15</h3>
+                                                        <h3>09</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Solved</span>
                                                 </div>
@@ -1484,7 +1473,7 @@
                                             <a href="#">
                                                 <div class="small-box6 processed-application">
                                                     <div class="inner">
-                                                        <h3>55</h3>
+                                                        <h3>03</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Pending</span>
                                                 </div>
@@ -1498,9 +1487,9 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 customer-application">
+                                                <div class="small-box6 regular">
                                                     <div class="inner">
-                                                        <h3>17</h3>
+                                                        <h3>03</h3>
                                                     </div>
                                                     <span class="small-box-footer">Forwarded to 3rd Party</span>
                                                 </div>
@@ -1512,9 +1501,9 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 rejected-application">
+                                                <div class="small-box6 bg-orange">
                                                     <div class="inner">
-                                                        <h3>05</h3>
+                                                        <h3>01</h3>
                                                     </div>
                                                     <span class="small-box-footer">Forwarded to Legal</span>
                                                 </div>
@@ -1526,9 +1515,9 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 processed-application">
+                                                <div class="small-box6 bg-teal">
                                                     <div class="inner">
-                                                        <h3>33</h3>
+                                                        <h3>04</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Assigned</span>
                                                 </div>
@@ -1549,7 +1538,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">3,20000</h5>
+                                                                <h5 class="description-header blue">Tk. 3,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1557,7 +1546,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">26,0000</h5>
+                                                                <h5 class="description-header green">Tk. 26,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1565,7 +1554,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">90000</h5>
+                                                                <h5 class="description-header red">Tk. 90000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1609,25 +1598,25 @@
                                                                 <td>Mem-17</td>
                                                                 <td>Sup-05</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Mem-18</td>
                                                                 <td>Sup-05</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
 															<tr>
                                                                 <td>Mem-19</td>
                                                                 <td>Sup-05</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
 															<tr>
                                                                 <td>Mem-20</td>
                                                                 <td>Sup-05</td>
                                                                 <td>05</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
                                                         <!--Table body-->

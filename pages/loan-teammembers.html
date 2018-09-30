@@ -74,8 +74,8 @@
             div.bhoechie-tab-menu div.list-group>a.active,
             div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
             div.bhoechie-tab-menu div.list-group>a.active .fa {
-                background-color: #0984E3;
-                background-image: #0984E3;
+                background-color: #3c8dbc;
+                background-image: #3c8dbc;
                 color: #ffffff;
             }
 
@@ -108,7 +108,7 @@
     <div class="wrapper">
         <header class="main-header">
             <!-- Logo -->
-            <a href="../index.html" class="logo">
+            <a href="../loanindex.html" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b>I</b>Q</span>
                 <!-- logo for regular state and mobile devices -->
@@ -168,38 +168,27 @@
             <section class="sidebar">
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="">
-                        <a href="../index.html">
+                        <a href="../loanindex.html">
                             <i class="fa fa-home"></i> <span>Dashboard</span>
+                            </span>
                         </a>
                     </li>
                     <li class="">
-                        <a href="./cl-ac.html">
-                            <i class="fa fa-cubes"></i> <span>Classified Account</span>
+                        <a href="./hoc.html">
+                            <i class="fa fa-cubes"></i> <span>Head of Collection</span>
+                            </span>
                         </a>
                     </li>
                     <li class="">
-                        <a href="./risk-report.html">
-                            <i class="fa fa-history"></i> <span>Risk Report</span>
+                        <a href="./supervisor.html">
+                            <i class="fa fa-handshake-o"></i> <span>Supervisor</span>
+                            </span>
                         </a>
                     </li>
                     <li class="">
-                        <a href="./supervisor-field.html">
-                            <i class="fa fa-handshake-o"></i> <span>Supervisor Field</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="./team-member.html">
+                        <a href="./teams.html">
                             <i class="fa fa-group"></i> <span>Team Member</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="./private-customer.html">
-                            <i class="fa fa-inbox"></i> <span>Private Customer</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="fa fa-bar-chart"></i> <span>Report</span>
+                            </span>
                         </a>
                     </li>
                 </ul>
@@ -218,6 +207,16 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 bhoechie-tab-menu">
                             <div class="list-group">
+                                <form action="#" method="get" class="team-form">
+                                    <div class="input-group">
+                                        <input type="text" name="q" class="form-control" placeholder="Search Team..">
+                                        <span class="input-group-btn">
+                                            <button type="submit" name="search" id="search-btn" class="btn btn-flat2"><i
+                                                    class="fa fa-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </form>
                                 <a href="#main" class="list-group-item active">Teams</a>
                                 <a href="#Team1" class="list-group-item">Mem-01</a>
                                 <a href="#Team2" class="list-group-item">Mem-02</a>
@@ -243,6 +242,8 @@
                         </div>
                         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 bhoechie-tab">
                             <!-- flight section -->
+							<div class="bhoechie-tab-content" id="blank">
+							</div>
                             <div class="bhoechie-tab-content active" id="main">
                                 <div class="box-body">
                                     <p style="font-size: 14px; font-weight:bold;text-align: center;">Total Teams
@@ -297,7 +298,7 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 customer-application">
+                                                <div class="small-box6 regular">
                                                     <div class="inner">
                                                         <h3>17</h3>
                                                     </div>
@@ -311,7 +312,7 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 rejected-application">
+                                                <div class="small-box6 bg-orange">
                                                     <div class="inner">
                                                         <h3>05</h3>
                                                     </div>
@@ -325,7 +326,7 @@
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
                                             <a href="#">
-                                                <div class="small-box6 processed-application">
+                                                <div class="small-box6 bg-teal">
                                                     <div class="inner">
                                                         <h3>33</h3>
                                                     </div>
@@ -348,7 +349,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">3,20000</h5>
+                                                                <h5 class="description-header blue">3,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -356,7 +357,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">23,0000</h5>
+                                                                <h5 class="description-header green">23,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -364,7 +365,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">90000</h5>
+                                                                <h5 class="description-header red">90000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -459,7 +460,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -552,7 +553,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -560,7 +561,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -568,7 +569,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -613,28 +614,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -706,7 +707,7 @@
                                         <!-- ./col -->
                                     </div>
                                 </div>
-								<!-- ./col -->
+                                <!-- ./col -->
                             </div>
                             <!-- ./col -->
                             <div class="bhoechie-tab-content" id="Team2">
@@ -720,7 +721,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -813,7 +814,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -821,7 +822,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -829,7 +830,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -874,28 +875,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -980,7 +981,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -1073,7 +1074,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1081,7 +1082,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1089,7 +1090,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1134,28 +1135,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -1240,7 +1241,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -1333,7 +1334,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1341,7 +1342,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1349,7 +1350,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1394,28 +1395,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -1500,7 +1501,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -1593,7 +1594,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1601,7 +1602,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1609,7 +1610,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1654,28 +1655,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -1760,7 +1761,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -1853,7 +1854,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1861,7 +1862,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1869,7 +1870,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -1914,28 +1915,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -2020,7 +2021,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -2113,7 +2114,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -2121,7 +2122,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -2129,7 +2130,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -2174,28 +2175,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -2280,7 +2281,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -2373,7 +2374,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -2381,7 +2382,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -2389,7 +2390,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -2434,28 +2435,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -2540,7 +2541,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -2633,7 +2634,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -2641,7 +2642,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -2649,7 +2650,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -2694,28 +2695,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -2800,7 +2801,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -2893,7 +2894,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -2901,7 +2902,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -2909,7 +2910,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -2954,28 +2955,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -3051,7 +3052,7 @@
                             <!-- ./col -->
                             <div class="bhoechie-tab-content" id="Team11">
                                 <div class="box-body">
-                                    <p style="font-size: 14px; font-weight:bold;text-align: center;">Mem-12 Performance</p>
+                                    <p style="font-size: 14px; font-weight:bold;text-align: center;">Mem-11 Performance</p>
                                     <hr style="margin-top: 10px;margin-bottom: 10px;" />
                                     <div class="row">
                                         <!-- col -->
@@ -3060,7 +3061,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -3153,7 +3154,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -3161,7 +3162,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -3169,7 +3170,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -3214,28 +3215,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -3311,8 +3312,7 @@
                             <!-- ./col -->
                             <div class="bhoechie-tab-content" id="Team12">
                                 <div class="box-body">
-                                    <p style="font-size: 14px; font-weight:bold;text-align: center;">MD. Al Amin
-                                        Performance</p>
+                                    <p style="font-size: 14px; font-weight:bold;text-align: center;"> Mem-12 Performance</p>
                                     <hr style="margin-top: 10px;margin-bottom: 10px;" />
                                     <div class="row">
                                         <!-- col -->
@@ -3321,7 +3321,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -3414,7 +3414,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -3422,7 +3422,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -3430,7 +3430,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -3475,28 +3475,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -3581,7 +3581,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -3674,7 +3674,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -3682,7 +3682,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -3690,7 +3690,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -3735,28 +3735,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -3841,7 +3841,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -3934,7 +3934,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -3942,7 +3942,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -3950,7 +3950,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -3995,28 +3995,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -4101,7 +4101,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -4194,7 +4194,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -4202,7 +4202,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -4210,7 +4210,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -4255,28 +4255,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -4361,7 +4361,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -4454,7 +4454,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -4462,7 +4462,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -4470,7 +4470,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -4515,28 +4515,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -4621,7 +4621,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -4714,7 +4714,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -4722,7 +4722,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -4730,7 +4730,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -4775,28 +4775,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -4881,7 +4881,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -4974,7 +4974,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -4982,7 +4982,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -4990,7 +4990,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -5035,28 +5035,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -5141,7 +5141,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -5234,7 +5234,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -5242,7 +5242,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -5250,7 +5250,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -5295,28 +5295,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>
@@ -5401,7 +5401,7 @@
                                             <a href="#">
                                                 <div class="small-box6 customer-application">
                                                     <div class="inner">
-                                                        <h3>25</h3>
+                                                        <h3>20</h3>
                                                     </div>
                                                     <span class="small-box-footer">Total Case</span>
                                                 </div>
@@ -5494,7 +5494,7 @@
                                                     <div class="row">
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">1,20000</h5>
+                                                                <h5 class="description-header blue">1,20000</h5>
                                                                 <span class="description-text">Total Amount</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -5502,7 +5502,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4 border-right">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header green">6,0000</h5>
                                                                 <span class="description-text">Total Recover</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -5510,7 +5510,7 @@
                                                         <!-- /.col -->
                                                         <div class="col-sm-4">
                                                             <div class="description-block">
-                                                                <h5 class="description-header">6,0000</h5>
+                                                                <h5 class="description-header red">6,0000</h5>
                                                                 <span class="description-text">Total Due</span>
                                                             </div>
                                                             <!-- /.description-block -->
@@ -5555,28 +5555,28 @@
                                                                 <td>Dr. Md. Nazmul Islam</td>
                                                                 <td>‭000073151‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Syed Joynal Abedin Alias</td>
                                                                 <td>‭000082935‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Ruhul Amin (Sadon)</td>
                                                                 <td>000134385‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Md. Zia Haider</td>
                                                                 <td>000165482‬</td>
                                                                 <td>Mem-01</td>
-                                                                <td><button type="button" onclick="window.location.href='../pages/report/rdb-loan-disbursement-report.html'"
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
                                                                         class="btn bg-navy btn-flat1">View</button></td>
                                                             </tr>
                                                         </tbody>

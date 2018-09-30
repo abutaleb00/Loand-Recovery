@@ -16,8 +16,30 @@
         <link rel="stylesheet" href="../resources/css/iclique.css">
         <link rel="stylesheet" href="../resources/css/skins/_all-skins.min.css">
         <link rel="stylesheet" href="../resources/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../resources/css/dataTables.searchHighlight.css">
         <!-- Google Font -->
         <link rel="stylesheet" href="../resources/js/datatables.net-bs/css/buttons.dataTables.min.css">
+		<style>
+		/* Ensure that the demo table scrolls */
+    th, td { white-space: nowrap; }
+    div.dataTables_wrapper {
+        margin: 0 auto;
+    }
+ 
+    div.container {
+        width: 80%;
+    }
+	div.dataTables_wrapper div.dataTables_info {
+    padding-top: 17px;
+    white-space: nowrap;
+    font-size: 12px;
+}
+div.dataTables_scrollBody table {
+    border-top: none;
+    margin-top: 14px !important;
+    margin-bottom: 0 !important;
+}
+		</style>
     </head>
     <body class="hold-transition skin-blue fixed sidebar-mini">
         <!-- Main wrapper -->
@@ -95,7 +117,7 @@
                                 </span>
                             </a>
                         </li>
-						<li class="active">
+						<li class="">
                             <a href="./teams.html">
                                 <i class="fa fa-group"></i> <span>Team Member</span>
                                 </span>
@@ -118,12 +140,1686 @@
 						  <h3 class="box-title">Customer Quarry Search</h3>
 						</div>
                         <div class="input-group input-group-sm">
-						<input type="text" class="form-control" placeholder="Enter Account Number/Customer ID">
+						<input type="text" class="form-control customSearch" id="customSearchBox" placeholder="Enter Account Number/Customer ID">
 							<span class="input-group-btn">
-							  <button type="button" class="btn btn-info btn-flat" onclick="window.location.href='./loan-customer-details.html'">Go!</button>
+							  <button type="button" class="btn btn-info btn-flat">Go!</button>
 							</span>
 					    </div>
 					    </div>
+							<div class="customediv" id="result">
+								<table id="users" class="table table-bordered table-striped">
+									<thead class="thead-dark">
+										<tr style="background-color: #3C8DBC; color: #ffffff;">
+											<th data-sortable="true">Sl</th>
+											<th>View</th>
+											<th>Assign</th>
+											<th data-sortable="true">Branch, Loan Wise</th>
+											<th data-sortable="true">Branch, SB A/C Wise</th>
+											<th data-sortable="true"> Name of Borrowers</th>
+											<th data-breakpoints="xs sm md">File No</th>
+											<th data-sortable="true">Loan A/C</th>
+											<th>Loan a/c Lending</th>
+											<th>SB A/c No</th>
+											<th>Match</th>
+											<th>Collector Aug'18</th>
+											<th>Supervisor</th>
+											<th>OS-31-Jul-18</th>
+											<th>EMI Amount</th>
+											<th>Overdue 31.07.18</th>
+											<th>ATE 31.07.18</th>
+											<th>Repayment Aug'18</th>
+											<th>End ATE</th>
+											<th>EMI Date</th>
+											<th>Status Dec'17</th>
+											<th>Status Jul'18</th>
+											<th>Product</th>
+											<th>Amount Disbursed</th>
+											<th>Staff List</th>
+											<th>Absconding File</th>
+											<th>Agent Name</th>
+											<th>Interest Rate</th>
+											<th>Loan A/C wise Zone</th>
+											<th>SB A/C wise Zone</th>
+											<th>Expiry</th>
+											<th>Disbursment Date</th>
+											<th>Expiry Date</th>
+											<th>EMI Date</th>
+											<th>CIF</th>
+											<th>End Of Moritorium Period</th>
+											<th>Contact No-Customer</th>
+											<th>Contact No- Guarantor</th>
+											<th>Rescheduled Month</th>
+											<th>RM</th>
+											<th>RM Code</th>
+											<th>Int Suspense & Accrued Int O/s  as per Schedule 31.07.18</th>
+											<th>>10<</th> <th>Remarks</th>
+											<th>Br. Code Loan Ac</th>
+											<th>Retail Br.</th>
+											<th>Collector Aug'18</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr data-expanded="true">
+											<td>101</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Basabo</td>
+											<td><a href="#">Basabo</a></td>
+											<td>Md. Gias Uddin</td>
+											<td>9098</td>
+											<td>045RT01151400001</td>
+											<td>045RT01151400001</td>
+											<td>0452070000292</td>
+											<td> - </td>
+											<td>50,000.00</td>
+											<td>Mem-01</td>
+											<td>Sup-01</td>
+											<td>1,400,058.38</td>
+											<td>64,620.86</td>
+											<td>141,539.45</td>
+											<td>2.19</td>
+											<td> - </td>
+											<td>3.19</td>
+											<td>15</td>
+											<td>NORM</td>
+											<td>Car</td>
+											<td>2,800,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>13.50%</td>
+											<td>DHK</td>
+											<td>DHK</td>
+											<td>0</td>
+											<td>20-May-2015</td>
+											<td>20-May-2020</td>
+											<td>15-May-2017</td>
+											<td>‭000031254‬</td>
+											<td>0</td>
+											<td>01911-386065</td>
+											<td>01912-179030</td>
+											<td>0</td>
+											<td>Md. Alem Islam</td>
+											<td>011020501923</td>
+											<td>40,280.90</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>045</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>102</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Feni</td>
+											<td><a href="#">Feni</a></td>
+											<td>Nazrul Islam Shohag</td>
+											<td>H-1235</td>
+											<td>028RT05162360001</td>
+											<td>028RT05162360001</td>
+											<td>0282050002377</td>
+											<td> - </td>
+											<td>100,000.00</td>
+											<td>Mem-02</td>
+											<td>Sup-01</td>
+											<td>2,911,701.41</td>
+											<td>45,950.10</td>
+											<td>77,047.66</td>
+											<td>1.68</td>
+											<td> - </td>
+											<td>2.68</td>
+											<td>25</td>
+											<td>NORM</td>
+											<td>Home</td>
+											<td>3,000,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>11.99%</td>
+											<td>NKH</td>
+											<td>NKH</td>
+											<td>0</td>
+											<td>23-Aug-2016</td>
+											<td>23-Aug-2026</td>
+											<td>25-Mar-2017</td>
+											<td>‭31313131‬‬</td>
+											<td>23-Feb-17</td>
+											<td>01812-311300</td>
+											<td>01711-374825</td>
+											<td>0</td>
+											<td>Delwar Hossain</td>
+											<td>016000502976</td>
+											<td>49,721.98</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>028</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>678</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Jubilee Road</td>
+											<td><a href="#">Jubilee Road</a></td>
+											<td>Sultan Salah Uddin</td>
+											<td>8692</td>
+											<td>023RT11142680001</td>
+											<td>023RT11142680001</td>
+											<td>0231020003284</td>
+											<td> - </td>
+											<td>12,277.82</td>
+											<td>Mem-05</td>
+											<td>Sup-02</td>
+											<td>158,073.04</td>
+											<td>12,490.87</td>
+											<td>213.88</td>
+											<td>0.02</td>
+											<td> - </td>
+											<td>1.02</td>
+											<td>25</td>
+											<td>SMA</td>
+											<td>Personal</td>
+											<td>500,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>17.00%</td>
+											<td>CTG</td>
+											<td>CTG</td>
+											<td>0</td>
+											<td>25-Sep-2014</td>
+											<td>25-Sep-2019</td>
+											<td>25-May-2017</td>
+											<td>000172353‬‬‬</td>
+											<td>0</td>
+											<td>01670-357992</td>
+											<td>01198-338255</td>
+											<td>0</td>
+											<td>Md. Athaur Rahman Chy</td>
+											<td>138</td>
+											<td>520.92</td>
+											<td>10 & <10</td>
+											<td>0</td>
+											<td>023</td>
+											<td> </td>
+											<td>Kamrul</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>101</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Basabo</td>
+											<td><a href="#">Basabo</a></td>
+											<td>Md. Gias Uddin</td>
+											<td>9098</td>
+											<td>045RT01151400001</td>
+											<td>045RT01151400001</td>
+											<td>0452070000292</td>
+											<td> - </td>
+											<td>50,000.00</td>
+											<td>Mem-01</td>
+											<td>Sup-01</td>
+											<td>1,400,058.38</td>
+											<td>64,620.86</td>
+											<td>141,539.45</td>
+											<td>2.19</td>
+											<td> - </td>
+											<td>3.19</td>
+											<td>15</td>
+											<td>NORM</td>
+											<td>Car</td>
+											<td>2,800,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>13.50%</td>
+											<td>DHK</td>
+											<td>DHK</td>
+											<td>0</td>
+											<td>20-May-2015</td>
+											<td>20-May-2020</td>
+											<td>15-May-2017</td>
+											<td>‭000031254‬</td>
+											<td>0</td>
+											<td>01911-386065</td>
+											<td>01912-179030</td>
+											<td>0</td>
+											<td>Md. Alem Islam</td>
+											<td>011020501923</td>
+											<td>40,280.90</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>045</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>102</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Feni</td>
+											<td><a href="#">Feni</a></td>
+											<td>Nazrul Islam Shohag</td>
+											<td>H-1235</td>
+											<td>028RT05162360001</td>
+											<td>028RT05162360001</td>
+											<td>0282050002377</td>
+											<td> - </td>
+											<td>100,000.00</td>
+											<td>Mem-02</td>
+											<td>Sup-01</td>
+											<td>2,911,701.41</td>
+											<td>45,950.10</td>
+											<td>77,047.66</td>
+											<td>1.68</td>
+											<td> - </td>
+											<td>2.68</td>
+											<td>25</td>
+											<td>NORM</td>
+											<td>Home</td>
+											<td>3,000,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>11.99%</td>
+											<td>NKH</td>
+											<td>NKH</td>
+											<td>0</td>
+											<td>23-Aug-2016</td>
+											<td>23-Aug-2026</td>
+											<td>25-Mar-2017</td>
+											<td>‭000031313‬‬</td>
+											<td>23-Feb-17</td>
+											<td>01812-311300</td>
+											<td>01711-374825</td>
+											<td>0</td>
+											<td>Delwar Hossain</td>
+											<td>016000502976</td>
+											<td>49,721.98</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>028</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>678</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Jubilee Road</td>
+											<td><a href="#">Jubilee Road</a></td>
+											<td>Sultan Salah Uddin</td>
+											<td>8692</td>
+											<td>023RT11142680001</td>
+											<td>023RT11142680001</td>
+											<td>0231020003284</td>
+											<td> - </td>
+											<td>12,277.82</td>
+											<td>Mem-05</td>
+											<td>Sup-02</td>
+											<td>158,073.04</td>
+											<td>12,490.87</td>
+											<td>213.88</td>
+											<td>0.02</td>
+											<td> - </td>
+											<td>1.02</td>
+											<td>25</td>
+											<td>SMA</td>
+											<td>Personal</td>
+											<td>500,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>17.00%</td>
+											<td>CTG</td>
+											<td>CTG</td>
+											<td>0</td>
+											<td>25-Sep-2014</td>
+											<td>25-Sep-2019</td>
+											<td>25-May-2017</td>
+											<td>000172353‬‬‬</td>
+											<td>0</td>
+											<td>01670-357992</td>
+											<td>01198-338255</td>
+											<td>0</td>
+											<td>Md. Athaur Rahman Chy</td>
+											<td>138</td>
+											<td>520.92</td>
+											<td>10 & <10</td>
+											<td>0</td>
+											<td>023</td>
+											<td> </td>
+											<td>Kamrul</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>101</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Basabo</td>
+											<td><a href="#">Basabo</a></td>
+											<td>Md. Gias Uddin</td>
+											<td>9098</td>
+											<td>045RT01151400001</td>
+											<td>045RT01151400001</td>
+											<td>0452070000292</td>
+											<td> - </td>
+											<td>50,000.00</td>
+											<td>Mem-01</td>
+											<td>Sup-01</td>
+											<td>1,400,058.38</td>
+											<td>64,620.86</td>
+											<td>141,539.45</td>
+											<td>2.19</td>
+											<td> - </td>
+											<td>3.19</td>
+											<td>15</td>
+											<td>NORM</td>
+											<td>Car</td>
+											<td>2,800,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>13.50%</td>
+											<td>DHK</td>
+											<td>DHK</td>
+											<td>0</td>
+											<td>20-May-2015</td>
+											<td>20-May-2020</td>
+											<td>15-May-2017</td>
+											<td>‭000031254‬</td>
+											<td>0</td>
+											<td>01911-386065</td>
+											<td>01912-179030</td>
+											<td>0</td>
+											<td>Md. Alem Islam</td>
+											<td>011020501923</td>
+											<td>40,280.90</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>045</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>102</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Feni</td>
+											<td><a href="#">Feni</a></td>
+											<td>Nazrul Islam Shohag</td>
+											<td>H-1235</td>
+											<td>028RT05162360001</td>
+											<td>028RT05162360001</td>
+											<td>0282050002377</td>
+											<td> - </td>
+											<td>100,000.00</td>
+											<td>Mem-02</td>
+											<td>Sup-01</td>
+											<td>2,911,701.41</td>
+											<td>45,950.10</td>
+											<td>77,047.66</td>
+											<td>1.68</td>
+											<td> - </td>
+											<td>2.68</td>
+											<td>25</td>
+											<td>NORM</td>
+											<td>Home</td>
+											<td>3,000,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>11.99%</td>
+											<td>NKH</td>
+											<td>NKH</td>
+											<td>0</td>
+											<td>23-Aug-2016</td>
+											<td>23-Aug-2026</td>
+											<td>25-Mar-2017</td>
+											<td>‭000031313‬‬</td>
+											<td>23-Feb-17</td>
+											<td>01812-311300</td>
+											<td>01711-374825</td>
+											<td>0</td>
+											<td>Delwar Hossain</td>
+											<td>016000502976</td>
+											<td>49,721.98</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>028</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>678</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Jubilee Road</td>
+											<td><a href="#">Jubilee Road</a></td>
+											<td>Sultan Salah Uddin</td>
+											<td>8692</td>
+											<td>023RT11142680001</td>
+											<td>023RT11142680001</td>
+											<td>0231020003284</td>
+											<td> - </td>
+											<td>12,277.82</td>
+											<td>Mem-05</td>
+											<td>Sup-02</td>
+											<td>158,073.04</td>
+											<td>12,490.87</td>
+											<td>213.88</td>
+											<td>0.02</td>
+											<td> - </td>
+											<td>1.02</td>
+											<td>25</td>
+											<td>SMA</td>
+											<td>Personal</td>
+											<td>500,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>17.00%</td>
+											<td>CTG</td>
+											<td>CTG</td>
+											<td>0</td>
+											<td>25-Sep-2014</td>
+											<td>25-Sep-2019</td>
+											<td>25-May-2017</td>
+											<td>000172353‬‬‬</td>
+											<td>0</td>
+											<td>01670-357992</td>
+											<td>01198-338255</td>
+											<td>0</td>
+											<td>Md. Athaur Rahman Chy</td>
+											<td>138</td>
+											<td>520.92</td>
+											<td>10 & <10</td>
+											<td>0</td>
+											<td>023</td>
+											<td> </td>
+											<td>Kamrul</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>101</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Basabo</td>
+											<td><a href="#">Basabo</a></td>
+											<td>Md. Gias Uddin</td>
+											<td>9098</td>
+											<td>045RT01151400001</td>
+											<td>045RT01151400001</td>
+											<td>0452070000292</td>
+											<td> - </td>
+											<td>50,000.00</td>
+											<td>Mem-01</td>
+											<td>Sup-01</td>
+											<td>1,400,058.38</td>
+											<td>64,620.86</td>
+											<td>141,539.45</td>
+											<td>2.19</td>
+											<td> - </td>
+											<td>3.19</td>
+											<td>15</td>
+											<td>NORM</td>
+											<td>Car</td>
+											<td>2,800,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>13.50%</td>
+											<td>DHK</td>
+											<td>DHK</td>
+											<td>0</td>
+											<td>20-May-2015</td>
+											<td>20-May-2020</td>
+											<td>15-May-2017</td>
+											<td>‭000031254‬</td>
+											<td>0</td>
+											<td>01911-386065</td>
+											<td>01912-179030</td>
+											<td>0</td>
+											<td>Md. Alem Islam</td>
+											<td>011020501923</td>
+											<td>40,280.90</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>045</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>102</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Feni</td>
+											<td><a href="#">Feni</a></td>
+											<td>Nazrul Islam Shohag</td>
+											<td>H-1235</td>
+											<td>028RT05162360001</td>
+											<td>028RT05162360001</td>
+											<td>0282050002377</td>
+											<td> - </td>
+											<td>100,000.00</td>
+											<td>Mem-02</td>
+											<td>Sup-01</td>
+											<td>2,911,701.41</td>
+											<td>45,950.10</td>
+											<td>77,047.66</td>
+											<td>1.68</td>
+											<td> - </td>
+											<td>2.68</td>
+											<td>25</td>
+											<td>NORM</td>
+											<td>Home</td>
+											<td>3,000,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>11.99%</td>
+											<td>NKH</td>
+											<td>NKH</td>
+											<td>0</td>
+											<td>23-Aug-2016</td>
+											<td>23-Aug-2026</td>
+											<td>25-Mar-2017</td>
+											<td>‭000031313‬‬</td>
+											<td>23-Feb-17</td>
+											<td>01812-311300</td>
+											<td>01711-374825</td>
+											<td>0</td>
+											<td>Delwar Hossain</td>
+											<td>016000502976</td>
+											<td>49,721.98</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>028</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>678</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Jubilee Road</td>
+											<td><a href="#">Jubilee Road</a></td>
+											<td>Sultan Salah Uddin</td>
+											<td>8692</td>
+											<td>023RT11142680001</td>
+											<td>023RT11142680001</td>
+											<td>0231020003284</td>
+											<td> - </td>
+											<td>12,277.82</td>
+											<td>Mem-05</td>
+											<td>Sup-02</td>
+											<td>158,073.04</td>
+											<td>12,490.87</td>
+											<td>213.88</td>
+											<td>0.02</td>
+											<td> - </td>
+											<td>1.02</td>
+											<td>25</td>
+											<td>SMA</td>
+											<td>Personal</td>
+											<td>500,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>17.00%</td>
+											<td>CTG</td>
+											<td>CTG</td>
+											<td>0</td>
+											<td>25-Sep-2014</td>
+											<td>25-Sep-2019</td>
+											<td>25-May-2017</td>
+											<td>000172353‬‬‬</td>
+											<td>0</td>
+											<td>01670-357992</td>
+											<td>01198-338255</td>
+											<td>0</td>
+											<td>Md. Athaur Rahman Chy</td>
+											<td>138</td>
+											<td>520.92</td>
+											<td>10 & <10</td>
+											<td>0</td>
+											<td>023</td>
+											<td> </td>
+											<td>Kamrul</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>101</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Basabo</td>
+											<td><a href="#">Basabo</a></td>
+											<td>Md. Gias Uddin</td>
+											<td>9098</td>
+											<td>045RT01151400001</td>
+											<td>045RT01151400001</td>
+											<td>0452070000292</td>
+											<td> - </td>
+											<td>50,000.00</td>
+											<td>Mem-01</td>
+											<td>Sup-01</td>
+											<td>1,400,058.38</td>
+											<td>64,620.86</td>
+											<td>141,539.45</td>
+											<td>2.19</td>
+											<td> - </td>
+											<td>3.19</td>
+											<td>15</td>
+											<td>NORM</td>
+											<td>Car</td>
+											<td>2,800,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>13.50%</td>
+											<td>DHK</td>
+											<td>DHK</td>
+											<td>0</td>
+											<td>20-May-2015</td>
+											<td>20-May-2020</td>
+											<td>15-May-2017</td>
+											<td>‭000031254‬</td>
+											<td>0</td>
+											<td>01911-386065</td>
+											<td>01912-179030</td>
+											<td>0</td>
+											<td>Md. Alem Islam</td>
+											<td>011020501923</td>
+											<td>40,280.90</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>045</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>102</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Feni</td>
+											<td><a href="#">Feni</a></td>
+											<td>Nazrul Islam Shohag</td>
+											<td>H-1235</td>
+											<td>028RT05162360001</td>
+											<td>028RT05162360001</td>
+											<td>0282050002377</td>
+											<td> - </td>
+											<td>100,000.00</td>
+											<td>Mem-02</td>
+											<td>Sup-01</td>
+											<td>2,911,701.41</td>
+											<td>45,950.10</td>
+											<td>77,047.66</td>
+											<td>1.68</td>
+											<td> - </td>
+											<td>2.68</td>
+											<td>25</td>
+											<td>NORM</td>
+											<td>Home</td>
+											<td>3,000,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>11.99%</td>
+											<td>NKH</td>
+											<td>NKH</td>
+											<td>0</td>
+											<td>23-Aug-2016</td>
+											<td>23-Aug-2026</td>
+											<td>25-Mar-2017</td>
+											<td>‭000031313‬‬</td>
+											<td>23-Feb-17</td>
+											<td>01812-311300</td>
+											<td>01711-374825</td>
+											<td>0</td>
+											<td>Delwar Hossain</td>
+											<td>016000502976</td>
+											<td>49,721.98</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>028</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>678</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Jubilee Road</td>
+											<td><a href="#">Jubilee Road</a></td>
+											<td>Sultan Salah Uddin</td>
+											<td>8692</td>
+											<td>023RT11142680001</td>
+											<td>023RT11142680001</td>
+											<td>0231020003284</td>
+											<td> - </td>
+											<td>12,277.82</td>
+											<td>Mem-05</td>
+											<td>Sup-02</td>
+											<td>158,073.04</td>
+											<td>12,490.87</td>
+											<td>213.88</td>
+											<td>0.02</td>
+											<td> - </td>
+											<td>1.02</td>
+											<td>25</td>
+											<td>SMA</td>
+											<td>Personal</td>
+											<td>500,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>17.00%</td>
+											<td>CTG</td>
+											<td>CTG</td>
+											<td>0</td>
+											<td>25-Sep-2014</td>
+											<td>25-Sep-2019</td>
+											<td>25-May-2017</td>
+											<td>000172353‬‬‬</td>
+											<td>0</td>
+											<td>01670-357992</td>
+											<td>01198-338255</td>
+											<td>0</td>
+											<td>Md. Athaur Rahman Chy</td>
+											<td>138</td>
+											<td>520.92</td>
+											<td>10 & <10</td>
+											<td>0</td>
+											<td>023</td>
+											<td> </td>
+											<td>Kamrul</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>101</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Basabo</td>
+											<td><a href="#">Basabo</a></td>
+											<td>Md. Gias Uddin</td>
+											<td>9098</td>
+											<td>045RT01151400001</td>
+											<td>045RT01151400001</td>
+											<td>0452070000292</td>
+											<td> - </td>
+											<td>50,000.00</td>
+											<td>Mem-01</td>
+											<td>Sup-01</td>
+											<td>1,400,058.38</td>
+											<td>64,620.86</td>
+											<td>141,539.45</td>
+											<td>2.19</td>
+											<td> - </td>
+											<td>3.19</td>
+											<td>15</td>
+											<td>NORM</td>
+											<td>Car</td>
+											<td>2,800,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>13.50%</td>
+											<td>DHK</td>
+											<td>DHK</td>
+											<td>0</td>
+											<td>20-May-2015</td>
+											<td>20-May-2020</td>
+											<td>15-May-2017</td>
+											<td>‭000031254‬</td>
+											<td>0</td>
+											<td>01911-386065</td>
+											<td>01912-179030</td>
+											<td>0</td>
+											<td>Md. Alem Islam</td>
+											<td>011020501923</td>
+											<td>40,280.90</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>045</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>102</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Feni</td>
+											<td><a href="#">Feni</a></td>
+											<td>Nazrul Islam Shohag</td>
+											<td>H-1235</td>
+											<td>028RT05162360001</td>
+											<td>028RT05162360001</td>
+											<td>0282050002377</td>
+											<td> - </td>
+											<td>100,000.00</td>
+											<td>Mem-02</td>
+											<td>Sup-01</td>
+											<td>2,911,701.41</td>
+											<td>45,950.10</td>
+											<td>77,047.66</td>
+											<td>1.68</td>
+											<td> - </td>
+											<td>2.68</td>
+											<td>25</td>
+											<td>NORM</td>
+											<td>Home</td>
+											<td>3,000,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>11.99%</td>
+											<td>NKH</td>
+											<td>NKH</td>
+											<td>0</td>
+											<td>23-Aug-2016</td>
+											<td>23-Aug-2026</td>
+											<td>25-Mar-2017</td>
+											<td>‭000031313‬‬</td>
+											<td>23-Feb-17</td>
+											<td>01812-311300</td>
+											<td>01711-374825</td>
+											<td>0</td>
+											<td>Delwar Hossain</td>
+											<td>016000502976</td>
+											<td>49,721.98</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>028</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>678</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Jubilee Road</td>
+											<td><a href="#">Jubilee Road</a></td>
+											<td>Sultan Salah Uddin</td>
+											<td>8692</td>
+											<td>023RT11142680001</td>
+											<td>023RT11142680001</td>
+											<td>0231020003284</td>
+											<td> - </td>
+											<td>12,277.82</td>
+											<td>Mem-05</td>
+											<td>Sup-02</td>
+											<td>158,073.04</td>
+											<td>12,490.87</td>
+											<td>213.88</td>
+											<td>0.02</td>
+											<td> - </td>
+											<td>1.02</td>
+											<td>25</td>
+											<td>SMA</td>
+											<td>Personal</td>
+											<td>500,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>17.00%</td>
+											<td>CTG</td>
+											<td>CTG</td>
+											<td>0</td>
+											<td>25-Sep-2014</td>
+											<td>25-Sep-2019</td>
+											<td>25-May-2017</td>
+											<td>000172353‬‬‬</td>
+											<td>0</td>
+											<td>01670-357992</td>
+											<td>01198-338255</td>
+											<td>0</td>
+											<td>Md. Athaur Rahman Chy</td>
+											<td>138</td>
+											<td>520.92</td>
+											<td>10 & <10</td>
+											<td>0</td>
+											<td>023</td>
+											<td> </td>
+											<td>Kamrul</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>101</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Basabo</td>
+											<td><a href="#">Basabo</a></td>
+											<td>Md. Gias Uddin</td>
+											<td>9098</td>
+											<td>045RT01151400001</td>
+											<td>045RT01151400001</td>
+											<td>0452070000292</td>
+											<td> - </td>
+											<td>50,000.00</td>
+											<td>Mem-01</td>
+											<td>Sup-01</td>
+											<td>1,400,058.38</td>
+											<td>64,620.86</td>
+											<td>141,539.45</td>
+											<td>2.19</td>
+											<td> - </td>
+											<td>3.19</td>
+											<td>15</td>
+											<td>NORM</td>
+											<td>Car</td>
+											<td>2,800,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>13.50%</td>
+											<td>DHK</td>
+											<td>DHK</td>
+											<td>0</td>
+											<td>20-May-2015</td>
+											<td>20-May-2020</td>
+											<td>15-May-2017</td>
+											<td>‭000031254‬</td>
+											<td>0</td>
+											<td>01911-386065</td>
+											<td>01912-179030</td>
+											<td>0</td>
+											<td>Md. Alem Islam</td>
+											<td>011020501923</td>
+											<td>40,280.90</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>045</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>102</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Feni</td>
+											<td><a href="#">Feni</a></td>
+											<td>Nazrul Islam Shohag</td>
+											<td>H-1235</td>
+											<td>028RT05162360001</td>
+											<td>028RT05162360001</td>
+											<td>0282050002377</td>
+											<td> - </td>
+											<td>100,000.00</td>
+											<td>Mem-02</td>
+											<td>Sup-01</td>
+											<td>2,911,701.41</td>
+											<td>45,950.10</td>
+											<td>77,047.66</td>
+											<td>1.68</td>
+											<td> - </td>
+											<td>2.68</td>
+											<td>25</td>
+											<td>NORM</td>
+											<td>Home</td>
+											<td>3,000,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>11.99%</td>
+											<td>NKH</td>
+											<td>NKH</td>
+											<td>0</td>
+											<td>23-Aug-2016</td>
+											<td>23-Aug-2026</td>
+											<td>25-Mar-2017</td>
+											<td>‭000031313‬‬</td>
+											<td>23-Feb-17</td>
+											<td>01812-311300</td>
+											<td>01711-374825</td>
+											<td>0</td>
+											<td>Delwar Hossain</td>
+											<td>016000502976</td>
+											<td>49,721.98</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>028</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>678</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Jubilee Road</td>
+											<td><a href="#">Jubilee Road</a></td>
+											<td>Sultan Salah Uddin</td>
+											<td>8692</td>
+											<td>023RT11142680001</td>
+											<td>023RT11142680001</td>
+											<td>0231020003284</td>
+											<td> - </td>
+											<td>12,277.82</td>
+											<td>Mem-05</td>
+											<td>Sup-02</td>
+											<td>158,073.04</td>
+											<td>12,490.87</td>
+											<td>213.88</td>
+											<td>0.02</td>
+											<td> - </td>
+											<td>1.02</td>
+											<td>25</td>
+											<td>SMA</td>
+											<td>Personal</td>
+											<td>500,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>17.00%</td>
+											<td>CTG</td>
+											<td>CTG</td>
+											<td>0</td>
+											<td>25-Sep-2014</td>
+											<td>25-Sep-2019</td>
+											<td>25-May-2017</td>
+											<td>000172353‬‬‬</td>
+											<td>0</td>
+											<td>01670-357992</td>
+											<td>01198-338255</td>
+											<td>0</td>
+											<td>Md. Athaur Rahman Chy</td>
+											<td>138</td>
+											<td>520.92</td>
+											<td>10 & <10</td>
+											<td>0</td>
+											<td>023</td>
+											<td> </td>
+											<td>Kamrul</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>101</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Basabo</td>
+											<td><a href="#">Basabo</a></td>
+											<td>Md. Gias Uddin</td>
+											<td>9098</td>
+											<td>045RT01151400001</td>
+											<td>045RT01151400001</td>
+											<td>0452070000292</td>
+											<td> - </td>
+											<td>50,000.00</td>
+											<td>Mem-01</td>
+											<td>Sup-01</td>
+											<td>1,400,058.38</td>
+											<td>64,620.86</td>
+											<td>141,539.45</td>
+											<td>2.19</td>
+											<td> - </td>
+											<td>3.19</td>
+											<td>15</td>
+											<td>NORM</td>
+											<td>Car</td>
+											<td>2,800,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>13.50%</td>
+											<td>DHK</td>
+											<td>DHK</td>
+											<td>0</td>
+											<td>20-May-2015</td>
+											<td>20-May-2020</td>
+											<td>15-May-2017</td>
+											<td>‭000031254‬</td>
+											<td>0</td>
+											<td>01911-386065</td>
+											<td>01912-179030</td>
+											<td>0</td>
+											<td>Md. Alem Islam</td>
+											<td>011020501923</td>
+											<td>40,280.90</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>045</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>102</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Feni</td>
+											<td><a href="#">Feni</a></td>
+											<td>Nazrul Islam Shohag</td>
+											<td>H-1235</td>
+											<td>028RT05162360001</td>
+											<td>028RT05162360001</td>
+											<td>0282050002377</td>
+											<td> - </td>
+											<td>100,000.00</td>
+											<td>Mem-02</td>
+											<td>Sup-01</td>
+											<td>2,911,701.41</td>
+											<td>45,950.10</td>
+											<td>77,047.66</td>
+											<td>1.68</td>
+											<td> - </td>
+											<td>2.68</td>
+											<td>25</td>
+											<td>NORM</td>
+											<td>Home</td>
+											<td>3,000,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>11.99%</td>
+											<td>NKH</td>
+											<td>NKH</td>
+											<td>0</td>
+											<td>23-Aug-2016</td>
+											<td>23-Aug-2026</td>
+											<td>25-Mar-2017</td>
+											<td>‭000031313‬‬</td>
+											<td>23-Feb-17</td>
+											<td>01812-311300</td>
+											<td>01711-374825</td>
+											<td>0</td>
+											<td>Delwar Hossain</td>
+											<td>016000502976</td>
+											<td>49,721.98</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>028</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>678</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Jubilee Road</td>
+											<td><a href="#">Jubilee Road</a></td>
+											<td>Sultan Salah Uddin</td>
+											<td>8692</td>
+											<td>023RT11142680001</td>
+											<td>023RT11142680001</td>
+											<td>0231020003284</td>
+											<td> - </td>
+											<td>12,277.82</td>
+											<td>Mem-05</td>
+											<td>Sup-02</td>
+											<td>158,073.04</td>
+											<td>12,490.87</td>
+											<td>213.88</td>
+											<td>0.02</td>
+											<td> - </td>
+											<td>1.02</td>
+											<td>25</td>
+											<td>SMA</td>
+											<td>Personal</td>
+											<td>500,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>17.00%</td>
+											<td>CTG</td>
+											<td>CTG</td>
+											<td>0</td>
+											<td>25-Sep-2014</td>
+											<td>25-Sep-2019</td>
+											<td>25-May-2017</td>
+											<td>000172353‬‬‬</td>
+											<td>0</td>
+											<td>01670-357992</td>
+											<td>01198-338255</td>
+											<td>0</td>
+											<td>Md. Athaur Rahman Chy</td>
+											<td>138</td>
+											<td>520.92</td>
+											<td>10 & <10</td>
+											<td>0</td>
+											<td>023</td>
+											<td> </td>
+											<td>Kamrul</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>101</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Basabo</td>
+											<td><a href="#">Basabo</a></td>
+											<td>Md. Gias Uddin</td>
+											<td>9098</td>
+											<td>045RT01151400001</td>
+											<td>045RT01151400001</td>
+											<td>0452070000292</td>
+											<td> - </td>
+											<td>50,000.00</td>
+											<td>Mem-01</td>
+											<td>Sup-01</td>
+											<td>1,400,058.38</td>
+											<td>64,620.86</td>
+											<td>141,539.45</td>
+											<td>2.19</td>
+											<td> - </td>
+											<td>3.19</td>
+											<td>15</td>
+											<td>NORM</td>
+											<td>Car</td>
+											<td>2,800,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>13.50%</td>
+											<td>DHK</td>
+											<td>DHK</td>
+											<td>0</td>
+											<td>20-May-2015</td>
+											<td>20-May-2020</td>
+											<td>15-May-2017</td>
+											<td>‭000031254‬</td>
+											<td>0</td>
+											<td>01911-386065</td>
+											<td>01912-179030</td>
+											<td>0</td>
+											<td>Md. Alem Islam</td>
+											<td>011020501923</td>
+											<td>40,280.90</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>045</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>102</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Feni</td>
+											<td><a href="#">Feni</a></td>
+											<td>Nazrul Islam Shohag</td>
+											<td>H-1235</td>
+											<td>028RT05162360001</td>
+											<td>028RT05162360001</td>
+											<td>0282050002377</td>
+											<td> - </td>
+											<td>100,000.00</td>
+											<td>Mem-02</td>
+											<td>Sup-01</td>
+											<td>2,911,701.41</td>
+											<td>45,950.10</td>
+											<td>77,047.66</td>
+											<td>1.68</td>
+											<td> - </td>
+											<td>2.68</td>
+											<td>25</td>
+											<td>NORM</td>
+											<td>Home</td>
+											<td>3,000,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>11.99%</td>
+											<td>NKH</td>
+											<td>NKH</td>
+											<td>0</td>
+											<td>23-Aug-2016</td>
+											<td>23-Aug-2026</td>
+											<td>25-Mar-2017</td>
+											<td>‭000031313‬‬</td>
+											<td>23-Feb-17</td>
+											<td>01812-311300</td>
+											<td>01711-374825</td>
+											<td>0</td>
+											<td>Delwar Hossain</td>
+											<td>016000502976</td>
+											<td>49,721.98</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>028</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>678</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Jubilee Road</td>
+											<td><a href="#">Jubilee Road</a></td>
+											<td>Sultan Salah Uddin</td>
+											<td>8692</td>
+											<td>023RT11142680001</td>
+											<td>023RT11142680001</td>
+											<td>0231020003284</td>
+											<td> - </td>
+											<td>12,277.82</td>
+											<td>Mem-05</td>
+											<td>Sup-02</td>
+											<td>158,073.04</td>
+											<td>12,490.87</td>
+											<td>213.88</td>
+											<td>0.02</td>
+											<td> - </td>
+											<td>1.02</td>
+											<td>25</td>
+											<td>SMA</td>
+											<td>Personal</td>
+											<td>500,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>17.00%</td>
+											<td>CTG</td>
+											<td>CTG</td>
+											<td>0</td>
+											<td>25-Sep-2014</td>
+											<td>25-Sep-2019</td>
+											<td>25-May-2017</td>
+											<td>000172353‬‬‬</td>
+											<td>0</td>
+											<td>01670-357992</td>
+											<td>01198-338255</td>
+											<td>0</td>
+											<td>Md. Athaur Rahman Chy</td>
+											<td>138</td>
+											<td>520.92</td>
+											<td>10 & <10</td>
+											<td>0</td>
+											<td>023</td>
+											<td> </td>
+											<td>Kamrul</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>101</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Basabo</td>
+											<td><a href="#">Basabo</a></td>
+											<td>Md. Gias Uddin</td>
+											<td>9098</td>
+											<td>045RT01151400001</td>
+											<td>045RT01151400001</td>
+											<td>0452070000292</td>
+											<td> - </td>
+											<td>50,000.00</td>
+											<td>Mem-01</td>
+											<td>Sup-01</td>
+											<td>1,400,058.38</td>
+											<td>64,620.86</td>
+											<td>141,539.45</td>
+											<td>2.19</td>
+											<td> - </td>
+											<td>3.19</td>
+											<td>15</td>
+											<td>NORM</td>
+											<td>Car</td>
+											<td>2,800,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>13.50%</td>
+											<td>DHK</td>
+											<td>DHK</td>
+											<td>0</td>
+											<td>20-May-2015</td>
+											<td>20-May-2020</td>
+											<td>15-May-2017</td>
+											<td>‭000031254‬</td>
+											<td>0</td>
+											<td>01911-386065</td>
+											<td>01912-179030</td>
+											<td>0</td>
+											<td>Md. Alem Islam</td>
+											<td>011020501923</td>
+											<td>40,280.90</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>045</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>102</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Feni</td>
+											<td><a href="#">Feni</a></td>
+											<td>Nazrul Islam Shohag</td>
+											<td>H-1235</td>
+											<td>028RT05162360001</td>
+											<td>028RT05162360001</td>
+											<td>0282050002377</td>
+											<td> - </td>
+											<td>100,000.00</td>
+											<td>Mem-02</td>
+											<td>Sup-01</td>
+											<td>2,911,701.41</td>
+											<td>45,950.10</td>
+											<td>77,047.66</td>
+											<td>1.68</td>
+											<td> - </td>
+											<td>2.68</td>
+											<td>25</td>
+											<td>NORM</td>
+											<td>Home</td>
+											<td>3,000,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>11.99%</td>
+											<td>NKH</td>
+											<td>NKH</td>
+											<td>0</td>
+											<td>23-Aug-2016</td>
+											<td>23-Aug-2026</td>
+											<td>25-Mar-2017</td>
+											<td>‭000031313‬‬</td>
+											<td>23-Feb-17</td>
+											<td>01812-311300</td>
+											<td>01711-374825</td>
+											<td>0</td>
+											<td>Delwar Hossain</td>
+											<td>016000502976</td>
+											<td>49,721.98</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>028</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>678</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Jubilee Road</td>
+											<td><a href="#">Jubilee Road</a></td>
+											<td>Sultan Salah Uddin</td>
+											<td>8692</td>
+											<td>023RT11142680001</td>
+											<td>023RT11142680001</td>
+											<td>0231020003284</td>
+											<td> - </td>
+											<td>12,277.82</td>
+											<td>Mem-05</td>
+											<td>Sup-02</td>
+											<td>158,073.04</td>
+											<td>12,490.87</td>
+											<td>213.88</td>
+											<td>0.02</td>
+											<td> - </td>
+											<td>1.02</td>
+											<td>25</td>
+											<td>SMA</td>
+											<td>Personal</td>
+											<td>500,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>17.00%</td>
+											<td>CTG</td>
+											<td>CTG</td>
+											<td>0</td>
+											<td>25-Sep-2014</td>
+											<td>25-Sep-2019</td>
+											<td>25-May-2017</td>
+											<td>000172353‬‬‬</td>
+											<td>0</td>
+											<td>01670-357992</td>
+											<td>01198-338255</td>
+											<td>0</td>
+											<td>Md. Athaur Rahman Chy</td>
+											<td>138</td>
+											<td>520.92</td>
+											<td>10 & <10</td>
+											<td>0</td>
+											<td>023</td>
+											<td> </td>
+											<td>Kamrul</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>101</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Basabo</td>
+											<td><a href="#">Basabo</a></td>
+											<td>Md. Gias Uddin</td>
+											<td>9098</td>
+											<td>045RT01151400001</td>
+											<td>045RT01151400001</td>
+											<td>0452070000292</td>
+											<td> - </td>
+											<td>50,000.00</td>
+											<td>Mem-01</td>
+											<td>Sup-01</td>
+											<td>1,400,058.38</td>
+											<td>64,620.86</td>
+											<td>141,539.45</td>
+											<td>2.19</td>
+											<td> - </td>
+											<td>3.19</td>
+											<td>15</td>
+											<td>NORM</td>
+											<td>Car</td>
+											<td>2,800,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>13.50%</td>
+											<td>DHK</td>
+											<td>DHK</td>
+											<td>0</td>
+											<td>20-May-2015</td>
+											<td>20-May-2020</td>
+											<td>15-May-2017</td>
+											<td>‭000031254‬</td>
+											<td>0</td>
+											<td>01911-386065</td>
+											<td>01912-179030</td>
+											<td>0</td>
+											<td>Md. Alem Islam</td>
+											<td>011020501923</td>
+											<td>40,280.90</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>045</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>102</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Feni</td>
+											<td><a href="#">Feni</a></td>
+											<td>Nazrul Islam Shohag</td>
+											<td>H-1235</td>
+											<td>028RT05162360001</td>
+											<td>028RT05162360001</td>
+											<td>0282050002377</td>
+											<td> - </td>
+											<td>100,000.00</td>
+											<td>Mem-02</td>
+											<td>Sup-01</td>
+											<td>2,911,701.41</td>
+											<td>45,950.10</td>
+											<td>77,047.66</td>
+											<td>1.68</td>
+											<td> - </td>
+											<td>2.68</td>
+											<td>25</td>
+											<td>NORM</td>
+											<td>Home</td>
+											<td>3,000,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>11.99%</td>
+											<td>NKH</td>
+											<td>NKH</td>
+											<td>0</td>
+											<td>23-Aug-2016</td>
+											<td>23-Aug-2026</td>
+											<td>25-Mar-2017</td>
+											<td>‭000031313‬‬</td>
+											<td>23-Feb-17</td>
+											<td>01812-311300</td>
+											<td>01711-374825</td>
+											<td>0</td>
+											<td>Delwar Hossain</td>
+											<td>016000502976</td>
+											<td>49,721.98</td>
+											<td>>10</td>
+											<td>0</td>
+											<td>028</td>
+											<td> </td>
+											<td>Altaf</td>
+										</tr>
+										<tr data-expanded="true">
+											<td>678</td>
+											<td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'" class="btn bg-navy btn-flat1">View</button></td>
+											<td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Assign</button></td>
+											<td>Jubilee Road</td>
+											<td><a href="#">Jubilee Road</a></td>
+											<td>Sultan Salah Uddin</td>
+											<td>8692</td>
+											<td>023RT11142680001</td>
+											<td>023RT11142680001</td>
+											<td>0231020003284</td>
+											<td> - </td>
+											<td>12,277.82</td>
+											<td>Mem-05</td>
+											<td>Sup-02</td>
+											<td>158,073.04</td>
+											<td>12,490.87</td>
+											<td>213.88</td>
+											<td>0.02</td>
+											<td> - </td>
+											<td>1.02</td>
+											<td>25</td>
+											<td>SMA</td>
+											<td>Personal</td>
+											<td>500,000</td>
+											<td> - </td>
+											<td>0</td>
+											<td> - </td>
+											<td>17.00%</td>
+											<td>CTG</td>
+											<td>CTG</td>
+											<td>0</td>
+											<td>25-Sep-2014</td>
+											<td>25-Sep-2019</td>
+											<td>25-May-2017</td>
+											<td>000172353‬‬‬</td>
+											<td>0</td>
+											<td>01670-357992</td>
+											<td>01198-338255</td>
+											<td>0</td>
+											<td>Md. Athaur Rahman Chy</td>
+											<td>138</td>
+											<td>520.92</td>
+											<td>10 & <10</td>
+											<td>0</td>
+											<td>023</td>
+											<td> </td>
+											<td>Kamrul</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- /.Table -->
+							</div>
 					    </div>
 					    </div>
                     </div>
@@ -149,5 +1845,50 @@
         <script src="../resources/js/fastclick.js"></script>
         <!-- iclique App -->
         <script src="../resources/js/iclique.min.js"></script>
+		<script src="../resources/js/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="../resources/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../resources/js/datatables.net/js/vfs_fonts.js"></script>
+        <script src="../resources/js/datatables.net/js/pdfmake.min.js"></script>
+        <script src="../resources/js/datatables.net/js/jszip.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.html5.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.print.min.js"></script>
+        <script src="../resources/js/datatables.net/js/buttons.flash.min.js"></script>
+        <script src="../resources/js/datatables.net/js/dataTables.buttons.min.js"></script>
+        <script src="../resources/js/jquery.highlight.js"></script>
+        <script src="../resources/js/dataTables.searchHighlight.min.js"></script>
+
+		<script>
+		$(document).ready(function() {
+            var users = $('#users').DataTable({
+                "dom": "t",
+				scrollY: false,
+                    scrollX: true,
+                    scrollCollapse: true,
+                    paging: true,
+                    fixedColumns: {
+                        leftColumns: 3
+                    },
+					searchHighlight: true
+            });
+
+            $('#customSearchBox').keyup(function(){
+                users.search($(this).val()).draw() ;
+            })
+        } );
+		</script>
+		<script>
+			// Bind keyup event on the input
+			$('#customSearchBox').keyup(function() {
+			  
+			  // If value is not empty
+			  if ($(this).val().length == 0) {
+				// Hide the element
+				$('.customediv').hide();
+			  } else {
+				// Otherwise show it
+				$('.customediv').show();
+			  }
+			}).keyup(); // Trigger the keyup event, thus running the handler on page load
+		</script>
     </body>
 </html>
