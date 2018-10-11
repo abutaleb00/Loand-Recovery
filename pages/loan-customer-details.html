@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>iClique</title>
-        <!-- responsive screen width -->
-        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <!-- Bootstrap 3.3.7 -->
-        <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="../resources/font-awesome/css/font-awesome.min.css">
-        <!-- Ionicons -->
-        <link rel="stylesheet" href="../resources/css/ionicons.min.css">
-        <!-- Custom Stylesheet -->
-        <link rel="stylesheet" href="../resources/css/iclique.css">
-        <!-- iclique Skins. Choose a skin from the css/skins
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>iClique</title>
+    <!-- responsive screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../resources/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="../resources/css/ionicons.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="../resources/css/iclique.css">
+    <!-- iclique Skins. Choose a skin from the css/skins
              folder instead of downloading all of them to reduce the load. -->
-        <link rel="stylesheet" href="../resources/css/skins/_all-skins.min.css">
-        <link rel="stylesheet" href="../resources/css/dataTables.bootstrap.min.css">
-        <link rel="stylesheet" href="../resources/css/jquery.scrolling-tabs.css">
-        <link rel="stylesheet" href="../resources/js/datatables.net-bs/css/buttons.dataTables.min.css">
-        <link rel="stylesheet" href="../resources/js/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
-		<link href="../resources/css/bootstrap-editable.css" rel="stylesheet">
-		<!-- Bootstrap time Picker -->
-		<link rel="stylesheet" href="../resources/js/timepicker/bootstrap-timepicker.min.css">
-        <!-- Google Font -->
-		<style>
+    <link rel="stylesheet" href="../resources/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="../resources/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/jquery.scrolling-tabs.css">
+    <link rel="stylesheet" href="../resources/js/datatables.net-bs/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="../resources/js/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link href="../resources/css/bootstrap-editable.css" rel="stylesheet">
+    <!-- Bootstrap time Picker -->
+    <link rel="stylesheet" href="../resources/js/timepicker/bootstrap-timepicker.min.css">
+    <!-- Google Font -->
+    <style>
         td input {width: 100%;}
 		td select {    
 		width: 100%;
@@ -55,309 +56,336 @@
 		margin-bottom: 3px;
 		}
 		</style>
-    </head>
-    <!-- ADD THE CLASS sidebar-collapse TO HIDE THE SIDEBAR PRIOR TO LOADING THE SITE -->
-    <body class="hold-transition skin-blue fixed sidebar-mini">
-        <!-- Main wrapper -->
-        <div class="wrapper">
+</head>
+<!-- ADD THE CLASS sidebar-collapse TO HIDE THE SIDEBAR PRIOR TO LOADING THE SITE -->
 
-            <header class="main-header">
-                <!-- Logo -->
-                <a href="../loanindex.html" class="logo">
-                    <!-- mini logo for sidebar mini 50x50 pixels -->
-                    <span class="logo-mini"><b>I</b>Q</span>
-                    <!-- logo for regular state and mobile devices -->
-                    <span class="logo-lg"><img src="../resources/img/logo.jpg" alt="Logo" width="" height=""></span>
+<body class="hold-transition skin-blue fixed sidebar-mini">
+    <!-- Main wrapper -->
+    <div class="wrapper">
+
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="../loanindex.html" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>I</b>Q</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><img src="../resources/img/logo.jpg" alt="Logo" width="" height=""></span>
+            </a>
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </a>
-                <!-- Header Navbar -->
-                <nav class="navbar navbar-static-top">
-                    <!-- Sidebar toggle button-->
-                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <!-- Page Menu Title -->
-                    <div class="sidebar-title">Customer Id: 1021220 Details</div>
-                    <!-- Page Menu Title -->
-                    <div class="navbar-custom-menu">
-                        <ul class="nav navbar-nav">
+                <!-- Page Menu Title -->
+                <div class="sidebar-title">Customer Id: 1021220 Details</div>
+                <!-- Page Menu Title -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
 
-                            <!-- User Account: style can be found in dropdown.less -->
-                            <li class="dropdown user user-menu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <img src="../resources/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                                    <span class="desig hidden-xs">Anisul Haque</span>
-                                    <span class="desig hidden-xs">Head of Loan Recovery</span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <!-- User image -->
-                                    <li class="user-header">
-                                        <img src="../resources/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="../resources/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                                <span class="desig hidden-xs">Anisul Haque</span>
+                                <span class="desig hidden-xs">Head of Loan Recovery</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header">
+                                    <img src="../resources/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
-                                        <p>
-                                            Anisul Haque - Head of Loan Recovery
-                                        </p>
-                                    </li>
-                                    <!-- User Menu-->
-                                    <li class="user-footer">
-                                        <div class="pull-left">
-                                            <a href="#" class="btn btn-default btn-flat">Profile</a>
-                                        </div>
-                                        <div class="pull-right">
-                                            <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-
-            <!-- =============================================== -->
-
-            <!-- Left side column. contains the sidebar -->
-            <aside class="main-sidebar">
-                <!-- sidebar -->
-                <section class="sidebar">
-                    <ul class="sidebar-menu" data-widget="tree">
-                        <li class="">
-                            <a href="../loanindex.html">
-                                <i class="fa fa-home"></i> <span>Dashboard</span>
-                                </span>
-                            </a>
-                        </li>
-                         <li class="">
-                            <a href="./hoc.html">
-                                <i class="fa fa-cubes"></i> <span>Head of Collection</span>
-                                </span>
-                            </a>
-                        </li>
-						<li class="">
-                            <a href="./supervisor.html">
-                                <i class="fa fa-handshake-o"></i> <span>Supervisor</span>
-                                </span>
-                            </a>
-                        </li>
-						<li class="">
-                            <a href="./teams.html">
-                                <i class="fa fa-group"></i> <span>Team Member</span>
-                                </span>
-                            </a>
+                                    <p>
+                                        Anisul Haque - Head of Loan Recovery
+                                    </p>
+                                </li>
+                                <!-- User Menu-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-                </section>
-                <!-- /.sidebar -->
-            </aside>
+                </div>
+            </nav>
+        </header>
 
-            <!-- =============================================== -->
+        <!-- =============================================== -->
 
-            <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper">
+        <!-- Left side column. contains the sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar -->
+            <section class="sidebar">
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="">
+                        <a href="../loanindex.html">
+                            <i class="fa fa-home"></i> <span>Dashboard</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="./hoc.html">
+                            <i class="fa fa-cubes"></i> <span>Head of Collection</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="./supervisor.html">
+                            <i class="fa fa-handshake-o"></i> <span>Supervisor</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="./teams.html">
+                            <i class="fa fa-group"></i> <span>Team Member</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
 
-                <!-- Main content -->
-                <section class="content">
-                    <!-- Data Table Start -->
-                    <div class="row">
+        <!-- =============================================== -->
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+
+            <!-- Main content -->
+            <section class="content">
+                <!-- Data Table Start -->
+                <div class="row">
                     <div class="col-md-12">
 
-                                                <div class="box-body">
-                                                    <!--Table body-->
-                                                    <div class="row">
-                                                        <table id="users" style="table-layout: fixed; border:1px solid #d3d3d3;" class="table table-responsive w-auto">
-                                                            <!--Table body-->
-                                                            <tbody>
-                                                                <tr bgcolor="#FF0000">
-                                                                    <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;font-weight:bold;"colspan="2">Account Details</td>
-                                                                    <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;" colspan="7"></td>
-                                                                </tr>
-                                                                <tr style="font-weight:bold;">
-                                                                    <td style="background: #3C8DBC; color: #fff;">Customer Name</td>
-                                                                    <td colspan="3"><span class="editdata" data-type="text">Md. Gias Uddin</span></input></td>
-                                                                    <td style="background: #3C8DBC; color: #fff;">Client ID:</td>
-                                                                    <td colspan="4">000031254‬</td>
-                                                                </tr>
-                                                                <tr style="font-weight:bold;">
-                                                                    <td style="background: #3C8DBC; color: #fff;">Customer Profile</td>
-                                                                    <td style="background: #3C8DBC; color: #fff;border-left: 1px solid #d3d3d3;" colspan="2">Contact Details</td>
-                                                                    <td style="background: #3C8DBC; color: #fff;border-left: 1px solid #d3d3d3;" colspan="2">Telephone</td>
-                                                                    <td style="background: #3C8DBC; color: #fff;border-left: 1px solid #d3d3d3;" colspan="2">Account</td>
-                                                                    <td style="background: #3C8DBC; color: #fff;border-left: 1px solid #d3d3d3;" colspan="2">Status</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td >Name</td>
-                                                                    <td class="left-bo" colspan="2"><span class="editdata" data-type="text">Md. Gias Uddin</span></td>
-                                                                    <td class="left-bo">Office :<span class="editdata" data-type="text">123456789</span></td>
-                                                                    <td >Ext :<span class="editdata" data-type="text">123456789</span></td>
-                                                                    <td class="left-bo" colspan="2">No: <span class="editdata" data-type="text">0452070000292</span></td>
-                                                                    <td class="left-bo" >Open Date: <span class="editdata" data-type="date" data-pk="1"  data-title="Select date">07-02-2012</span></td>
-                                                                    <td rowspan="6"><img src="../resources/img/avatar5.png" alt="Avator" width="110" height="120"></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td rowspan="4">Adress:</td>
-                                                                    <td class="editfield" style="border-left: 1px solid #d3d3d3;" colspan="2" rowspan="4"><span class="editdata" data-type="textarea">Usha Tower(3rd Floor)255/f-8.
-																	Tejgaon,Gulshan ,Dhaka.BD</span></td>
-                                                                    <td class="left-bo">Fax :</td>
-                                                                    <td class="editfield" style="border-left: 1px solid #d3d3d3;"><span class="editdata" data-type="text">***********</span></td>
-                                                                    <td class="left-bo" colspan="2">Product: Car Loan</td>
-                                                                    <td class="left-bo" >Status :</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="left-bo" >Home:<span class="editdata" data-type="text"></span></td>
-                                                                    <td class="left-bo" >Ext :<span class="editdata" data-type="text"></span></td>
-                                                                    <td class="left-bo" colspan="2">Current Due: <span class="editdata" data-type="text"></span></td>
-                                                                    <td class="left-bo"  >Last Action :</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="editfield" style="border-left: 1px solid #d3d3d3;" colspan="2">Mobile :<span class="editdata" data-type="text">01911-386065</span></td>
-                                                                    <td class="left-bo" colspan="2">Past Due Amt:<span class="editdata" data-type="text"></span></td>
-                                                                    <td class="left-bo" ></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="left-bo" colspan="2">Email : <span class="editdata" data-type="text">s_r@gmail.com</span></td>
-                                                                    <td class="left-bo" colspan="2">CL Status: NORM</td>
-                                                                    <td class="left-bo" ></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>DOB:</td>
-                                                                    <td class="left-bo" ><span class="editdata" data-type="date" data-pk="1"  data-title="Select date">3-3-1980</span></td>
-                                                                    <td class="left-bo" >Gender:</td>
-                                                                    <td style="border-left: 1px solid #d3d3d3;border-right: 1px solid #d3d3d3;" ><span class="editdata" data-pk="1" data-type="select" data-value="1"></td>
-                                                                    <td colspan="4"></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td style="font-weight:bold;">Refference Detail:</td>
-                                                                    <td style="border-left: 1px solid #d3d3d3;font-weight:bold;" colspan="4">Refference -1</td>
-                                                                    <td style="border-left: 1px solid #d3d3d3;font-weight:bold;" colspan="4">Refference -2</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Name</td>
-                                                                    <td class="left-bo" colspan="2"><span class="editdata" data-type="text">MD XYZ</span></td>
-                                                                    <td class="left-bo" >Office :<span class="editdata" data-type="text">123456789</span></td>
-                                                                    <td>Ext :<span class="editdata" data-type="text">123</span></td>
-                                                                    <td class="left-bo" colspan="2"><span class="editdata" data-type="text">MD XYZ</span></td>
-                                                                    <td class="left-bo" >Office :<span class="editdata" data-type="text">123456789</span></td>
-                                                                    <td>Ext :<span class="editdata" data-type="text">123</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="left-bo" rowspan="3">Adress:</td>
-                                                                    <td class="left-bo" colspan="2" rowspan="3"><span class="editdata" data-type="textarea">Usha Tower(3rd Floor)255/f-8.
-																	Tejgaon,Gulshan ,Dhaka.BD</span></td>
-                                                                    <td class="left-bo" colspan="2">Fax : <span class="editdata" data-type="text">***********</span></td>
-                                                                    <td class="left-bo" colspan="2" rowspan="3"><span class="editdata" data-type="textarea">Usha Tower(3rd Floor)255/f-8.
-																	Tejgaon,Gulshan ,Dhaka.BD</span></td>
-                                                                    <td class="left-bo" colspan="2">Fax : <span class="editdata" data-type="text">***********</span></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="left-bo" >Home:</td>
-                                                                    <td>Ext :</td>
-                                                                    <td class="left-bo" >Home:</td>
-                                                                    <td>Ext :</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="left-bo" colspan="2">Email : <span class="editdata" data-type="text">s_r@gmail.com</span></td>
-                                                                    <td class="left-bo" colspan="2">Email : <span class="editdata" data-type="text">s_r@gmail.com</span></td>
-                                                                </tr>
-                                                            </tbody>
-                                                            <!--Table body-->
+                        <div class="box-body">
+                            <!--Table body-->
+                            <div class="row">
+                                <table id="users" style="table-layout: fixed; border:1px solid #d3d3d3;" class="table table-responsive w-auto">
+                                    <!--Table body-->
+                                    <tbody>
+                                        <tr bgcolor="#FF0000">
+                                            <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;font-weight:bold;"
+                                                colspan="2">Account Details</td>
+                                            <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;"
+                                                colspan="7"></td>
+                                        </tr>
+                                        <tr style="font-weight:bold;">
+                                            <td style="background: #3C8DBC; color: #fff;">Customer Name</td>
+                                            <td colspan="3"><span class="editdata" data-type="text">Md. Gias Uddin</span></input></td>
+                                            <td style="background: #3C8DBC; color: #fff;">Client ID:</td>
+                                            <td colspan="4">000031254‬</td>
+                                        </tr>
+                                        <tr style="font-weight:bold;">
+                                            <td style="background: #3C8DBC; color: #fff;">Customer Profile</td>
+                                            <td style="background: #3C8DBC; color: #fff;border-left: 1px solid #d3d3d3;"
+                                                colspan="2">Contact Details</td>
+                                            <td style="background: #3C8DBC; color: #fff;border-left: 1px solid #d3d3d3;"
+                                                colspan="2">Telephone</td>
+                                            <td style="background: #3C8DBC; color: #fff;border-left: 1px solid #d3d3d3;"
+                                                colspan="2">Account</td>
+                                            <td style="background: #3C8DBC; color: #fff;border-left: 1px solid #d3d3d3;"
+                                                colspan="2">Status</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Name</td>
+                                            <td class="left-bo" colspan="2"><span class="editdata" data-type="text">Md.
+                                                    Gias Uddin</span></td>
+                                            <td class="left-bo">Office :<span class="editdata" data-type="text">123456789</span></td>
+                                            <td>Ext :<span class="editdata" data-type="text">123456789</span></td>
+                                            <td class="left-bo" colspan="2">No: <span class="editdata" data-type="text">0452070000292</span></td>
+                                            <td class="left-bo">Open Date: <span class="editdata" data-type="date"
+                                                    data-pk="1" data-title="Select date">07-02-2012</span></td>
+                                            <td rowspan="6"><img src="../resources/img/avatar5.png" alt="Avator" width="110"
+                                                    height="120"></td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">Adress:</td>
+                                            <td class="editfield" style="border-left: 1px solid #d3d3d3;" colspan="2"
+                                                rowspan="4"><span class="editdata" data-type="textarea">Usha Tower(3rd
+                                                    Floor)255/f-8.
+                                                    Tejgaon,Gulshan ,Dhaka.BD</span></td>
+                                            <td class="left-bo">Fax :</td>
+                                            <td class="editfield" style="border-left: 1px solid #d3d3d3;"><span class="editdata"
+                                                    data-type="text">***********</span></td>
+                                            <td class="left-bo" colspan="2">Product: Car Loan</td>
+                                            <td class="left-bo">Status :</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left-bo">Home:<span class="editdata" data-type="text"></span></td>
+                                            <td class="left-bo">Ext :<span class="editdata" data-type="text"></span></td>
+                                            <td class="left-bo" colspan="2">Current Due: <span class="editdata"
+                                                    data-type="text"></span></td>
+                                            <td class="left-bo">Last Action :</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="editfield" style="border-left: 1px solid #d3d3d3;" colspan="2">Mobile
+                                                :<span class="editdata" data-type="text">01911-386065</span></td>
+                                            <td class="left-bo" colspan="2">Past Due Amt:<span class="editdata"
+                                                    data-type="text"></span></td>
+                                            <td class="left-bo"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left-bo" colspan="2">Email : <span class="editdata" data-type="text">s_r@gmail.com</span></td>
+                                            <td class="left-bo" colspan="2">CL Status: NORM</td>
+                                            <td class="left-bo"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>DOB:</td>
+                                            <td class="left-bo"><span class="editdata" data-type="date" data-pk="1"
+                                                    data-title="Select date">3-3-1980</span></td>
+                                            <td class="left-bo">Gender:</td>
+                                            <td style="border-left: 1px solid #d3d3d3;border-right: 1px solid #d3d3d3;"><span
+                                                    class="editdata" data-pk="1" data-type="select" data-value="1"></td>
+                                            <td colspan="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight:bold;">Refference Detail:</td>
+                                            <td style="border-left: 1px solid #d3d3d3;font-weight:bold;" colspan="4">Refference
+                                                -1</td>
+                                            <td style="border-left: 1px solid #d3d3d3;font-weight:bold;" colspan="4">Refference
+                                                -2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Name</td>
+                                            <td class="left-bo" colspan="2"><span class="editdata" data-type="text">MD
+                                                    XYZ</span></td>
+                                            <td class="left-bo">Office :<span class="editdata" data-type="text">123456789</span></td>
+                                            <td>Ext :<span class="editdata" data-type="text">123</span></td>
+                                            <td class="left-bo" colspan="2"><span class="editdata" data-type="text">MD
+                                                    XYZ</span></td>
+                                            <td class="left-bo">Office :<span class="editdata" data-type="text">123456789</span></td>
+                                            <td>Ext :<span class="editdata" data-type="text">123</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left-bo" rowspan="3">Adress:</td>
+                                            <td class="left-bo" colspan="2" rowspan="3"><span class="editdata"
+                                                    data-type="textarea">Usha Tower(3rd Floor)255/f-8.
+                                                    Tejgaon,Gulshan ,Dhaka.BD</span></td>
+                                            <td class="left-bo" colspan="2">Fax : <span class="editdata" data-type="text">***********</span></td>
+                                            <td class="left-bo" colspan="2" rowspan="3"><span class="editdata"
+                                                    data-type="textarea">Usha Tower(3rd Floor)255/f-8.
+                                                    Tejgaon,Gulshan ,Dhaka.BD</span></td>
+                                            <td class="left-bo" colspan="2">Fax : <span class="editdata" data-type="text">***********</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left-bo">Home:</td>
+                                            <td>Ext :</td>
+                                            <td class="left-bo">Home:</td>
+                                            <td>Ext :</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left-bo" colspan="2">Email : <span class="editdata" data-type="text">s_r@gmail.com</span></td>
+                                            <td class="left-bo" colspan="2">Email : <span class="editdata" data-type="text">s_r@gmail.com</span></td>
+                                        </tr>
+                                    </tbody>
+                                    <!--Table body-->
 
 
-                                                        </table>
-                                                        <!--Table-->
-                                                        <!--Table-->
-                                                        <table style="table-layout: fixed;border-bottom: 2px solid #d3d3d3;word-wrap: break-word;" class="table table-custom table-bordered table-responsive w-auto">
-                                                            <!--Table body-->
-                                                            <tbody>
-                                                                <tr bgcolor="#FF0000">
-                                                                    <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;font-weight:bold;" colspan="2">Loan Details</td>
-                                                                    <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;" colspan="9"></td>
-                                                                </tr>
-                                                                <tr style="font-weight:bold;">
-                                                                    <td>Product</td>
-                                                                    <td>Branch, Loan Wise</td>
-                                                                    <td>File No</td>
-                                                                    <td>Loan A/C</td>
-                                                                    <td>SB A/c No</td>
-                                                                    <td>EMI Amount</td>
-                                                                    <td>EMI Date</td>
-                                                                    <td>Overdue 31.07.18</td>
-                                                                    <td>ATE 31.07.18 </td>
-                                                                    <td>End ATE</td>
-                                                                    <td>Status Jul'18</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Car</td>
-                                                                    <td>Basabo</td>
-                                                                    <td>9098</td>
-                                                                    <td>045RT01151400001</td>
-                                                                    <td>0452070000292</td>
-                                                                    <td>64,620.86</td>
-                                                                    <td>79500</td>
-                                                                    <td>579090</td>
-                                                                    <td>0</td>
-                                                                    <td>Saving A/C, FDR</td>
-                                                                    <td>NORM</td>
-                                                                </tr>
-                                                                <tr style="font-weight:bold;">
-                                                                    <td>Amount Disbursed</td>
-                                                                    <td>Interest Rate</td>
-                                                                    <td>Loan A/C wise Zone</td>
-                                                                    <td>SB A/C wise Zone</td>
-                                                                    <td>Expiry</td>
-                                                                    <td>Disbursment Date</td>
-                                                                    <td>Expiry Date</td>
-                                                                    <td>EMI Date</td>
-                                                                    <td>CIF</td>
-                                                                    <td>End Of Moritorium Period</td>
-                                                                    <td>Contact No-Customer</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2,800,000</td>
-                                                                    <td>13.50%</td>
-                                                                    <td>DHK</td>
-                                                                    <td>DHK</td>
-                                                                    <td>0</td>
-                                                                    <td>20-May-2015</td>
-                                                                    <td>20-May-2020</td>
-                                                                    <td>15-May-2017</td>
-                                                                    <td>000031254‬</td>
-                                                                    <td>0</td>
-                                                                    <td>01911-386065</td>
-                                                                </tr>
-																<tr style="font-weight:bold;">
-                                                                    <td>Contact No- Guarantor</td>
-                                                                    <td>RM</td>
-                                                                    <td>RM Code</td>
-                                                                    <td colspan="2">Int Suspense & Accrued Schedule 31.07.18</td>
-                                                                    <td>>10<</td>
-                                                                    <td>Remarks</td>
-                                                                    <td>Br. Code Loan Ac</td>
-                                                                    <td>Credit Cards Information</td>
-                                                                    <td>Retail Br.</td>
-                                                                    <td>Collector Aug'18</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>01912-179030</td>
-                                                                    <td>Md. Alem Islam</td>
-                                                                    <td>011020501923</td>
-                                                                    <td colspan="2">40,280.90</td>
-                                                                    <td>>10</td>
-                                                                    <td>Duplicate Acc</td>
-                                                                    <td>045</td>
-                                                                    <td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal" data-target="#modal-default">Details</button></td>
-                                                                    <td></td>
-                                                                    <td>Altaf</td>
-                                                                </tr>
-                                                            </tbody>
-                                                            <!--Table body-->
-                                                        </table>
+                                </table>
+                                <!--Table-->
+                                <!--Table-->
+                                <table style="table-layout: fixed;border-bottom: 2px solid #d3d3d3;word-wrap: break-word;"
+                                    class="table table-custom table-bordered table-responsive w-auto">
+                                    <!--Table body-->
+                                    <tbody>
+                                        <tr bgcolor="#FF0000">
+                                            <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;font-weight:bold;"
+                                                colspan="2">Loan Details</td>
+                                            <td style="background: #2B79A7; color: #fff;height: 25px;font-size: 13px;"
+                                                colspan="9"></td>
+                                        </tr>
+                                        <tr style="font-weight:bold;">
+                                            <td>Product</td>
+                                            <td>Branch, Loan Wise</td>
+                                            <td>File No</td>
+                                            <td>Loan A/C</td>
+                                            <td>SB A/c No</td>
+                                            <td>EMI Amount</td>
+                                            <td>EMI Date</td>
+                                            <td>Overdue 31.07.18</td>
+                                            <td>ATE 31.07.18 </td>
+                                            <td>End ATE</td>
+                                            <td>Status Jul'18</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Car</td>
+                                            <td>Basabo</td>
+                                            <td>9098</td>
+                                            <td>045RT01151400001</td>
+                                            <td>0452070000292</td>
+                                            <td>64,620.86</td>
+                                            <td>79500</td>
+                                            <td>579090</td>
+                                            <td>0</td>
+                                            <td>Saving A/C, FDR</td>
+                                            <td>NORM</td>
+                                        </tr>
+                                        <tr style="font-weight:bold;">
+                                            <td>Amount Disbursed</td>
+                                            <td>Interest Rate</td>
+                                            <td>Loan A/C wise Zone</td>
+                                            <td>SB A/C wise Zone</td>
+                                            <td>Expiry</td>
+                                            <td>Disbursment Date</td>
+                                            <td>Expiry Date</td>
+                                            <td>EMI Date</td>
+                                            <td>CIF</td>
+                                            <td>End Of Moritorium Period</td>
+                                            <td>Contact No-Customer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2,800,000</td>
+                                            <td>13.50%</td>
+                                            <td>DHK</td>
+                                            <td>DHK</td>
+                                            <td>0</td>
+                                            <td>20-May-2015</td>
+                                            <td>20-May-2020</td>
+                                            <td>15-May-2017</td>
+                                            <td>000031254‬</td>
+                                            <td>0</td>
+                                            <td>01911-386065</td>
+                                        </tr>
+                                        <tr style="font-weight:bold;">
+                                            <td>Contact No- Guarantor</td>
+                                            <td>RM</td>
+                                            <td>RM Code</td>
+                                            <td colspan="2">Int Suspense & Accrued Schedule 31.07.18</td>
+                                            <td>>10</td> <td>Remarks</td>
+                                            <td>Br. Code Loan Ac</td>
+                                            <td>Credit Cards Information</td>
+                                            <td>Retail Br.</td>
+                                            <td>Collector Aug'18</td>
+                                        </tr>
+                                        <tr>
+                                            <td>01912-179030</td>
+                                            <td>Md. Alem Islam</td>
+                                            <td>011020501923</td>
+                                            <td colspan="2">40,280.90</td>
+                                            <td>>10</td>
+                                            <td>Duplicate Acc</td>
+                                            <td>045</td>
+                                            <td><button type="button" class="btn bg-navy btn-flat1" data-toggle="modal"
+                                                    data-target="#modal-default">Details</button></td>
+                                            <td></td>
+                                            <td>Altaf</td>
+                                        </tr>
+                                    </tbody>
+                                    <!--Table body-->
+                                </table>
 
-                                                        <!--Table-->
+                                <!--Table-->
 
-                                                        <form name="order" id="order" class="" style="max-height: 40%;">
-                                    <table style="table-layout: fixed;" class="table table-striped table-bordered table-responsive w-auto">
+                                <form name="order" id="order" class="" method="get" style="max-height: 40%;">
+                                    <table id="order" style="table-layout: fixed;" class="table table-striped table-bordered table-responsive w-auto">
                                         <!--Table body-->
                                         <tbody>
                                             <tr bgcolor="#FF0000">
@@ -377,272 +405,281 @@
                                             </tr>
                                             <tr style="font-weight:bold;">
                                                 <td>
-												<div class="form-group">
-                                                    <select id="action" name="action" class="form-control">
-                                                        <option selected hidden>Choose here</option>
-                                                        <option value="SMS">SMS</option>
-                                                        <option value="Phone Call">Phone Call</option>
-                                                        <option value="Email">Email</option>
-                                                        <option value="Visit">Visit</option>
+                                                    <div class="form-group">
+                                                        <select id="action" name="action" class="form-control">
+                                                            <option selected hidden>Choose here</option>
+                                                            <option value="SMS">SMS</option>
+                                                            <option value="Phone Call">Phone Call</option>
+                                                            <option value="Email">Email</option>
+                                                            <option value="Visit">Visit</option>
 
-                                                    </select>
-												</div>
+                                                        </select>
+                                                    </div>
                                                 </td>
                                                 <td>
-													<div class="form-group">
-													  <div class="input-group">
-														<input type="text" class="form-control" id="result"></td>
-													  </div>
-													  <!-- /.input group -->
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" id="result">
+                                                </td>
+														</div>
+														<!-- /.input group -->
 													</div>
-                                                <td>
+												<td>
 													<div class="form-group">
-													  <div class="input-group">
-														<input type="text" class="form-control" id="place"></td>
-													  </div>
-													  <!-- /.input group -->
-													</div>
-                                                <td>
-													<div class="form-group">
-													  <div class="input-group">
-														<input type="text" class="form-control" id="amount">
-													  </div>
-													  <!-- /.input group -->
+														<div class="input-group">
+															<input type="text" class="form-control" id="place">
+														</div>
+													<!-- /.input group -->
 													</div>
 												</td>
-												<td>
+											<td>
 												<div class="form-group">
-													<div class="input-group date">
-													  <input type="text" class="form-control pull-right" id="datepicker1">
+													<div class="input-group">
+														<input type="text" class="form-control" id="amount">
 													</div>
 													<!-- /.input group -->
-												  </div>
-												</td>
-                                                <td>
+												</div>
+											</td>
+											<td>
+												<div class="form-group">
+													<div class="input-group date">
+														<input type="text" class="form-control pull-right" id="datepicker1">
+													</div>
+													<!-- /.input group -->
+												</div>
+											</td>
+											<td>
 												<div class="bootstrap-timepicker">
 													<div class="form-group">
-													  <div class="input-group">
-														<input type="text" class="form-control timepicker" id="timepicker1">
-													  </div>
-													  <!-- /.input group -->
+														<div class="input-group">
+															<input type="text" class="form-control timepicker" id="timepicker1">
+														</div>
+														<!-- /.input group -->
 													</div>
 													<!-- /.form group -->
 												</div>
-												</td>
-                                                <td>
-													<div class="form-group">
-													  <div class="input-group">
-														<input type="text" class="form-control" id="summery"></td>
-													  </div>
-													  <!-- /.input group -->
+											</td>
+											<td>
+												<div class="form-group">
+													<div class="input-group">
+														<input type="text" class="form-control" id="summery">
 													</div>
-                                                <td style="float: right"><button id="result" class="btn bg-navy btn-flat1" style="margin: 0px 5px;">Archive</button><button type="button" id="add-row" class="btn bg-navy btn-flat1">Submit</button></td>
-                                            </tr>
-                                        </tbody>
-                                        <!--Table body-->
-                                    </table>
-                                </form>
-                                <!--Table-->
-                                <table id="results" style="table-layout: fixed;border-bottom: 2px solid #d3d3d3;" class="table table-striped table-bordered table-responsive w-auto">
-                                    <!--Table body-->
-                                    <thead>
-                                        <td style="background: #2B79A7; color: #fff;font-size: 12px;font-weight:bold;"
-                                            colspan="2">Log History</td>
-                                        <td style="background: #2B79A7; color: #fff;font-size: 12px;" colspan="6"></td>
-                                        <tr style="background-color: #B6DBF0;">
-                                            <th>Action</th>
-                                            <th>Result</th>
-                                            <th>Place</th>
-                                            <th>Amount</th>
-                                            <th>Date</th>
-                                            <th>Time</th>
-                                            <th colspan="2">Summary</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><span class="editdata" data-type="text">SMS</span></td>
-                                            <td>Pay</td>
-                                            <td>Office</td>
-                                            <td>20000</td>
-                                            <td>20/05/2018</td>
-                                            <td>12:30 PM</td>
-                                            <td colspan="2">Payment: ref: 688262</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Phone Call</td>
-                                            <td>Not Pay</td>
-                                            <td>Dhanmondi, Dhaka</td>
-                                            <td>340,000</td>
-                                            <td>20/09/2018</td>
-                                            <td>04:30 PM</td>
-                                            <td colspan="2">Ref: 656562</td>
-                                        </tr>
-                                    </tbody>
-                                    <!--Table body-->
-                                </table>
-                                                    </div>
-                                                    <div class="modal fade" id="modal-default">
-                                                        <div class="modal-dialog">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                        <span aria-hidden="true">&times;</span></button>
-                                                                    <h4 class="modal-title">Credit Card Information</h4>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    <table id="example" class="table table-bordered table-striped">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>C.Cards CLIENT ID</th>
-                                                                                <th>C.CARD Number</th>
-                                                                                <th>Total M/D(Bdt+Usd)</th>
-                                                                                <th>Total Expence</th>
-                                                                                <th> OVER DUE PERIOD</th>
-                                                                                <th>Current OVER DUE PERIOD</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>83634</td>
-                                                                                <td>41992900****6417</td>
-                                                                                <td> - </td>
-                                                                                <td> - </td>
-                                                                                <td>0</td>
-                                                                                <td>GOOD</td>
-                                                                            </tr>                                                                 </tbody>
-                                                                        <tfoot>
-                                                                        </tfoot>
-                                                                    </table>
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-                                                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                                                </div>
-                                                            </div>
-                                                            <!-- /.modal-content -->
-                                                        </div>
-                                                        <!-- /.modal-dialog -->
-                                                    </div>
-                                                    <!-- /.col -->
-                                                </div>
-                                                <!-- Summery Row Body -->
-                    </div>
-                    </div>
-                    <!-- /.Review And Details -->
-
-                </section>
-                <!-- /.content -->
-            </div>
-            <!-- /.content-wrapper -->
-
-            <footer class="main-footer">
-                <!-- Footer Section -->
-            </footer>
-
+												<!-- /.input group -->
+												</div>
+											</td>
+											<td style="float: right"><button id="result" class="btn bg-navy btn-flat1" style="margin: 0px 5px;">Archive</button>
+											<button type="button" id="add-row" class="btn bg-navy btn-flat1">Submit</button></td>
+											</tr>
+										</tbody>
+									<!--Table body-->
+									</table>
+								</form>
+								<!--Table-->
+								<table id="results" style="table-layout: fixed;border-bottom: 2px solid #d3d3d3;" class="table table-striped table-bordered table-responsive w-auto">
+									<!--Table body-->
+									<thead>
+										<td style="background: #2B79A7; color: #fff;font-size: 12px;font-weight:bold;" colspan="2">Log History</td>
+										<td style="background: #2B79A7; color: #fff;font-size: 12px;" colspan="6"></td>
+										<tr style="background-color: #B6DBF0;">
+											<th>Action</th>
+											<th>Result</th>
+											<th>Place</th>
+											<th>Amount</th>
+											<th>Date</th>
+											<th>Time</th>
+											<th colspan="2">Summary</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><span class="editdata" data-type="text">SMS</span></td>
+											<td>Pay</td>
+											<td>Office</td>
+											<td>20000</td>
+											<td>20/05/2018</td>
+											<td>12:30 PM</td>
+											<td colspan="2">Payment: ref: 688262</td>
+										</tr>
+										<tr>
+											<td>Phone Call</td>
+											<td>Not Pay</td>
+											<td>Dhanmondi, Dhaka</td>
+											<td>340,000</td>
+											<td>20/09/2018</td>
+											<td>04:30 PM</td>
+											<td colspan="2">Ref: 656562</td>
+										</tr>
+									</tbody>
+									<!--Table body-->
+								</table>
+								</div>
+								<div class="modal fade" id="modal-default">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span></button>
+												<h4 class="modal-title">Credit Card Information</h4>
+											</div>
+											<div class="modal-body">
+												<table id="example" class="table table-bordered table-striped">
+													<thead>
+														<tr>
+															<th>C.Cards CLIENT ID</th>
+															<th>C.CARD Number</th>
+															<th>Total M/D(Bdt+Usd)</th>
+															<th>Total Expence</th>
+															<th> OVER DUE PERIOD</th>
+															<th>Current OVER DUE PERIOD</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>83634</td>
+															<td>41992900****6417</td>
+															<td> - </td>
+															<td> - </td>
+															<td>0</td>
+															<td>GOOD</td>
+														</tr>
+													</tbody>
+													<tfoot>
+													</tfoot>
+												</table>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button>
+												</div>
+										</div>
+											<!-- /.modal-content -->
         </div>
-        <!-- ./wrapper -->
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.col -->
+    </div>
+    <!-- Summery Row Body -->
+    </div>
+    </div>
+    <!-- /.Review And Details -->
 
-        <!-- jQuery 3 -->
-        <script src="../resources/js/jquery.min.js"></script>
-        <!-- Bootstrap 3.3.7 -->
-        <script src="../resources/js/bootstrap.min.js"></script>
-        <!-- SlimScroll -->
-        <script src="../resources/js/jquery.slimscroll.min.js"></script>
-        <!-- FastClick -->
-        <script src="../resources/js/fastclick.js"></script>
-        <!-- iclique App -->
-        <script src="../resources/js/iclique.min.js"></script>
-        <script src="../resources/js/chart.js/Chart.js"></script>
-        <script src="../resources/js/highcharts.js"></script>
-        <script src="../resources/js/datatables.net/js/jquery.dataTables.min.js"></script>
-        <script src="../resources/js/datatables.net/js/vfs_fonts.js"></script>
-        <script src="../resources/js/datatables.net/js/pdfmake.min.js"></script>
-        <script src="../resources/js/datatables.net/js/jszip.min.js"></script>
-        <script src="../resources/js/datatables.net/js/buttons.html5.min.js"></script>
-        <script src="../resources/js/datatables.net/js/buttons.print.min.js"></script>
-        <script src="../resources/js/datatables.net/js/buttons.flash.min.js"></script>
-        <script src="../resources/js/datatables.net/js/dataTables.buttons.min.js"></script>
-        <script src="../resources/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-        <script src="../resources/js/jquery.scrolltabs.js"></script>
-        <script src="../resources/js/jquery.mousewheel.js"></script>
-        <script src="../resources/js/jquery.scrolling-tabs.js"></script>
-        <script src="../resources/js/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-        <script src="../resources/js/timepicker/bootstrap-timepicker.min.js"></script>
-        <script src="../resources/js/bootstable.js"></script>
-		<script src="../resources/js/bootstrap-editable.js"></script>
-		<script>
-		var source = [{'value': 1, 'text': 'Male'}, {'value': 2, 'text': 'Female'}];
-			$('#users .editdata').editable({
-				type: 'text',
-				title: 'Edit..',
-				placement: 'bottom',
-				'source': function() {
-					return source;
-				},
-				emptyclass: 'none',
-				format: 'yyyy-mm-dd',  
-				placement: 'bottom',		
-				viewformat: 'dd/mm/yyyy',    
-				datepicker: {
+    </section>
+    <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+        <!-- Footer Section -->
+    </footer>
+
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery 3 -->
+    <script src="../resources/js/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="../resources/js/bootstrap.min.js"></script>
+    <!-- SlimScroll -->
+    <script src="../resources/js/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="../resources/js/fastclick.js"></script>
+    <!-- iclique App -->
+    <script src="../resources/js/iclique.min.js"></script>
+    <script src="../resources/js/chart.js/Chart.js"></script>
+    <script src="../resources/js/highcharts.js"></script>
+    <script src="../resources/js/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../resources/js/datatables.net/js/vfs_fonts.js"></script>
+    <script src="../resources/js/datatables.net/js/pdfmake.min.js"></script>
+    <script src="../resources/js/datatables.net/js/jszip.min.js"></script>
+    <script src="../resources/js/datatables.net/js/buttons.html5.min.js"></script>
+    <script src="../resources/js/datatables.net/js/buttons.print.min.js"></script>
+    <script src="../resources/js/datatables.net/js/buttons.flash.min.js"></script>
+    <script src="../resources/js/datatables.net/js/dataTables.buttons.min.js"></script>
+    <script src="../resources/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../resources/js/jquery.scrolltabs.js"></script>
+    <script src="../resources/js/jquery.mousewheel.js"></script>
+    <script src="../resources/js/jquery.scrolling-tabs.js"></script>
+    <script src="../resources/js/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="../resources/js/timepicker/bootstrap-timepicker.min.js"></script>
+    <script src="../resources/js/bootstable.js"></script>
+    <script src="../resources/js/bootstrap-editable.js"></script>
+    <script>
+        var source = [{
+            'value': 1,
+            'text': 'Male'
+        }, {
+            'value': 2,
+            'text': 'Female'
+        }];
+        $('#users .editdata').editable({
+            type: 'text',
+            title: 'Edit..',
+            placement: 'bottom',
+            'source': function () {
+                return source;
+            },
+            emptyclass: 'none',
+            format: 'yyyy-mm-dd',
+            placement: 'bottom',
+            viewformat: 'dd/mm/yyyy',
+            datepicker: {
                 weekStart: 1
-           }
-			});
-		</script>
-		<script>
-           $('#table').SetEditable();
-        </script>
-		<script>
-		</script>
-        <script>
-            $(document).ready(function () {
-                $('#example').DataTable({
-                    dom: 'Bfrtip',
-                    buttons: [
-                        'excel', 'pdf', 'print'
-                    ]
-
-                });
             }
-            );
-        </script>
-        <script>
-		//Date picker
-    $('#datepicker').datepicker({
-      autoclose: true
-    })
-        </script>
-        <script>
+        });
+    </script>
+    <script>
+        $('#table').SetEditable();
+    </script>
+    <script>
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'excel', 'pdf', 'print'
+                ]
 
-            $(document).ready(function () {
-                $('#example1').DataTable({
-                    dom: 'Bfrtip',
-                    buttons: [
-                        'excel', 'pdf', 'print'
-                    ]
-
-                });
             });
-        </script>
-        <script>
-            //Date picker
-            $('#datepicker').datepicker({
-                autoclose: true
-            })
-        </script>
-		<script>
-            //Timepicker
-			$('.timepicker').timepicker({
-			  showInputs: false
-			})
-        </script>
-		<script>
-          //Date picker
-			$('#datepicker1').datepicker({
-			  autoclose: true
-			})
-        </script>
-		<script type="text/javascript">
+        });
+    </script>
+    <script>
+        //Date picker
+        $('#datepicker').datepicker({
+            autoclose: true
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#example1').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'excel', 'pdf', 'print'
+                ]
+
+            });
+        });
+    </script>
+    <script>
+        //Date picker
+        $('#datepicker').datepicker({
+            autoclose: true
+        })
+    </script>
+    <script>
+        //Timepicker
+        $('.timepicker').timepicker({
+            showInputs: false,
+			minuteStep: 5
+        })
+    </script>
+    <script>
+        //Date picker
+        $('#datepicker1').datepicker({
+            autoclose: true
+        })
+    </script>
+    <script type="text/javascript">
         $(document).ready(function () {
             $("#add-row").click(function () {
                 var name = document.getElementById("action").value;
@@ -657,7 +694,7 @@
                     visit3 + "</td></tr>";
                 $("#results tbody").append(markup);
             });
-
+			$('#order')[0].reset();
             // Find and remove selected table rows
             $(".delete-row").click(function () {
                 $("#results tbody").find('input[name="record"]').each(function () {
@@ -668,5 +705,6 @@
             });
         });
     </script>
-    </body>
+</body>
+
 </html>
