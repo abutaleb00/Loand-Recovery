@@ -237,7 +237,7 @@
                                         <!-- col -->
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
-                                            <a href="#">
+                                            <a href="#" data-toggle="modal" data-target="#modal-default">
                                                 <div class="small-box6 rejected-application">
                                                     <div class="inner">
                                                         <h3>15</h3>
@@ -1690,6 +1690,64 @@
                             <!-- ./col -->
                         </div>
                     </div>
+					<div class="modal fade" id="modal-default">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span></button>
+												<h4 class="modal-title">Solved Case Record</h4>
+											</div>
+											<div class="modal-body">
+												<table id="example" class="table table-bordered table-striped">
+
+                                                        <!--Table body-->
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Team Member Name</th>
+                                                                <th>Supervisor Name</th>
+                                                                <th>Total Assin Case</th>
+                                                                <th>Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Mem-09</td>
+                                                                <td>Sup-03</td>
+                                                                <td>05</td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Mem-10</td>
+                                                                <td>Sup-03</td>
+                                                                <td>05</td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                            </tr>
+															<tr>
+                                                                <td>Mem-11</td>
+                                                                <td>Sup-03</td>
+                                                                <td>05</td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                            </tr>
+															<tr>
+                                                                <td>Mem-12</td>
+                                                                <td>Sup-03</td>
+                                                                <td>05</td>
+                                                                <td><button type="button" onclick="window.location.href='.../pages/individual-member.html'" class="btn bg-navy btn-flat1">View</button></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <!--Table body-->
+                                                    </table>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button>
+												</div>
+										</div>
+											<!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
                 </div>
             </section>
             <!-- /.content -->

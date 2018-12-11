@@ -267,7 +267,7 @@
                                         <!-- col -->
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
-                                            <a href="#">
+                                            <a href="#" data-toggle="modal" data-target="#modal-default">
                                                 <div class="small-box6 rejected-application">
                                                     <div class="inner">
                                                         <h3>15</h3>
@@ -471,7 +471,7 @@
                                         <!-- col -->
                                         <div class="col-lg-4 col-xs-6">
                                             <!-- small box -->
-                                            <a href="#">
+                                            <a href="#" data-toggle="modal" data-target="#modal-default">
                                                 <div class="small-box6 rejected-application">
                                                     <div class="inner">
                                                         <h3>05</h3>
@@ -5652,6 +5652,68 @@
                             <!-- ./col -->
                         </div>
                     </div>
+					<div class="modal fade" id="modal-default">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span></button>
+												<h4 class="modal-title">Solved Case Record</h4>
+											</div>
+											<div class="modal-body">
+												<table id="example" class="table table-bordered table-striped">
+
+                                                        <!--Table body-->
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Name of Borrowers</th>
+                                                                <th>CIF</th>
+                                                                <th>Team Name</th>
+                                                                <th>Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Dr. Md. Nazmul Islam</td>
+                                                                <td>‭000073151‬</td>
+                                                                <td>Mem-01</td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
+                                                                        class="btn bg-navy btn-flat1">View</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Syed Joynal Abedin Alias</td>
+                                                                <td>‭000082935‬</td>
+                                                                <td>Mem-01</td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
+                                                                        class="btn bg-navy btn-flat1">View</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Md. Ruhul Amin (Sadon)</td>
+                                                                <td>000134385‬</td>
+                                                                <td>Mem-01</td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
+                                                                        class="btn bg-navy btn-flat1">View</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Md. Zia Haider</td>
+                                                                <td>000165482‬</td>
+                                                                <td>Mem-01</td>
+                                                                <td><button type="button" onclick="window.location.href='../pages/loan-customer-details.html'"
+                                                                        class="btn bg-navy btn-flat1">View</button></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <!--Table body-->
+                                                    </table>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button>
+												</div>
+										</div>
+											<!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
                 </div>
             </section>
             <!-- /.content -->
